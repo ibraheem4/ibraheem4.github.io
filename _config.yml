@@ -1,6 +1,21 @@
-title: Ibraheem Abdul-Malik
-timezone: America/Los_Angeles
+# Dependencies
+pygments:		true
 
+# Gems
 gems:
 - jemoji
 - jekyll-sitemap
+
+# Setup
+title: 			Ibraheem.com
+tagline: 		This is my blog.
+timezone: 		America/Los_Angeles
+author:
+  name:			Ibraheem Abdul-Malik
+  url:			https://twitter.com/ibraheem4
+  email:		ibraheem4@gmail.com
+
+# Custom
+version:		1.0.0
+github:
+  repo:			https://github.com/ibraheem4/ibraheem4.github.io
