@@ -1,5 +1,8 @@
 # Dependencies
-pygments:		true
+highlighter:	pygments
+
+# Permalinks
+permalink:		pretty
 
 # Gems
 gems:
