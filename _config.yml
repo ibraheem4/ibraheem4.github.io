@@ -1,8 +1,8 @@
 # Dependencies
-highlighter:	    pygments
+highlighter:        pygments
 
 # Permalinks
-permalink:		    pretty
+permalink:          pretty
 
 # Gems
 gems:
@@ -10,19 +10,21 @@ gems:
 - jekyll-sitemap
 
 # Setup
-title: 			      Ibraheem.com
-tagline: 		      How to use the internet to make money.
-timezone: 		    America/Los_Angeles
+title:              Ibraheem.com
+tagline:            How to use the internet.
+timezone:           America/Los_Angeles
+paginate:           1
+baseurl:            /
 author:
-  name:			      Ibraheem Abdul-Malik
-  url:            https://twitter.com/ibraheem4
-  email:		      ibraheem4@gmail.com
+  name:             Ibraheem Abdul-Malik
+  url:              https://twitter.com/ibraheem4
+  email:            ibraheem4@gmail.com
 
 # Custom
-version:		      1.0.0
+version:            1.0.0
 github:
-  repo:			      https://github.com/ibraheem4/ibraheem4.github.io
+  repo:             https://github.com/ibraheem4/ibraheem4.github.io
 
 google:
   analytics:
-    tracking_id:     UA-27939534-5
+    tracking_id:    UA-27939534-5

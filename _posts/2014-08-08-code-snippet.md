@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Code snippet
 ---
 {% highlight ruby linenos %}
