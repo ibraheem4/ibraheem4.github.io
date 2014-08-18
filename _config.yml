@@ -13,7 +13,7 @@ gems:
 title:              Ibraheem.com
 tagline:            How to use the internet.
 timezone:           America/Los_Angeles
-paginate:           1
+paginate:           3
 baseurl:            /
 author:
   name:             Ibraheem Abdul-Malik
