@@ -1,7 +1,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- Facebook Insights -->
+  {% include fb_.html %}
+  
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -26,7 +28,4 @@
 
   <!-- Google Analytics -->
   {% include ga_.html %}
-
-  <!-- Facebook Insights -->
-  {% include fb_.html %}
 </head>
