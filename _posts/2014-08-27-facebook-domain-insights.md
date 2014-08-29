@@ -6,4 +6,4 @@ title: Facebook Domain Insights
 
 While [Google Analytics](http://google.com/analytics/) has robust capabilities for monitoring site usage, using Facebook Insights can provide reporting reducancy as well as an additional source of data that can help drive strategic decisions.
 
-Many developers also implement app specific monitoring softwares such as [New Relic](http://newrelic.com/) or [Mixpanel](https://mixpanel.com/).  There are other really cool web analytics tools such as [Piwik](http://piwik.org/) and [Guag.es](http://gaug.es).  It really depends on the specific use case, but it is important to have some system in place for measurement & analytics.
+Many developers implement other types of analytics packages such as [New Relic](http://newrelic.com/), [Mixpanel](https://mixpanel.com/), [Piwik](http://piwik.org/) and [Guag.es](http://gaug.es).  It really just depends on the use case, but it is important to have an analytics system in place.
