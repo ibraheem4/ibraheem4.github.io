@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 <title>{% if page.title == "Home" %} {{ site.title }} &middot; {{ site.tagline }} {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}</title>
-<meta name="description" content="Homepage of Ibraheem Abdul-Malik." />
+<meta name="description" content="{{ site.description }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-{% include _twitter.html %}
 {% include _ga.html %}
 {% include _fb.html %}
+{% include _twitter.html %}
 {% include _og.html %}
 <link rel="stylesheet" href="{{ site.baseurl }}assets/css/normalize.css">
 <link rel="stylesheet" href="{{ site.baseurl }}assets/css/foundation.css">
