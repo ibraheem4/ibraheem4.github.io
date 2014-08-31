@@ -1,7 +1,13 @@
-# Dependencies
-highlighter:        pygments
+title:              Ibraheem.com
+tagline:            How to use the internet.
+description:        This is the personal blog of Ibraheem Abdul-Malik.
+disqus_shortname:   ibraheem
 
-# Permalinks
+# Setup
+baseurl:            /
+timezone:           America/Los_Angeles
+paginate:           3
+highlighter:        pygments
 permalink:          pretty
 
 # Gems
@@ -9,22 +15,32 @@ gems:
 - jemoji
 - jekyll-sitemap
 
-# Setup
-title:              Ibraheem.com
-tagline:            How to use the internet.
-timezone:           America/Los_Angeles
-paginate:           3
-baseurl:            /
+# Author
 author:
   name:             Ibraheem Abdul-Malik
   url:              https://twitter.com/ibraheem4
+  description:      An American entrepreneur.
+  avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
-# Custom
+# Project
 version:            1.0.0
 github:
+  username:         ibraheem4
   repo:             https://github.com/ibraheem4/ibraheem4.github.io
 
+# Social
 google:
+  plus:
+    custom_id:      IbraheemAbdulMalik4
   analytics:
     tracking_id:    UA-27939534-4
+
+twitter:
+  username:         ibraheem4
+
+facebook:
+  username:         ibraheem4   
+
+instagram:
+  username:         ibraheem4_
