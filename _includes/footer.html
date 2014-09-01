@@ -1,3 +1,47 @@
-<div class="footer">
-  <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-</div>
+<footer class="social-footer">
+  <div class="copyright">
+    <section>Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}/about">{{ site.author.name }}</a></section>
+  </div>
+  <div class="social-icons">        
+    {% if site.twitter.username %}
+    <a href="http://twitter.com/{{ site.twitter.username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+    {% if site.google.plus.custom_id %}
+    <a href="http://google.com/+{{ site.google.plus.custom_id }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-google-plus fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+    {% if site.instagram.username %}
+    <a href="http://instagram.com/{{ site.instagram.username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-instagram fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+    {% if site.github.username %}
+    <a href="http://github.com/{{ site.github.username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-github fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+    {% if site.facebook.username %}
+    <a href="http://facebook.com/{{ site.facebook.username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+  </div>
+</footer>
