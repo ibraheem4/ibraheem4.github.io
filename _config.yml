@@ -9,7 +9,7 @@ baseurl:            /
 timezone:           America/Los_Angeles
 paginate:           3
 highlighter:        pygments
-permalink:          /:categories/:title/
+permalink:          /:year/:month/:day/:title/
 
 # Gems
 gems:
