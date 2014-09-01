@@ -36,6 +36,8 @@ google:
     custom_id:      IbraheemAbdulMalik4
   analytics:
     tracking_id:    UA-27939534-4
+  tagmanager:      
+    id:             GTM-BVJQ
 
 twitter:
   username:         ibraheem4
