@@ -1,4 +1,4 @@
-title:              Ibraheem.com
+title:              Ibraheem Abdul-Malik
 url:                http://ibraheem.com
 tagline:            How to use the internet.
 description:        This is the personal blog of Ibraheem Abdul-Malik.
@@ -20,7 +20,7 @@ gems:
 author:
   name:             Ibraheem Abdul-Malik
   url:              https://twitter.com/ibraheem4
-  description:      An American entrepreneur.
+  bio:              An American entrepreneur.
   avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
