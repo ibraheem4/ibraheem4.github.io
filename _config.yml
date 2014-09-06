@@ -1,8 +1,7 @@
-title:              Ibraheem Abdul-Malik
 url:                http://ibraheem.com
-tagline:            How to use the internet.
+title:              Ibraheem Abdul-Malik
+subtitle:           How to use the internet.
 description:        This is the personal blog of Ibraheem Abdul-Malik.
-disqus_shortname:   ibraheem
 
 # Setup
 baseurl:            /
@@ -48,3 +47,6 @@ facebook:
 
 instagram:
   username:         ibraheem4_
+
+disqus:
+  shortname:        ibraheem
