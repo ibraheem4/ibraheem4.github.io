@@ -24,3 +24,13 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+{% if site.disqus.shortname and page.comments == true %}
+<section class="disqus row">
+  <div class="small-12 columns">
+    <h1 class="comments-header">Comments</h1>
+    <div id="disqus_thread"></div>
+    {% include _disqus.html %}
+  </div>
+</section>
+{% endif %}
