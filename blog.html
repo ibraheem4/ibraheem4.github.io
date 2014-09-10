@@ -4,72 +4,51 @@ title: Blog
 permalink: /blog/
 ---
 <div class="row">
-<div class="large-12 columns">
-<div class="nav-bar right">
-<ul class="button-group">
-<li><a href="{{ site.baseurl }}" class="button">Home</a></li>
-<li><a href="{{ site.baseurl }}/about/" class="button">About</a></li>
-<li><a href="{{ site.baseurl }}/projects/" class="button">Work</a></li>
-<li><a href="{{ site.baseurl }}/blog/" class="button">Thoughts</a></li>
-</ul>
+  <div class="large-12 columns">
+    <div class="nav-bar right">
+      <ul class="button-group">
+        <li><a href="{{ site.baseurl }}" class="button">Home</a></li>
+        <li><a href="{{ site.baseurl }}about/" class="button">About</a></li>
+        <li><a href="{{ site.baseurl }}projects/" class="button">Work</a></li>
+        <li><a href="{{ site.baseurl }}blog/" class="button">Thoughts</a></li>
+      </ul>
+    </div>
+    <h1>{{ site.slug }} <small>{{ site.subtitle }}</small></h1>
+    <hr/>
+  </div>
 </div>
-<h1>{{ site.slug }} <small>This is my blog. It's awesome.</small></h1>
-<hr/>
-</div>
-</div>
- 
- 
+
 <div class="row">
- 
-<div class="large-9 columns" role="content">
-<article>
-<h3><a href="#">Blog Post Title</a></h3>
-<h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-<div class="row">
-<div class="large-6 columns">
-<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-<p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-</div>
-<div class="large-6 columns">
-<img src="http://placehold.it/400x240&text=[img]"/>
-</div>
-</div>
-<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-</article>
-<hr/>
-<article>
-<h3><a href="#">Blog Post Title</a></h3>
-<h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
-<div class="row">
-<div class="large-6 columns">
-<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-<p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-</div>
-<div class="large-6 columns">
-<img src="http://placehold.it/400x240&text=[img]"/>
-</div>
-</div>
-<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-</article>
-</div>
- 
- 
-<aside class="large-3 columns">
-<h5>Categories</h5>
-<ul class="side-nav">
-<li><a href="#">News</a></li>
-<li><a href="#">Code</a></li>
-<li><a href="#">Design</a></li>
-<li><a href="#">Fun</a></li>
-<li><a href="#">Weasels</a></li>
-</ul>
-<div class="panel">
-<h5>Featured</h5>
-<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-<a href="#">Read More &rarr;</a>
-</div>
-</aside>
- 
+  <div class="large-12 columns" role="content">
+    <h1><span>Latest Blog Articles</span></h1>
+    {% for post in site.posts %}
+    <article>
+      <h2 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      {{ post.content }}
+    </article>
+    <hr/>
+    {% endfor %}
+  </div>
+  <div class="large-12 columns" role="pagination">
+    {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    {% else %}
+    <span class="pagination-item older">Older</span>
+    {% endif %}
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+    <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+    {% else %}
+    <span class="pagination-item newer">Newer</span>
+    {% endif %}
+    <hr/>
+  </div>
 </div>
