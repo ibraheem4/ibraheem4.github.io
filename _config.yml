@@ -8,6 +8,7 @@ description:        This is the online home of Ibraheem Abdul-Malik.
 baseurl:            /
 timezone:           America/Los_Angeles
 paginate:           3
+paginate_path:      blog/page:num
 highlighter:        pygments
 permalink:          /:categories/:title/
 
@@ -51,3 +52,6 @@ instagram:
 
 disqus:
   shortname:        ibraheem
+
+include:            ["robots.txt", "feed.xml", "sitemap.xml"]
+exclude:            ['README.md']
