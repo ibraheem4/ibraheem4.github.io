@@ -1,7 +1,7 @@
 ---
 layout: 	post
 title: 		Route 53 Domain Registration
-category: 	Tech
+category: 	blog
 tags:
 - amazon web services
 - DNS

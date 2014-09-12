@@ -1,7 +1,7 @@
 url:                http://ibraheem.com
 title:              Ibraheem Abdul-Malik
 slug:               Ibraheem
-subtitle:           Code Together
+subtitle:           Build Something
 description:        This is the online home of Ibraheem Abdul-Malik.
 
 # Setup
@@ -9,7 +9,7 @@ baseurl:            /
 timezone:           America/Los_Angeles
 paginate:           3
 highlighter:        pygments
-permalink:          /:year/:month/:day/:title/
+permalink:          /:categories/:title/
 
 # Gems
 gems:
