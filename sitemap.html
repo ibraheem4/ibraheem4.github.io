@@ -4,22 +4,14 @@ title:          Sitemap
 ---
 <h1><span>Posts</span></h1>
 {% for post in site.posts %}
-<li>
-<url>
-	<loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-</url>
-</li>
+<li><a href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.url | remove: 'index.html' }}</a></li>
 {% endfor %}
 
 <h1><span>Pages</span></h1>
 {% for page in site.pages %}
 {% if page.layout != nil %}
 {% if page.layout != 'feed' %}
-<li>
-<url>
-	<loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-</url>
-</li>
+<li><a href="{{ site.url }}{{ page.url | remove: 'index.html' }}">{{ page.url | remove: 'index.html' }}</a></li>
 {% endif %}
 {% endif %}
 {% endfor %}
