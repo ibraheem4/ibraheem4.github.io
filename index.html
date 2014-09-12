@@ -2,33 +2,52 @@
 layout: default
 title: Home
 ---
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {{ post.content }}
+<div class="row">
+  <div class="large-12 columns">
+    <div class="nav-bar right">
+      <ul class="button-group">
+        <li><a href="{{ site.baseurl }}" class="button">Home</a></li>
+        <li><a href="{{ site.baseurl }}about/" class="button">About</a></li>
+        <li><a href="{{ site.baseurl }}projects/" class="button">Work</a></li>
+        <li><a href="{{ site.baseurl }}blog/" class="button">Thoughts</a></li>
+      </ul>
+    </div>
+    <h1>{{ site.slug }} <small>{{ site.subtitle }}</small></h1>
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div class="row">
+  <div class="large-12 columns" role="content">
+    <h1><span>Latest Blog Articles</span></h1>
+    {% for post in site.posts %}
+    <article>
+      <h2 class="post-title">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+    </article>
+    <hr/>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="pagination">
+      <div class="large-12 columns">
+        {% if site.next_page %}
+        <a class="button" href="/page{{site.next_page}}">Older</a>
+        {% else %}
+        <a class="button disabled">Older</a>
+        {% endif %}
+        {% if site.previous_page %}
+        {% if site.page == 2 %}
+        <a class="button" href="/">Newer</a>
+        {% else %}
+        <a class="button" href="/page{{site.previous_page}}">Newer</a>
+        {% endif %}
+        {% else %}
+        <a class="button disabled">Newer</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
