@@ -19,7 +19,7 @@ title: Home
 <div class="row">
   <div class="large-12 columns" role="content">
     <h1><span>Latest Blog Articles</span></h1>
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <article>
       <h2 class="post-title">
         <a href="{{ post.url }}">
@@ -31,23 +31,22 @@ title: Home
     {% endfor %}
   </div>
   <div class="row">
-    <div class="pagination">
+    <div class="pagination-centered">
       <div class="large-12 columns">
-        {% if site.next_page %}
-        <a class="button" href="/page{{site.next_page}}">Older</a>
+        {% if paginator.next_page %}
+        <a class="button" href="/page{{paginator.next_page}}">Older</a>
         {% else %}
         <a class="button disabled">Older</a>
         {% endif %}
-        {% if site.previous_page %}
-        {% if site.page == 2 %}
+        {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
         <a class="button" href="/">Newer</a>
         {% else %}
-        <a class="button" href="/page{{site.previous_page}}">Newer</a>
+        <a class="button" href="/page{{paginator.previous_page}}">Newer</a>
         {% endif %}
         {% else %}
         <a class="button disabled">Newer</a>
         {% endif %}
       </div>
     </div>
-  </div>
 </div>
