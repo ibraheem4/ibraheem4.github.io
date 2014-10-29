@@ -1,8 +1,8 @@
 url:                http://ibraheem.com
 title:              Ibraheem Abdul-Malik
 slug:               Ibraheem
-subtitle:           Under Construction.
-description:        This is the online home of Ibraheem Abdul-Malik.
+subtitle:           Under Construction
+description:        The online home of Ibraheem Abdul-Malik
 
 # Setup
 baseurl:            /
@@ -21,7 +21,7 @@ gems:
 author:
   name:             Ibraheem Abdul-Malik
   url:              https://twitter.com/ibraheem4
-  bio:              An American entrepreneur.
+  bio:              An American entrepreneur
   avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
