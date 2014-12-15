@@ -25,6 +25,10 @@ author:
   avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
+# Owner
+owner:
+  name:             Ibraheem Abdul-Malik
+
 # Project
 version:            1.0.0
 github:
