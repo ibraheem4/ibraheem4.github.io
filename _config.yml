@@ -57,5 +57,6 @@ instagram:
 disqus:
   shortname:        ibraheem
 
+# Files
 include:            ["robots.txt", "feed.xml", "sitemap.xml"]
 exclude:            ['README.md']
