@@ -8,7 +8,7 @@ tags:
 modified: 	2016-01-15T00:00:00-07:00
 comments: 	false
 ---
-I wanted to share some of my favorite places to play and win!
+I wanted to share some of my favorite places to play casino games!
 
 Blackjack
 -------------
@@ -17,3 +17,6 @@ Blackjack
 Poker
 -------------
 [MGM Grand Poker Room](https://www.mgmgrand.com/en/casino/poker-tables.html)
+
+Roulette
+[Casino Royale](http://www.casinoroyalehotel.com/)
