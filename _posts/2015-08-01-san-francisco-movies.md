@@ -4,7 +4,7 @@ title: 		San Francisco Movies
 category: 	blog
 tags:
 - movies
-modified: 	2015-08-01T00:00:00-07:00
+modified: 	2016-04-08T00:00:00-07:00
 comments: 	false
 ---
 Here's a list of my favorite movies that were set in San Francisco.
@@ -15,4 +15,5 @@ Here's a list of my favorite movies that were set in San Francisco.
 [Dawn of the Planet of the Apes (2014)](http://www.imdb.com/title/tt2103281/)
 [Contagion (2011)](http://www.imdb.com/title/tt1598778/)
 [Doctor Dolittle (1998)](http://www.imdb.com/title/tt0118998/)
-[The Game (1997)](http://www.imdb.com/title/tt0119174/?ref_=ttpl_pl_tt)
+[The Game (1997)](http://www.imdb.com/title/tt0119174/)
+[Big Eyes (2014)](http://www.imdb.com/title/tt1126590/)
