@@ -5,23 +5,24 @@ subtitle:           A blog
 description:        The online home of Ibraheem Abdul-Malik
 
 # Setup
+markdown:           kramdown
 baseurl:            /
 timezone:           America/Los_Angeles
-paginate:           3
+paginate:           5
 paginate_path:      blog/page:num
-highlighter:        pygments
 permalink:          /:categories/:title/
 
 # Gems
 gems:
 - jemoji
 - jekyll-sitemap
+- jekyll-paginate
 
 # Author
 author:
   name:             Ibraheem Abdul-Malik
   url:              https://twitter.com/ibraheem4
-  bio:              An American entrepreneur
+  bio:              Coding is fun
   avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
@@ -38,7 +39,7 @@ github:
 # Social
 google:
   plus:
-    custom_id:      IbraheemAbdulMalik4
+    custom_id:      ibraheemabdulmalik4
   analytics:
     tracking_id:    UA-27939534-4
   tagmanager:      
