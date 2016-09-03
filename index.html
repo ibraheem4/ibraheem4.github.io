@@ -40,36 +40,6 @@ title: Home
     {% endfor %}
   </div>
 
-  {% if paginator.total_pages > 1 %}
-  <ul class="pagination text-center">
-    {% if paginator.previous_page %}
-      <li><a href="{{ paginator.previous_page_path }}" class="pagination-previous">&laquo;</a></li>
-    {% endif %}
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <li class="current"><span>{{ page }}</span></li>
-      {% elsif page == 1 %}
-        <li><a href="/">{{ page }}</a></li>
-      {% else %}
-        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-      {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
-      <li><a href="{{ paginator.next_page_path }}" class="pagination-next">&raquo;</a></li>
-    {% endif %}
-  </ul>
+  {% include paginate_oldernewer.html %}
 
-  <ul class="pagination text-center">
-    {% if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path }}">Newer</a></li>
-    {% else %}
-    <li><a class="disabled">Newer</a></li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li><a href="{{ paginator.next_page_path }}">Older</a></li>
-    {% else %}
-    <li><a class="disabled">Older</a></li>
-    {% endif %}
-  </ul>
-  {% endif %}
 </div>
