@@ -2,53 +2,74 @@
 layout: default
 title: Home
 ---
-<div class="row">
-  <div class="large-12 columns">
-    <div class="nav-bar right">
-      <ul class="button-group">
-        <li><a href="{{ site.baseurl }}" class="button">Home</a></li>
-        <li><a href="{{ site.baseurl }}about/" class="button">About</a></li>
-        <li><a href="{{ site.baseurl }}projects/" class="button">Work</a></li>
+<div class="top-bar">
+  <div>
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text">{{ site.slug }}</li>
       </ul>
     </div>
-    <h1>{{ site.slug }} <small>{{ site.subtitle }}</small></h1>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="{{ site.baseurl }}about/">About</a></li>
+        <li><a href="{{ site.baseurl }}projects/">Work</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="large-12 columns" role="content">
-    <h1><span>Latest Blog Articles</span></h1>
+<div class="callout large primary">
+  <div class="row column text-center">
+    <h1>{{ site.subtitle }}</h1>
+    <h2 class="subheader">Latest Blog Articles</h2>
+  </div>
+</div>
+
+<div class="row medium-8 large-7 columns">
+  <div class="blog-post">
     {% for post in paginator.posts %}
-    <article>
-      <h2 class="post-title">
+      <h3>
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
-      </h2>
-    </article>
+        <small>
+          {{ post.date | date: '%B %d, %Y' }}
+        </small>
+      </h3>
     <hr/>
     {% endfor %}
   </div>
+
   {% if paginator.total_pages > 1 %}
-  <div class="row">
-    <div class="pagination-centered">
-      <div class="large-12 columns">
-        {% if paginator.next_page %}
-        <a class="button" href="/blog/page{{paginator.next_page}}">Older</a>
-        {% else %}
-        <a class="button disabled">Older</a>
-        {% endif %}
-        {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-        <a class="button" href="/">Newer</a>
-        {% else %}
-        <a class="button" href="/blog/page{{paginator.previous_page}}">Newer</a>
-        {% endif %}
-        {% else %}
-        <a class="button disabled">Newer</a>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+  <ul class="pagination text-center">
+    {% if paginator.previous_page %}
+      <li><a href="{{ paginator.previous_page_path }}" class="pagination-previous">&laquo;</a></li>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="current"><span>{{ page }}</span></li>
+      {% elsif page == 1 %}
+        <li><a href="/">{{ page }}</a></li>
+      {% else %}
+        <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <li><a href="{{ paginator.next_page_path }}" class="pagination-next">&raquo;</a></li>
+    {% endif %}
+  </ul>
+
+  <ul class="pagination text-center">
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path }}">Newer</a></li>
+    {% else %}
+    <li><a class="disabled">Newer</a></li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path }}">Older</a></li>
+    {% else %}
+    <li><a class="disabled">Older</a></li>
+    {% endif %}
+  </ul>
   {% endif %}
 </div>

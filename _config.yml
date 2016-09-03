@@ -1,14 +1,21 @@
-url:                http://ibraheem.com
 title:              Ibraheem Abdul-Malik
+
+version:            1.1.0
+
+url:                http://ibraheem.com
 slug:               Ibraheem
 subtitle:           A blog
 description:        The online home of Ibraheem Abdul-Malik
 
 # Setup
 markdown:           kramdown
+sass:
+  sass_dir:         ./assets/scss
+  style:            compressed
+
 baseurl:            /
 timezone:           America/Los_Angeles
-paginate:           5
+paginate:           4
 paginate_path:      blog/page:num
 permalink:          /:categories/:title/
 
@@ -17,6 +24,7 @@ gems:
 - jemoji
 - jekyll-sitemap
 - jekyll-paginate
+- jekyll-coffeescript
 
 # Author
 author:
@@ -31,7 +39,6 @@ owner:
   name:             Ibraheem Abdul-Malik
 
 # Project
-version:            1.0.0
 github:
   username:         ibraheem4
   repo:             https://github.com/ibraheem4/ibraheem4.github.io
@@ -59,5 +66,5 @@ disqus:
   shortname:        ibraheem
 
 # Files
-include:            ["robots.txt", "feed.xml", "sitemap.xml"]
-exclude:            ['README.md']
+include:            ['robots.txt', 'feed.xml', 'sitemap.xml']
+exclude:            ['.gitignore', 'README.md', 'Gemfile', 'Gemfile.lock']
