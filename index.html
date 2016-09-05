@@ -2,22 +2,6 @@
 layout: default
 title: Home
 ---
-<div class="top-bar">
-  <div>
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li class="menu-text">{{ site.slug }}</li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><a href="{{ site.baseurl }}about/">About</a></li>
-        <li><a href="{{ site.baseurl }}projects/">Work</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 <div class="callout primary">
   <div class="row column text-center">
     <h1>{{ site.subtitle }}</h1>
@@ -40,4 +24,11 @@ title: Home
     {% endfor %}
   </div>
   {% include paginate_oldernewer.html %}
+</div>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
 </div>

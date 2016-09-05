@@ -2,3 +2,11 @@
   display: table;
   margin: 0 auto;
 }
+
+li.menu-text {
+  padding: 0;
+}
+
+li.menu-text a {
+  color: black;
+}

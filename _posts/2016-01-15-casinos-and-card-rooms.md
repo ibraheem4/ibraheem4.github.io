@@ -10,13 +10,11 @@ comments: 	false
 ---
 I wanted to share some of my favorite places to play casino games!
 
-Blackjack
--------------
+### Blackjack
 [The Tahoe Biltmore](http://tahoebiltmore.com/index.php?page=casino)
 
-Poker
--------------
+### Poker
 [MGM Grand Poker Room](https://www.mgmgrand.com/en/casino/poker-tables.html)
 
-Roulette
+### Roulette
 [Casino Royale](http://www.casinoroyalehotel.com/)

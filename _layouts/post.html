@@ -1,49 +1,33 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="large-12 columns">
-    <div class="nav-bar right">
-      <ul class="button-group">
-        <li><a href="{{ site.baseurl }}" class="button">Home</a></li>
-        <li><a href="{{ site.baseurl }}about/" class="button">About</a></li>
-        <li><a href="{{ site.baseurl }}projects/" class="button">Work</a></li>
-      </ul>
-    </div>
-    <h1>{{ site.slug }} <small>{{ site.subtitle }}</small></h1>
+<div class="row large-12 columns" role="content">
+  <h1 class="post-title">{{ page.title }}</h1>
+  {{ content }}
+  <hr />
+  <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
+  <hr/>
+  <div class="related">
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+      {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+      {% endfor %}
+    </ul>
     <hr/>
-  </div>
-</div>
-
-<div class="row">
-  <div class="large-12 columns" role="content">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {{ content }}
-    <hr />
-    <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-    <hr/>
-    <div class="related">
-      <h2>Related Posts</h2>
-      <ul class="related-posts">
-        {% for post in site.related_posts limit:3 %}
-        <li>
-          <h3>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-              <small>{{ post.date | date_to_string }}</small>
-            </a>
-          </h3>
-        </li>
-        {% endfor %}
-      </ul>
-      <hr/>
-    </div>
   </div>
 </div>
 
 {% if site.disqus.shortname and page.comments == true %}
-<section class="disqus row">
-  <div class="small-12 columns">
+<section class="disqus">
+  <div class="row small-12 columns">
     <h1 class="comments-header">Comments</h1>
     <div id="disqus_thread"></div>
     {% include _disqus.html %}
