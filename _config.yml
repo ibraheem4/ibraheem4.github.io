@@ -4,8 +4,8 @@ version:            1.1.0
 
 url:                http://ibraheem.com
 slug:               Ibraheem
-subtitle:           A blog
-description:        The online home of Ibraheem Abdul-Malik
+subtitle:           Art on the Internet
+description:        A website by Ibraheem Abdul-Malik
 
 # Setup
 markdown:           kramdown
@@ -21,16 +21,23 @@ permalink:          /:categories/:title/
 
 # Gems
 gems:
-- jemoji
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-coffeescript
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-gist
+whitelist:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-gist
 
 # Author
 author:
   name:             Ibraheem Abdul-Malik
   url:              https://twitter.com/ibraheem4
-  bio:              Coding is fun
+  bio:              Houston Texas 1986
   avatar:           ibraheem.jpg
   email:            ibraheem4@gmail.com
 
