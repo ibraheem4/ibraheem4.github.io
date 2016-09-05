@@ -18,7 +18,7 @@ title: Home
   </div>
 </div>
 
-<div class="callout large primary">
+<div class="callout primary">
   <div class="row column text-center">
     <h1>{{ site.subtitle }}</h1>
     <h2 class="subheader">Latest Blog Articles</h2>
@@ -28,18 +28,16 @@ title: Home
 <div class="row medium-8 large-7 columns">
   <div class="blog-post">
     {% for post in paginator.posts %}
-      <h3>
+      <h6>
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
         <small>
           {{ post.date | date: '%B %d, %Y' }}
         </small>
-      </h3>
+      </h6>
     <hr/>
     {% endfor %}
   </div>
-
   {% include paginate_oldernewer.html %}
-
 </div>
