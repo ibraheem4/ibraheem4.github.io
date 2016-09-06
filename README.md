@@ -8,6 +8,6 @@ A [Jekyll](https://jekyllrb.com) site.
     bundle install
     bundle update jekyll
 
-    bundle exec jekyll build --watch --incremental
+    bundle exec jekyll build --incremental
     
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental

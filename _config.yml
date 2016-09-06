@@ -1,23 +1,25 @@
-title:              Ibraheem Abdul-Malik
+title: Ibraheem Abdul-Malik
 
-version:            1.1.0
+version: 1.1.0
 
-url:                http://ibraheem.com
-slug:               Ibraheem
-subtitle:           Art on the Internet
-description:        A website by Ibraheem Abdul-Malik
+url: http://ibraheem.com
+slug: Ibraheem
+subtitle: Under Construction
+description: A website made by Ibraheem Abdul-Malik
+
+# Conversion
+incremental: true
 
 # Setup
-markdown:           kramdown
 sass:
-  sass_dir:         ./assets/scss
-  style:            compressed
+  sass_dir: ./assets/scss
+  style: compressed
 
-baseurl:            /
-timezone:           America/Los_Angeles
-paginate:           12
-paginate_path:      blog/page:num
-permalink:          /:categories/:title/
+baseurl: /
+timezone: America/Los_Angeles
+paginate: 12
+paginate_path: blog/page:num
+permalink: /:categories/:title/
 
 # Gems
 gems:
@@ -26,52 +28,53 @@ gems:
   - jekyll-paginate
   - jekyll-coffeescript
   - jekyll-gist
-whitelist:
-  - jemoji
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-coffeescript
-  - jekyll-gist
 
 # Author
 author:
-  name:             Ibraheem Abdul-Malik
-  url:              https://twitter.com/ibraheem4
-  bio:              Houston Texas 1986
-  avatar:           ibraheem.jpg
-  email:            ibraheem4@gmail.com
+  name: Ibraheem Abdul-Malik
+  url: https://twitter.com/ibraheem4
+  bio: Houston Texas 1986
+  avatar: ibraheem.jpg
+  email: ibraheem4@gmail.com
 
 # Owner
 owner:
-  name:             Ibraheem Abdul-Malik
+  name: Ibraheem Abdul-Malik
 
 # Project
 github:
-  username:         ibraheem4
-  repo:             https://github.com/ibraheem4/ibraheem4.github.io
+  username: ibraheem4
+  repo: https://github.com/ibraheem4/ibraheem4.github.io
 
 # Social
 google:
   plus:
-    custom_id:      ibraheemabdulmalik4
+    custom_id: ibraheemabdulmalik4
   analytics:
-    tracking_id:    UA-27939534-4
+    tracking_id: UA-27939534-4
   tagmanager:      
-    id:             GTM-BVJQ
+    id: GTM-BVJQ
 
 twitter:
-  username:         ibraheem4
+  username: ibraheem4
 
 facebook:
-  id:               7907713
-  username:         ibraheem4
+  id: 7907713
+  username: ibraheem4
 
 instagram:
-  username:         ibraheem4_
+  username: ibraheem4_
 
 disqus:
-  shortname:        ibraheem
+  shortname: ibraheem
 
 # Files
-include:            ['robots.txt', 'feed.xml', 'sitemap.xml']
-exclude:            ['.gitignore', 'README.md', 'Gemfile', 'Gemfile.lock']
+include: 
+  - "robots.txt"
+  - "feed.xml"
+  - "_pages"
+exclude: 
+  - ".gitignore"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
