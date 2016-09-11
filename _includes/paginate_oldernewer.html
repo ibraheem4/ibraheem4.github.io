@@ -1,16 +1,16 @@
 {% if paginator.total_pages > 1 %}
-<div class="ui pagination menu">
+<div class="ui center aligned container">
+  <div class="ui pagination compact menu">
+    {% if paginator.previous_page %}
+    <a class="active item" href="{{ paginator.previous_page_path }}">Newer</a>
+    {% else %}
+    <a class="disabled item">Newer</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a class="active item" href="{{ paginator.next_page_path }}">Older</a>
+    {% else %}
+    <a class="disabled item">Older</a>
+    {% endif %}
+  </div>
 </div>
-<ul class="pagination text-center">
-  {% if paginator.previous_page %}
-  <li><a href="{{ paginator.previous_page_path }}">Newer</a></li>
-  {% else %}
-  <li><a class="disabled">Newer</a></li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li><a href="{{ paginator.next_page_path }}">Older</a></li>
-  {% else %}
-  <li><a class="disabled">Older</a></li>
-  {% endif %}
-</ul>
 {% endif %}
