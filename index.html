@@ -2,19 +2,28 @@
 layout: default
 title: Home
 ---
-<div class="row small-12 medium-9 large-8 columns">
-  <div class="blog-post">
-    {% for post in paginator.posts %}
-      <h6>
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <a class="subheader float-right">
+<div class="ui container">
+  {% for post in paginator.posts %}
+    {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+    {% if currentyear != year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h1 class="ui center aligned header">{{ currentyear }}</h1>
+      {% capture year %}{{currentyear}}{% endcapture %}
+    {% endif %}
+    <div class="ui stackable two column grid">
+      <div class="column">
+        <h2 class="ui left floated header">        
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>        
+      </div>
+      <div class="column">
+        <h3 class="ui right floated header">
           {{ post.date | date: '%B %d, %Y' }}
-        </a>
-      </h6>
-    <hr/>
-    {% endfor %}
-  </div>
+        </h3>
+      </div>
+    </div>
+  {% endfor %}
   {% include paginate_oldernewer.html %}
 </div>

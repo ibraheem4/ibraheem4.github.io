@@ -1,11 +1,12 @@
-<footer>
-  <div class="row small-12 menu-centered">
-    <ul class="menu simple">
-      {% if site.twitter.username %}<li><a href="http://twitter.com/{{ site.twitter.username }}">Twitter</a></li>{% endif %}
-      {% if site.google.plus.custom_id %}<li><a href="http://google.com/+{{ site.google.plus.custom_id }}">Google+</a></li>{% endif %}
-      {% if site.instagram.username %}<li><a href="http://instagram.com/{{ site.instagram.username }}">Instagram</a></li>{% endif %}
-      {% if site.github.username %}<li><a href="http://github.com/{{ site.github.username }}">GitHub</a></li>{% endif %}
-      {% if site.facebook.username %}<li><a href="http://facebook.com/{{ site.facebook.username }}">Facebook</a></li>{% endif %}
-    </ul>
+<div class="ui inverted vertical footer segment">
+  <div class="ui center aligned container">
+    <img src="{{ site.baseurl }}assets/ico/logo.png" class="ui centered mini image">
+    <div class="ui horizontal inverted small divided link list">
+    {% if site.twitter.username %}<a class="item" href="http://twitter.com/{{ site.twitter.username }}">Twitter</a>{% endif %}
+    {% if site.google.plus.custom_id %}<a class="item" href="http://google.com/+{{ site.google.plus.custom_id }}">Google+</a>{% endif %}
+    {% if site.instagram.username %}<a class="item" href="http://instagram.com/{{ site.instagram.username }}">Instagram</a>{% endif %}
+    {% if site.github.username %}<a class="item" href="http://github.com/{{ site.github.username }}">GitHub</a>{% endif %}
+    {% if site.facebook.username %}<a class="item" href="http://facebook.com/{{ site.facebook.username }}">Facebook</a>{% endif %}
+    </div>
   </div>
-</footer>
+</div>

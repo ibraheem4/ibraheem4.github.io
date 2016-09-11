@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en">
-<head>
-{% include head.html %}
-{% include topbar.html %}
-</head>
-<body>
-{% include callout.html %}
-{% include _gtm.html %}
-{% include _fb_pixel_base.html %}
-{{ content }}
-{% include footer.html %}
-{% include scripts.html %}
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+    {% include topbar.html %}
+  </head>
+  <body>
+    <div id="root"></div>
+    {% include _gtm.html %}
+    {% include _fb_pixel_base.html %}
+    {{ content }}
+    <footer>
+      {% include footer.html %}
+    </footer>
+    {% include scripts.html %}
+  </body>
 </html>

@@ -1,34 +1,31 @@
 ---
 layout: default
 ---
-<div class="row small-12 medium-9 large-8 columns" role="content">
-  <h2 class="post-title">{{ page.title }}</h2>
+<div class="ui container">
+  <h2 class="ui center aligned header">{{ page.title }}</h2>
   <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
   {{ content }}
-  <hr />
   <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-  <hr/>
   <div>
     <h4>Related Posts</h4>
-    <ul class="no-bullet">
+    <ul>
       {% for post in site.related_posts limit:3 %}
       <h5>
         <a href="{{ post.url }}">
           {{ post.title }}
         </a>
-        <a class="subheader">
+        <a>
           {{ post.date | date: '%B %d, %Y' }}
         </a>
       </h5>
       {% endfor %}
     </ul>
-    <hr/>
   </div>
 </div>
 
 {% if site.disqus.shortname and page.comments == true %}
 <section class="disqus">
-  <div class="row small-12 medium-9 large-8 columns">
+  <div>
     <h1 class="comments-header">Comments</h1>
     <div id="disqus_thread"></div>
     {% include _disqus.html %}

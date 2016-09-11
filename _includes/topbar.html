@@ -1,17 +1,14 @@
-<div class="top-bar">
-  <div class="row small-12 medium-9 large-8 columns">
-    <div class="top-bar-left">
-      <ul class="menu">
-        <li class="menu-text"><a href="{{ site.baseurl }}">{{ site.slug }}</a></li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li><a href="{{ site.baseurl }}about/">About</a></li>
-        <li><a href="{{ site.baseurl }}">Posts</a></li>
-        <li><a href="{{ site.baseurl }}projects/">Projects</a></li>
-        <li><a href="{{ site.baseurl }}hire/">Hire Me</a></li>
-      </ul>
-    </div>
+<div class="ui menu">
+  <div class="ui container">
+    <a href="{{ site.baseurl }}" class="header item">
+      <img class="logo" src="{{ site.baseurl }}assets/ico/logo.png">
+      {{ site.slug }}
+    </a>
+  </div>
+  <div class="right menu">
+    <a class="ui item" href="{{ site.baseurl }}about/">About</a>
+    <a class="ui item" href="{{ site.baseurl }}">Posts</a>
+    <a class="ui item" href="{{ site.baseurl }}projects/">Projects</a>
+    <a class="ui item" href="{{ site.baseurl }}hire/">Hire Me</a>
   </div>
 </div>
