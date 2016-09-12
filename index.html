@@ -7,21 +7,21 @@ title: Home
     {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if currentyear != year %}
       {% unless forloop.first %}</ul>{% endunless %}
-      <h1 class="ui center aligned header">{{ currentyear }}</h1>
+      <h2 class="ui center aligned header">{{ currentyear }}</h2>
       {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
     <div class="ui stackable two column grid">
       <div class="column">
-        <h2 class="ui left floated header">        
+        <h3 class="ui left floated header">        
           <a href="{{ post.url }}">
             {{ post.title }}
           </a>
-        </h2>        
+        </h3>        
       </div>
       <div class="column">
-        <h3 class="ui right floated header">
+        <h4 class="ui right floated sub header">
           {{ post.date | date: '%B %d, %Y' }}
-        </h3>
+        </h4>
       </div>
     </div>
   {% endfor %}

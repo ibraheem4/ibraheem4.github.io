@@ -2,24 +2,32 @@
 layout: default
 ---
 <div class="ui container">
-  <h2 class="ui center aligned header">{{ page.title }}</h2>
-  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+  <h1 class="ui center aligned header">
+    {{ page.title }}
+    <div class="ui center aligned sub header">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+    </div>
+  </h1>
   {{ content }}
-  <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-  <div>
-    <h4>Related Posts</h4>
-    <ul>
+  <p><em>{% if page.modified %} Last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
+  <div class="ui top center aligned attached block header">Related Posts</div>
+  <div class="ui attached segment">
+    <div class="ui stackable two column grid">
       {% for post in site.related_posts limit:3 %}
-      <h5>
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <a>
+      <div class="column">
+        <h4 class="ui left floated header">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h4>
+      </div>
+      <div class="column">
+        <h5 class="ui right floated sub header">
           {{ post.date | date: '%B %d, %Y' }}
-        </a>
-      </h5>
+        </h5>
+      </div>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 </div>
 
