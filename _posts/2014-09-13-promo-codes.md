@@ -5,7 +5,7 @@ category: 	blog
 tags:
 - promo codes
 modified: 	2015-04-19T00:00:00-07:00
-comments: 	false
+comments: 	true
 ---
 I am a early adopter and avid user of many apps and services.  I decided to share some of my promotional codes!  In most cases you will receive a credit if you choose to try a product for the first time using a promo code.
 

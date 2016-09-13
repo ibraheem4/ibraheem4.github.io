@@ -1,0 +1,9 @@
+{% if page.comments == true and site.facebook.comments == true %}
+<section class="facebook">
+<div class="ui text container">
+  <h2 class="ui disabled center aligned header">Comments</h2>
+  <div id="facebook_thread"></div>
+  <div class="fb-comments" data-href="{{ post.url }}" data-numposts="5" data-width="100%"></div>
+</div>
+</section>
+{% endif %}

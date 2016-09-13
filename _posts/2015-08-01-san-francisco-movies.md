@@ -5,7 +5,7 @@ category: 	blog
 tags:
 - movies
 modified: 	2016-09-12T00:00:00-07:00
-comments: 	false
+comments: 	true
 ---
 Here's a list of my favorite movies that were set in San Francisco.
 

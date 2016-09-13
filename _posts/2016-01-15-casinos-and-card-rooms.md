@@ -6,7 +6,7 @@ tags:
 - gaming
 - casino
 modified: 2016-01-15T00:00:00-07:00
-comments: false
+comments: true
 ---
 I wanted to share some of my favorite places to play casino games!
 

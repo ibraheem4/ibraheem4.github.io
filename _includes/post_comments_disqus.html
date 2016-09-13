@@ -1,0 +1,9 @@
+{% if site.disqus.shortname and page.comments == true and site.disqus.comments == true %}
+<section class="disqus">
+<div class="ui text container">
+  <h2 class="ui disabled center aligned header">Comments</h2>
+  <div id="disqus_thread"></div>
+  {% include _disqus.html %}
+</div>
+</section>
+{% endif %}

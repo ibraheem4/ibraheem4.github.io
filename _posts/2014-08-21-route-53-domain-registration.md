@@ -6,7 +6,7 @@ tags:
 - amazon web services
 - DNS
 modified: 	2014-08-31T00:00:00-07:00
-comments: 	false
+comments: 	true
 ---
 I am a huge fan of [Amazon Web Services](http://aws.amazon.com) and continue to be impressed by the rapid development of the product offering.  [Recently](http://aws.amazon.com/about-aws/whats-new/2014/07/31/amazon-route-53-announces-domain-name-registration-geo-routing-and-lower-pricing/) I found out that with [Route 53](http://aws.amazon.com/route53/), Amazon's [DNS](http://en.wikipedia.org/wiki/Domain_Name_System) service, users can now purchase a new domain name or transfer the management of an existing domain name.  Previously, I would register domains with [Bluehost](http://bluehost.com).  
 

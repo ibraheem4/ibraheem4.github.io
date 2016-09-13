@@ -59,14 +59,17 @@ twitter:
   username: ibraheem4
 
 facebook:
-  id: 7907713
+  user_id: 7907713
+  app_id: 275310882861610
   username: ibraheem4
+  comments: true
 
 instagram:
   username: ibraheem4_
 
 disqus:
   shortname: ibraheem
+  comments: true
 
 # Files
 include: 
