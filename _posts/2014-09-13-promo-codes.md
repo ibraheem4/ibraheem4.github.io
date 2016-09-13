@@ -13,7 +13,6 @@ I am a early adopter and avid user of many apps and services.  I decided to shar
 [Lyft](http://lyft.com/invited/IBRAHEEM1) | 
 [Uber](http://uber.com/invite/UBERIBRAHEEM4) | 
 [Flywheel](http://flywheel.com/signup/GFEKMM) | 
-[Handybook](http://www.handybook.com/) | 
 [Washio](http://r.getwashio.com/lq.c.r) | 
 [Dashlane](https://www.dashlane.com/en/cs/3BBD04DA) | 
 [Silvercar](https://www.silvercar.com/users/sign_in?referrer_code=IABDULMALIK) | 
