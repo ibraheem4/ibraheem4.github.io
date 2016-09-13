@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<head>
+  {% include head.html %}
+  {% include topbar.html %}
+</head>
+<body>
+  <div id="root"></div>
+  <div id="fb-root"></div>
+  {% include _gtm.html %}
+  {% include _fb_pixel_base.html %}
+  {{ content }}
+  <footer>
+    {% include footer.html %}
+  </footer>
+  {% include scripts.html %}
+</body>
