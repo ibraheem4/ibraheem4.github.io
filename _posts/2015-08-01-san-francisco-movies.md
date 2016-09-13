@@ -18,3 +18,4 @@ Here's a list of my favorite movies that were set in San Francisco.
 - [The Game (1997)](http://www.imdb.com/title/tt0119174/)
 - [Big Eyes (2014)](http://www.imdb.com/title/tt1126590/)
 - [The Wedding Planner (2001)](http://www.imdb.com/title/tt0209475/)
+- [Mrs. Doubtfire (1993)](http://www.imdb.com/title/tt0107614/)
