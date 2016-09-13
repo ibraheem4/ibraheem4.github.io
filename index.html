@@ -6,22 +6,20 @@ title: Home
   {% for post in paginator.posts %}
     {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
     {% if currentyear != year %}
-      {% unless forloop.first %}</ul>{% endunless %}
-      <h2 class="ui center aligned header">{{ currentyear }}</h2>
-      {% capture year %}{{currentyear}}{% endcapture %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 class="ui center aligned header">{{ currentyear }}</h2>
+    {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
-    <div class="ui stackable two column grid">
-      <div class="column">
-        <h2 class="ui left floated header">        
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h2>        
-      </div>
-      <div class="column">
-        <h3 class="ui right floated sub header">
-          {{ post.date | date: '%B %d, %Y' }}
-        </h3>
+    <div class="ui middle aligned celled list">
+      <div class="item">
+        <div class="left floated content">
+          {{ post.title }}
+        </div>
+        <div class="right floated content">
+          <div class="ui button basic">
+            {{ post.date | date: '%B %d, %Y' }}
+          </div>
+        </div>
       </div>
     </div>
   {% endfor %}

@@ -17,7 +17,7 @@ sass:
 
 baseurl: /
 timezone: America/Los_Angeles
-paginate: 6
+paginate: 3
 paginate_path: blog/page/:num
 permalink: /:categories/:title/
 
