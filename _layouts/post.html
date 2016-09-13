@@ -1,42 +1,46 @@
 ---
 layout: default
 ---
-<div class="ui container">
+<div class="ui fluid container">
   <h1 class="ui center aligned header">
     {{ page.title }}
     <div class="ui center aligned sub header">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
     </div>
   </h1>
-  {{ content }}
-  <p><em>{% if page.modified %} Last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
-  <div class="ui top center aligned attached block header">Related Posts</div>
-  <div class="ui attached segment">
-    <div class="ui stackable two column grid">
-      {% for post in site.related_posts limit:3 %}
-      <div class="column">
-        <h4 class="ui left floated header">
-          <a href="{{ post.url }}">
-            {{ post.title }}
-          </a>
-        </h4>
+  <div class="ui text container">
+    {{ content }}
+    <p><em>{% if page.modified %} Last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
+    <div class="ui container">
+      <div class="ui top center aligned attached block header">Related Posts</div>
+      <div class="ui attached segment">
+        <div class="ui stackable two column grid">
+          {% for post in site.related_posts limit:3 %}
+          <div class="column">
+            <h4 class="ui left floated header">
+              <a href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h4>
+          </div>
+          <div class="column">
+            <h5 class="ui right floated sub header">
+              {{ post.date | date: '%B %d, %Y' }}
+            </h5>
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      <div class="column">
-        <h5 class="ui right floated sub header">
-          {{ post.date | date: '%B %d, %Y' }}
-        </h5>
-      </div>
-      {% endfor %}
+      <div class="ui hidden divider"></div>
     </div>
   </div>
+  {% if site.disqus.shortname and page.comments == true %}
+  <section class="disqus">
+    <div class="ui text container">
+      <h2 class="ui disabled center aligned bottom attached header">Comments</h2>
+      <div id="disqus_thread"></div>
+      {% include _disqus.html %}
+    </div>
+  </section>
+  {% endif %}
 </div>
-
-{% if site.disqus.shortname and page.comments == true %}
-<section class="disqus">
-  <div>
-    <h1 class="comments-header">Comments</h1>
-    <div id="disqus_thread"></div>
-    {% include _disqus.html %}
-  </div>
-</section>
-{% endif %}
