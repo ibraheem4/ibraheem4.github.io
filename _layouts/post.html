@@ -10,7 +10,7 @@ layout: default
   </h1>
   <div class="ui text container">
     {{ content }}
-    <p><em>{% if page.modified %} Last modified on <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
+    <p><em>{% if page.modified %} Last modified <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
     <div class="ui container">
       <div class="ui top center aligned attached block header">Related Posts</div>
       <div class="ui attached segment">
