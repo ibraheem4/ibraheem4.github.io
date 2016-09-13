@@ -4,7 +4,7 @@ title: 		San Francisco Movies
 category: 	blog
 tags:
 - movies
-modified: 	2016-04-08T00:00:00-07:00
+modified: 	2016-09-12T00:00:00-07:00
 comments: 	false
 ---
 Here's a list of my favorite movies that were set in San Francisco.
@@ -17,3 +17,4 @@ Here's a list of my favorite movies that were set in San Francisco.
 - [Doctor Dolittle (1998)](http://www.imdb.com/title/tt0118998/)
 - [The Game (1997)](http://www.imdb.com/title/tt0119174/)
 - [Big Eyes (2014)](http://www.imdb.com/title/tt1126590/)
+- [The Wedding Planner (2001)](http://www.imdb.com/title/tt0209475/)
