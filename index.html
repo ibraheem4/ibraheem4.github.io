@@ -10,16 +10,14 @@ title: Home
     <h2 class="ui center aligned header">{{ currentyear }}</h2>
     {% capture year %}{{currentyear}}{% endcapture %}
     {% endif %}
-    <div class="ui middle aligned celled list">
-      <div class="item">
-        <div class="left floated content">
+    <div class="ui stackable two column relaxed grid">
+      <div class="center aligned column">
+        <a href="{{ post.url }}">
           {{ post.title }}
-        </div>
-        <div class="right floated content">
-          <div class="ui button basic">
-            {{ post.date | date: '%B %d, %Y' }}
-          </div>
-        </div>
+        </a>
+      </div>
+      <div class="center aligned column">
+        {{ post.date | date: '%B %d, %Y' }}
       </div>
     </div>
   {% endfor %}
