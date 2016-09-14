@@ -1,38 +1,30 @@
 ---
 layout: base
 ---
-<div class="ui container">
-  <h1 class="ui center aligned header">
-    {{ page.title }}
-    <div class="ui center aligned sub header">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    </div>
-  </h1>
-  <div class="ui text container">
-    {{ content }}
-    <p><em>{% if page.modified %} Last modified <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
-    <div class="ui container">
-      <div class="ui top center aligned attached block header">Related Posts</div>
-      <div class="ui attached segment">
-        <div class="ui stackable two column grid">
-          {% for post in site.related_posts limit:3 %}
-          <div class="column">
-            <h4 class="ui left floated header">
-              <a href="{{ post.url }}">
-                {{ post.title }}
-              </a>
-            </h4>
-          </div>
-          <div class="column">
-            <h5 class="ui right floated sub header">
-              {{ post.date | date: '%B %d, %Y' }}
-            </h5>
-          </div>
-          {% endfor %}
-        </div>
+<h1 class="ui center aligned header">
+  {{ page.title }}
+  <div class="ui center aligned sub header">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+  </div>
+</h1>
+<div class="ui text container">
+  {{ content }}
+  <p><em>{% if page.modified %} Last modified <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
+  <div class="ui top center aligned attached block header">Related Posts</div>
+  <div class="ui attached segment">
+    <div class="ui two column stackable relaxed grid">
+      {% for post in site.related_posts limit:3 %}
+      <div class="center aligned column">
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
       </div>
-      <div class="ui hidden divider"></div>
+      <div class="center aligned column">
+        {{ post.date | date: '%B %d, %Y' }}
+      </div>
+      {% endfor %}
     </div>
   </div>
-  {% include post_comments_fb.html %}
+  <div class="ui hidden divider"></div>
 </div>
+{% include post_comments_fb.html %}
