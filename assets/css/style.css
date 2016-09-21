@@ -6,6 +6,8 @@
 
 .PermanentMarker { 
   font-family: 'Permanent Marker', cursive;
-  font-weight: normal;
-  font-style: normal;
+}
+
+.DrSugiyama { 
+  font-family: 'Dr Sugiyama', cursive;
 }
