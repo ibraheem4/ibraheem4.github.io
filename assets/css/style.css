@@ -3,3 +3,9 @@
 .ui.menu .item img.logo {
   margin-right: 1.5em;
 }
+
+.PermanentMarker { 
+  font-family: 'Permanent Marker', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
