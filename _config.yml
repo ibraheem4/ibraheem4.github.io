@@ -7,7 +7,6 @@ slug: Ibraheem
 subtitle: Under Construction
 description: A website made by Ibraheem Abdul-Malik
 
-
 markdown: kramdown
 highlighter: rouge
 
@@ -15,6 +14,13 @@ kramdown:
   input: GFM
   hard_wrap: false
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
     
 # Conversion
 incremental: true
