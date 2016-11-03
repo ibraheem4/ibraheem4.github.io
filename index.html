@@ -3,23 +3,14 @@ layout: base
 title: Home
 ---
 <div class="ui text container">
-  {% for post in paginator.posts %}
-    {% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
-    {% if currentyear != year %}
-    {% unless forloop.first %}</ul>{% endunless %}
-    <h2 class="ui center aligned header">{{ currentyear }}</h2>
-    {% capture year %}{{currentyear}}{% endcapture %}
-    {% endif %}
-    <div class="ui two column stackable relaxed grid">
-      <div class="center aligned column">
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </div>
-      <div class="center aligned column">
-        {{ post.date | date: '%B %d, %Y' }}
-      </div>
-    </div>
+  {% for post in site.posts limit:1 %}
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% include post_detail.html %}
   {% endfor %}
-  {% include paginate_oldernewer.html %}
+  {% for post in site.posts offset:1 limit:2 %}
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% include post_detail.html %}
+  {% endfor %}
 </div>
