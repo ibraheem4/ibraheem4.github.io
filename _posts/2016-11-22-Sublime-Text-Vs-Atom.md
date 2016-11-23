@@ -41,4 +41,4 @@ Add the following block:
 
 To the config file found at `Atom > Keymap...`
 
-You can now use ``ctrl + cmd + ]`` to auto indent.
+You can now use  `ctrl + cmd + ]` to auto indent.
