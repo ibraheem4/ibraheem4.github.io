@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		Tips Atom, Sublime Text
+title: 		Sublime Text vs Atom
 category: 	blog
 tags:
 - text
