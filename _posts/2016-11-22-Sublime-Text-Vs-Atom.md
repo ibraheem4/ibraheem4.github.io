@@ -14,11 +14,11 @@ Both of these applications are easy to use out-of-the-box, but I thought I would
 
 You can find plenty of additional documentation on the respective websites.
 
-Sublime Text 3
+Sublime Text
 ---
 Spell Check
 
-Toggle the option at `View` > `Spell Check`
+Toggle the option at `View > Spell Check`
 
 Or use the `spell_check` setting in `Preferences.sublime-settings`:
 
@@ -39,6 +39,6 @@ Add the following block:
   'ctrl-cmd-]': 'editor:auto-indent'
 ```
 
-To the config file found at `Atom` > `Keymap...`
+To the config file found at `Atom > Keymap...`
 
-You can now use `ctrl + cmd + ]` to auto indent.
+You can now use ``ctrl + cmd + ]`` to auto indent.
