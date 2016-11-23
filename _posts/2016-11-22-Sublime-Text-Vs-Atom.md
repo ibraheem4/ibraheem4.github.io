@@ -20,6 +20,14 @@ Spell Check
 
 Toggle the option at `View` > `Spell Check`
 
+Or use the `spell_check` setting in `Preferences.sublime-settings`:
+
+```
+{
+  "spell_check": true
+}
+```
+
 Atom
 ---
 Auto Indenting
