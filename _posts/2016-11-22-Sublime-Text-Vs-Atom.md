@@ -16,13 +16,13 @@ You can find plenty of additional documentation on the respective websites.
 
 Sublime Text 3
 ---
-### Spell Check
+Spell Check
 
 Toggle the option at `View` > `Spell Check`
 
 Atom
 ---
-### Auto Indenting
+Auto Indenting
 
 Add the following block:
 
