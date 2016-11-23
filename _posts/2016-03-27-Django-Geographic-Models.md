@@ -6,7 +6,7 @@ tags:
 - django
 - python
 - geography
-modified: 	2016-11-02T00:00:00-07:00+00:00
+modified: 	2016-11-02T00:00:00-07:00
 comments: 	true
 ---
 Many projects will at some point require Country or Language lookup.  I created a reusable django app as a quick way to include this functionality.  Below are the Models and related Fixtures.

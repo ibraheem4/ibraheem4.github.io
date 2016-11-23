@@ -1,11 +1,11 @@
 ---
 layout: 	post
-title: 		Tips & Tricks: Atom, Sublime Text
+title: 		Atom, Sublime Text Tips
 category: 	blog
 tags:
 - text
 - tips
-modified:   2016-11-20T00:00:00-07:00+00:00
+modified:   2016-11-20T00:00:00-07:00
 comments: 	true
 ---
 By and large, the most popular text editors being used by developers these days are [Sublime Text](sublimetext.com) and [Atom](atom.io).  
