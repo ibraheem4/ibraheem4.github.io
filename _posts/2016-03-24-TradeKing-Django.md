@@ -5,7 +5,7 @@ category: 	blog
 tags:
 - finance
 - python
-modified: 	2016-11-01T00:00:00-07:00
+modified: 	2016-11-01T00:00:00-07:00+00:00
 comments: 	true
 ---
 I was looking for an implementation of the TradeKing API and found a really nicely done Python wrapper by [Sir Wiggles](https://github.com/sir-wiggles) over at [GitHub](https://github.com/sir-wiggles/tradeking).  
