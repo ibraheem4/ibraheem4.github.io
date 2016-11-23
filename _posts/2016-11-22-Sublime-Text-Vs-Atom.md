@@ -12,8 +12,6 @@ By and large, the most popular text editors being used by developers these days 
 
 Both of these applications are easy to use out-of-the-box, but I thought I would share a few of my preferred configurations.
 
-You can find plenty of additional documentation on the respective websites.
-
 Sublime Text
 ---
 Spell Check
