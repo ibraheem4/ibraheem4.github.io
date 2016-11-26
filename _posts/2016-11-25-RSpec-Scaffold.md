@@ -10,11 +10,11 @@ comments: 	true
 ---
 Often, as a Rubyist, one will need to create `Classes` or `Modules`.
 
-And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) workflow, you most likely would be using [RSpec](http://rspec.info/).
+And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) workflow, you would most likely be using a testing library like [RSpec](http://rspec.info/).
 
-I wrote a Ruby script to scaffold Ruby objects and their related RSpec tests.
+I wrote an executable Ruby script to scaffold Ruby objects and their related RSpec tests.
 
-This executable script could be made accessible via symbolic link:
+This script could be made accessible via a [symbolic link](https://kb.iu.edu/d/abbe), for example `scaffold`:
 
 `ln -s /path/to/rspec_scaffold.rb /usr/local/bin/scaffold`
 
