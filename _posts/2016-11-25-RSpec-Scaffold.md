@@ -5,10 +5,10 @@ category: 	blog
 tags:
 - rspec
 - ruby
-modified:   2016-11-25T00:00:00-07:00
+modified:   2016-11-29T00:00:00-07:00
 comments: 	true
 ---
-Often, as a Rubyist, one will need to create `Classes` or `Modules`.
+At some point you'll probably need to create new `Classes` or `Modules` in Ruby.  You might even string these `Objects` together into a [MVC](https://en.wikipedia.org/wiki/Model–view–controller).
 
 And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) workflow, you would most likely be using a testing library like [RSpec](http://rspec.info/).
 
