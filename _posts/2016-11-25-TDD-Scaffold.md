@@ -10,9 +10,9 @@ comments: 	true
 ---
 At some point you'll probably need to create new `Classes` or `Modules` in Ruby.  You might even string these `Objects` together into an [MVC](https://en.wikipedia.org/wiki/Model–view–controller).
 
-And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) workflow, you would most likely be using a testing library like [RSpec](http://rspec.info/).
+And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) workflow, you would most likely be using a testing suite like the wonderful [RSpec](http://rspec.info/).
 
-I originally wrote an executable Ruby script to scaffold Ruby objects and their related RSpec tests.  This project has now been published as a [Ruby Gem](https://rubygems.org/gems/tdd_scaffold)!  And of course, on [GitHub](https://github.com/ibraheem4/tdd_scaffold).
+I originally wrote an executable Ruby script to scaffold Ruby objects and their related RSpec tests.  This project has now been published as a [Ruby Gem](https://rubygems.org/gems/tdd_scaffold) for all to enjoy!  And of course, the code is available on [GitHub](https://github.com/ibraheem4/tdd_scaffold).
 
 ```ruby
 gem install tdd_scaffold
