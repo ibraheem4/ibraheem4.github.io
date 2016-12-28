@@ -28,20 +28,26 @@ brew install pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
-pyenv install 2.7.13
-pyenv global 2.7.13
+env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.13
+env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.4.5
+pyenv global 2.7.13 
 pip install -U pip virtualenv virtualenvwrapper
-pyenv install 3.4.5
 pyenv global 3.4.5
 pip3 install -U pip virtualenv virtualenvwrapper
 pyenv global 2.7.13 3.4.5
-pyenv whence virtualenv virtualenvwrapper.sh
 ```
 
 ### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
 ```
-git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
+```
+
+### Test the installations
+```
+pyenv versions
+pyenv whence virtualenv virtualenvwrapper.sh
+pyenv virtualenvs
 ```
 
 rbenv
