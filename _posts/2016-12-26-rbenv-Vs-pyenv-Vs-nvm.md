@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		rbenv vs pyenv vs nvm
+title: 		rbenv vs pyenv vs NVM
 category: 	blog
 tags:
 - ruby
@@ -62,7 +62,7 @@ rbenv global 2.3.1
 rbenv versions
 ```
 
-nvm
+NVM
 ---
 
 ```
