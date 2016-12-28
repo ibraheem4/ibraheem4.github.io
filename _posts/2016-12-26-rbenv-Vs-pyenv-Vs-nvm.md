@@ -15,7 +15,9 @@ In Ruby, for example, many developers manage their Ruby versions using using too
 
 I wanted to do a similar setup using Python and ended up settling on [pyenv](https://github.com/yyuu/pyenv).  Using pyenv, I was able to download specific versions of Python 2/3 and set both to be available globally.
 
-If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH`.
+Node has a similar tool, called [NVM](https://github.com/creationix/nvm) which has much of the same functionality as it's counterparts.
+
+**If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH`.**
 
 pyenv
 ---
