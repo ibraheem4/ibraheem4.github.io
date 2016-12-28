@@ -22,30 +22,26 @@ Node has a similar tool, called [NVM](https://github.com/creationix/nvm) which h
 pyenv
 ---
 
-### Install pyenv with pyenv-virtualenv & pyenv-virtualenvwrapper
+### Install pyenv
 ```
-brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
+brew install pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
-echo 'if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi' >> ~/.bashrc
 pyenv install 2.7.13
 pyenv global 2.7.13
 pip install -U pip virtualenv virtualenvwrapper
-pyenv whence virtualenv virtualenvwrapper.sh
-```
-
-### Install virtualenv, virtualenvwrapper on Python 3
-```
 pyenv install 3.4.5
 pyenv global 3.4.5
 pip3 install -U pip virtualenv virtualenvwrapper
+pyenv global 2.7.13 3.4.5
 pyenv whence virtualenv virtualenvwrapper.sh
 ```
 
-### Make both Python 2 and Python 3 available globally
+### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
 ```
-pyenv global 2.7.13 3.4.5
+git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
+git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 ```
 
 rbenv
