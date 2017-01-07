@@ -38,7 +38,10 @@ permalink: :categories/:title/
 gems:
   - jemoji
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-gist
+
+paginate: 5
 
 # Author
 author:
