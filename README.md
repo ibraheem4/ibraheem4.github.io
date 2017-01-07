@@ -14,18 +14,18 @@ I am passionate about crafting beautiful and intuitive UI / UX to ensure the bes
 
 My interests and specialties include:
 
-፠ Front-End Development
-፠ Python, JavaScript, Ruby, PHP
-፠ Test-Driven Development
-፠ Cloud Computing, DevOps
-፠ Django, Ruby on Rails, ReactJS
-፠ Google Cloud, AWS, Heroku
-፠ SASS, Foundation, Semantic UI
-፠ MySQL, PostgreSQL
-፠ Jasmine, RSpec, Selenium
+፠ Front-End Development <br/>
+፠ Python, JavaScript, Ruby, PHP <br/>
+፠ Test-Driven Development <br/>
+፠ Cloud Computing, DevOps <br/>
+፠ Django, Ruby on Rails, ReactJS <br/>
+፠ Google Cloud, AWS, Heroku <br/>
+፠ SASS, Foundation, Semantic UI <br/>
+፠ MySQL, PostgreSQL <br/>
+፠ Jasmine, RSpec, Selenium <br/>
 
-📧 : hi@ibraheem.com
-💻 : www.ibraheem.com
+Email : hi@ibraheem.com <br/>
+Website : www.ibraheem.com <br/>
 
 # About The Site
 
