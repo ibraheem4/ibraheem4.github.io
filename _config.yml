@@ -38,7 +38,10 @@ permalink: :categories/:title/
 gems:
   - jemoji
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-gist
+
+paginate: 5
 
 # Author
 author:
@@ -77,10 +80,6 @@ facebook:
 
 instagram:
   username: ibraheem4_
-
-disqus:
-  shortname: ibraheem
-  comments: true
 
 # Files
 include:
