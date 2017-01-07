@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io)
+
 ibraheem4.github.io
 ===================
 
