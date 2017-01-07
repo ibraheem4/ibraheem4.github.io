@@ -1,0 +1,32 @@
+---
+layout:         post
+title:          Code snippet
+category:       blog
+tags:
+- example
+modified:     2014-09-12T00:00:00-07:00
+---
+<h2>ruby</h2>
+
+<p><code>ruby
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+</code></p>
+
+<h2>bash</h2>
+
+<p><code>bash
+cd ~
+</code></p>
+
+<h2>python</h2>
+
+<p><code>python
+from google.appengine.ext import vendor
+vendor.add('lib')
+</code></p>
