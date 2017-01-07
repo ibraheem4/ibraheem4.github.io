@@ -81,10 +81,6 @@ facebook:
 instagram:
   username: ibraheem4_
 
-disqus:
-  shortname: ibraheem
-  comments: true
-
 # Files
 include:
   - "robots.txt"
