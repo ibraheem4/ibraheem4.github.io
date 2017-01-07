@@ -5,18 +5,19 @@ category: 	blog
 tags:
 - text
 - tips
-modified:   2016-11-20T00:00:00-07:00
+modified:   2017-01-07T00:00:00-07:00
 comments: 	true
 ---
-By and large, the most popular text editors being used by developers these days are [Sublime Text](sublimetext.com) and [Atom](atom.io).  
+By and large, the most popular text editors being used by developers these days are [Sublime Text](sublimetext.com) and [Atom](atom.io).
 
 Both of these applications are easy to use out-of-the-box, but I thought I would share a few of my preferred configurations.
 
 Sublime Text
 ---
-Spell Check
+### Spell Check
 
-Toggle the option at `View > Spell Check`
+Toggle the option
+`View > Spell Check`
 
 Or use the `spell_check` setting in `Preferences.sublime-settings`:
 
@@ -26,17 +27,26 @@ Or use the `spell_check` setting in `Preferences.sublime-settings`:
 }
 ```
 
+### Removing comments
+1. Open the replace window in Sublime
+`Cmd-Shift-f`
+
+2. Use regular expression search
+`Find: #.*`
+
+3. Replace with nothing
+`Replace: `
+
 Atom
 ---
-Auto Indenting
+### Auto Indenting
 
-Add the following block:
+Add the following block to the Atom Keymap
+`Atom > Keymap...`
 
 ```
 'atom-text-editor':
   'ctrl-cmd-]': 'editor:auto-indent'
 ```
-
-To the config file found at `Atom > Keymap...`
 
 You can now use  `ctrl + cmd + ]` to auto indent.
