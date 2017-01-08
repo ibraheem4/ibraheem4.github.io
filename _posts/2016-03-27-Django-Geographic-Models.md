@@ -9,10 +9,7 @@ tags:
 modified: 2016-11-02T00:00:00-07:00
 comments: true
 ---
-
-Many projects will at some point require Country or Language lookup. I
-created a reusable django app as a quick way to include this
-functionality. Below are the Models and related Fixtures.
+Many projects will at some point require Country or Language lookup. I created a reusable Django app as a quick way to include this functionality. Below are the Models and related Fixtures.
 
 Full version: [django-atlas](https://github.com/ibraheem4/django-atlas)
 
