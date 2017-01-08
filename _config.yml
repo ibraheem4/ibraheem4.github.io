@@ -28,7 +28,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
 
-paginate: 5
+paginate: 3
 
 # Author
 author:
