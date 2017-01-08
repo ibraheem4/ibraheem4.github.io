@@ -2,18 +2,7 @@
   "name": "ibraheem4.github.io",
   "version": "1.0.0",
   "description": "ibraheem ==========",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^2.1.0",
-    "react-scripts": "0.4.1"
-  },
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ibraheem4/ibraheem4.github.io.git"
@@ -24,9 +13,5 @@
   },
   "author": "Ibraheem Abdul-Malik <ibraheem4@gmail.com>",
   "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "highlight.js": "^9.7.0",
-    "semantic-ui": "^2.2.4"
-  }
+  "private": true
 }
