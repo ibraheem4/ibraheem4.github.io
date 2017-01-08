@@ -25,17 +25,11 @@ Or use the `"spell_check": true` setting in `Preferences.sublime-settings`:
 
 ### Removing comments
 
-1.Open the replace window in Sublime
+1.Open the replace window in Sublime `cmd + shift + f`
 
-  `cmd + shift + f`
+2.Use regular expression search: `Find: #.*`
 
-2.Use regular expression search
-
-  `Find: #.*`
-
-3.Replace with nothing
-
-  `Replace:`
+3.Replace with nothing: `Replace:`
 
 Atom
 ---
