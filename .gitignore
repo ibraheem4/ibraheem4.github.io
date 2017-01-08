@@ -1,7 +1,4 @@
 _site/
 .DS_Store
-bower_components
-node_modules
-npm-debug.log
-coverage
-build
+/bower_components/
+/node_modules/

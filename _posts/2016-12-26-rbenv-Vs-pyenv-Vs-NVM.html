@@ -23,7 +23,7 @@ comments:   true
 
 <h3>Install pyenv</h3>
 
-<p><code>
+<pre><code>
 brew install pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' &gt;&gt; ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' &gt;&gt; ~/.bashrc
@@ -35,28 +35,28 @@ pip install -U pip virtualenv virtualenvwrapper
 pyenv global 3.4.5
 pip3 install -U pip virtualenv virtualenvwrapper
 pyenv global 2.7.13 3.4.5
-</code></p>
+</code></pre>
 
 <h3>Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins</h3>
 
-<p><code>
+<pre><code>
 git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
-</code></p>
+</code></pre>
 
 <h3>Test the installations</h3>
 
-<p><code>
+<pre><code>
 pyenv versions
 pyenv whence virtualenv virtualenvwrapper.sh
 pyenv virtualenvs
-</code></p>
+</code></pre>
 
 <h2>rbenv</h2>
 
 <h3>Install rbenv</h3>
 
-<p><code>
+<pre><code>
 brew install rbenv
 echo 'if which rbenv &gt; /dev/null; then eval "$(rbenv init -)"; fi' &gt;&gt; ~/.bashrc
 echo 'test -d "$HOME/.rbenv/" &amp;&amp; PATH="$HOME/.rbenv/bin:$PATH" &amp;&amp; PATH="$HOME/.rbenv/shims:$PATH"' &gt;&gt; ~/.bashrc
@@ -64,12 +64,12 @@ rbenv install 2.3.1
 rbenv install 2.2.5
 rbenv global 2.3.1
 rbenv versions
-</code></p>
+</code></pre>
 
 <h2>NVM</h2>
 
-<p><code>
+<pre><code>
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 nvm install v6.9.2
 nvm ls
-</code></p>
+</code></pre>
