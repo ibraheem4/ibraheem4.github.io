@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io)
 
-ibraheem4.github.io
+www.ibraheem.com
 ===================
 
 # About Me
@@ -48,5 +48,5 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     npm install
     npm update
 
-    bundle exec jekyll build --incremental --watch
-    bundle exec jekyll serve --incremental --watch
+    bundle exec jekyll build --watch
+    bundle exec jekyll serve --watch
