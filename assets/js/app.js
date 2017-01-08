@@ -3,4 +3,8 @@ $(document).ready(function() {
     .sticky({
       context: '#context'
     });
+
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
 });
