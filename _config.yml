@@ -71,11 +71,12 @@ instagram:
 
 # Files
 include:
-  - "robots.txt"
-  - "feed.xml"
-  - "_pages"
+  - robots.txt
+  - feed.xml
+  - _pages
 exclude:
-  - ".gitignore"
-  - "README.md"
-  - "Gemfile"
+  - vendor
+  - .gitignore
+  - README.md
+  - Gemfile
   - "Gemfile.lock"
