@@ -8,7 +8,7 @@ subtitle: Mostly posts about code.
 description: This is my personal blog, since 2007.
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Conversion
 incremental: true
