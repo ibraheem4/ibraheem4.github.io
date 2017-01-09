@@ -1,0 +1,11 @@
+machine:
+  ruby:
+    version: ruby-2.3.1
+
+test:
+  override:
+    - gem install bundler
+    - bundle exec jekyll build
+    - npm install
+    - bower install
+    - rm _site/circle.yml
