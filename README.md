@@ -1,7 +1,8 @@
 [![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io)
 
-www.ibraheem.com
-===================
+ibraheem.com
+===
+![Cover](https://github.com/ibraheem4/ibraheem4.github.io/raw/master/img/harvard_boys.png)
 
 # About Me
 Hi, I'm Ibraheem.  This is my personal blog.
