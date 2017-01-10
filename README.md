@@ -2,7 +2,7 @@
 
 ibraheem.com
 ===
-![Cover](https://github.com/ibraheem4/ibraheem4.github.io/raw/master/img/harvard_boys.png)
+![Cover](https://github.com/ibraheem4/ibraheem4.github.io/raw/master/img/harvard_boys.jpg)
 
 # About Me
 Hi, I'm Ibraheem.  This is my personal blog.
