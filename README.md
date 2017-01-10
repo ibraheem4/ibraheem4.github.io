@@ -32,11 +32,13 @@ Website : www.ibraheem.com <br/>
 
 This is a [Jekyll](https://jekyllrb.com) site.  It is served on [GitHub Pages](https://pages.github.com/).
 
-I'm using [Semantic UI](http://www.semantic-ui.com) here.
+I'm using [Semantic UI](http://www.semantic-ui.com).
 
-For comments, I'm using the [Facebook Comments](https://developers.facebook.com/products/social-plugins/comments/).
+For comments, I'm using [Facebook Comments](https://developers.facebook.com/products/social-plugins/comments/).
 
 I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager/) and [Google Analytics](https://www.google.com/analytics/).
+
+[Circle CI](https://circleci.com) for Continuous Integration.
 
 # Startup
 
