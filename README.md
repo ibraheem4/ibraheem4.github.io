@@ -40,7 +40,7 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 
 [Circle CI](https://circleci.com) for Continuous Integration.
 
-# Startup
+# Setup
 
     $ bundle install
     $ bundle update jekyll
@@ -54,6 +54,6 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     npm install
     npm update
 
-### Jekyll `build` and `serve`
+## Jekyll `build` and `serve`
     bundle exec jekyll build --watch
     bundle exec jekyll serve --watch
