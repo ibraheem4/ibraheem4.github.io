@@ -45,15 +45,15 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     $ bundle install
     $ bundle update jekyll
 
-# Install `bower_components`
+### Install `bower_components`
 
     bower install
     bower update
 
-# Install `node_modules`
+### Install `node_modules`
     npm install
     npm update
 
-# Jekyll `build` and `serve`
+### Jekyll `build` and `serve`
     bundle exec jekyll build --watch
     bundle exec jekyll serve --watch
