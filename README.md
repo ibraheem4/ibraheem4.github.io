@@ -2,7 +2,6 @@
 
 [![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io)
 
-# About Me
 Hi, I'm Ibraheem.  This is my personal blog.
 
 I've had this website since 2007.
@@ -45,13 +44,13 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 
 ### Install `bower_components`
 
-    bower install
-    bower update
+    $ bower install
+    $ bower update
 
 ### Install `node_modules`
-    npm install
-    npm update
+    $ npm install
+    $ npm update
 
 ## Jekyll `build` and `serve`
-    bundle exec jekyll build --watch
-    bundle exec jekyll serve --watch
+    $ bundle exec jekyll build --watch
+    $ bundle exec jekyll serve --watch
