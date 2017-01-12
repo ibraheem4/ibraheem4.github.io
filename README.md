@@ -5,9 +5,9 @@
 # About Me
 Hi, I'm Ibraheem.  This is my personal blog.
 
-I've had this website since 2007, when on a whim I decided it would be cool to buy my name on the web.
+I've had this website since 2007.
 
-I'm a *Software Engineer* with a keen eye for quality and high standards for efficient code.
+I'm a *Software Engineer*.
 
 I am passionate about crafting beautiful and intuitive UI / UX to ensure the best possible user interactions.
 
