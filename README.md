@@ -2,9 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io)
 
-Hi, I'm Ibraheem.  This is my personal blog.
-
-I've had this website since 2007.
+Hi, I'm **Ibraheem**.  This is my personal blog, since 2007.
 
 I'm a *Software Engineer*.
 
