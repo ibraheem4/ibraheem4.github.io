@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kodi Addons
+title: Kodi Add-ons
 category: blog
 tags:
 - gaming
@@ -10,14 +10,14 @@ comments: true
 ---
 I wanted to share some of my favorite places to play casino games!
 
-### Live Sports
+#### Live Sports
 
 [SportsDevil (via SportsDevil Launcher)](https://superrepo.org/kodi/addon/plugin.video.sportsdevil.launcher/)
 
-### Movies & TV Shows
+#### Movies & TV Shows
 
 [MGM Grand Poker Room](https://www.mgmgrand.com/en/casino/poker-tables.html)
 
-### Super Repos
+#### Super Repos
 
 [Super Repo](https://superrepo.org/get-started/)

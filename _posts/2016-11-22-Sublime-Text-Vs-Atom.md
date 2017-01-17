@@ -17,24 +17,24 @@ I would share a few of my preferred configurations.
 Sublime Text
 ---
 
-### Spell Check
+#### Spell Check
 
 Toggle the option `View > Spell Check`
 
 Or use the `"spell_check": true` setting in `Preferences.sublime-settings`:
 
-### Removing comments
+#### Removing comments
 
-1.Open the replace window in Sublime `cmd + shift + f`
+1. Open the replace window in Sublime `Cmd + Shift + f`
 
-2.Use regular expression search: `Find: #.*`
+2. Use regular expression search: `Find: #.*`
 
-3.Replace with nothing: `Replace:`
+3. Replace with nothing: `Replace:`
 
 Atom
 ---
 
-### Auto Indenting
+#### Auto Indenting
 
 Add the following block to the Atom Keymap `Atom > Keymap...`
 
@@ -42,4 +42,4 @@ Add the following block to the Atom Keymap `Atom > Keymap...`
 'atom-text-editor':
   'ctrl-cmd-]': 'editor:auto-indent'
 ```
-You can now use `ctrl + cmd + ]` to auto indent.
+You can now use `Ctrl + Cmd + ]` to auto indent.
