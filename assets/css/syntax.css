@@ -144,12 +144,11 @@ pre.highlight, figure.highlight > pre { padding: 10px }
 .language-php .sd { color: #94BF8F }
 
 code.highlighter-rouge {
-    border: 1px solid #dfdfdf;
-    border-radius: 3px;
-    box-shadow: 1px 1px 0 1px #eee;
-    padding: 0 2px;
+    border: 1px solid #272822;
+    border-radius: 4px;
+    padding: 6px 10px;
     font-size: 14px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.8px;
 }
 
 .highlighter-rouge {
@@ -157,7 +156,7 @@ code.highlighter-rouge {
   padding: 10px;
   font-family: monospace;
   margin-bottom: 20px;
-  color: #eeffdd;
+  color: #c0e799;
   /* Comment */
   /* Error */
   /* Keyword */
@@ -239,9 +238,15 @@ code.highlighter-rouge {
   margin-bottom: 0;
   word-break: inherit;
   word-wrap: inherit;
+  font-size: 150%;
+}
+@media (min-width: 48rem) {
+  .highlighter-rouge pre {
+    font-size: 125%;
+  }
 }
 .highlighter-rouge pre, .highlighter-rouge pre code {
-  color: #eeffdd;
+  color: #c0e799;
 }
 .highlighter-rouge pre code {
   white-space: pre;
