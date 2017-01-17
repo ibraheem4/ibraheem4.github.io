@@ -1,7 +1,7 @@
 ---
 ---
-.ui.menu .item > img.logo {
-  margin-right: 1.5em;
+.ui.menu .item>img:not(.ui) {
+  margin: -.3em .1875em;
   padding: 0.1875em;
 }
 
