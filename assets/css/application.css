@@ -1,0 +1,25 @@
+.ui.menu .item>img:not(.ui) {
+  margin: -.3em .1875em;
+  padding: 0.1875em;
+}
+
+.PermanentMarker {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.DrSugiyama {
+  font-family: 'Dr Sugiyama', cursive;
+}
+
+.ui.text.container {
+  max-width: 768px!important;
+}
+
+html {
+  font-size: 95%;
+}
+@media (min-width: 48rem) {
+  html {
+    font-size: 110%;
+  }
+}
