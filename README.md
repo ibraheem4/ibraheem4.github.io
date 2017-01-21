@@ -21,7 +21,7 @@ My interests and specialties include:
 Email : hi@ibraheem.com <br/>
 Website : www.ibraheem.com <br/>
 
-# About The Site
+## About The Site
 
 This is a [Jekyll](https://jekyllrb.com) site.  It is served on [GitHub Pages](https://pages.github.com/).
 
@@ -33,7 +33,7 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 
 [Circle CI](https://circleci.com) for Continuous Integration.
 
-# Setup
+## Setup
 
     $ bundle install
     $ bundle update jekyll
@@ -51,4 +51,6 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     $ bundle exec jekyll build --watch
     $ bundle exec jekyll serve --watch
 
+## Photo
 ![Cover](https://github.com/ibraheem4/ibraheem4.github.io/raw/master/img/harvard_boys.jpg)
+* Boston, December 2012, I'm second from the left. *
