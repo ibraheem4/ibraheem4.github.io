@@ -23,3 +23,7 @@ html {
     font-size: 110%;
   }
 }
+
+p > a, p > a:hover {
+  text-decoration: underline;
+}
