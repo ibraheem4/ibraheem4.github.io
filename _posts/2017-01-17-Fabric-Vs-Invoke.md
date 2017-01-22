@@ -12,7 +12,7 @@ Similar to Ruby's [Rake](https://github.com/ruby/rake) tool, Python has tools fo
 
 ### Invoke
 
-```
+``` python
 from invoke import task, run
 
 @task
@@ -22,7 +22,8 @@ def count_files(ctx):
 ```
 
 ### Fabric
-```
+
+``` python
 from fabric.api import *
 
 @task
