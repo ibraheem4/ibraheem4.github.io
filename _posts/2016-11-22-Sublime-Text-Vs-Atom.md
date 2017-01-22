@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublime Text vs Atom
+title: Sublime Text Vs Atom
 category: blog
 tags:
 - text
@@ -8,6 +8,7 @@ tags:
 modified: 2017-01-07T00:00:00-07:00
 comments: true
 ---
+
 By and large, the most popular text editors being used by developers
 these days are [Sublime Text](sublimetext.com) and [Atom](atom.io).
 

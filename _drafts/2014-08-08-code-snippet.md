@@ -8,7 +8,7 @@ modified: 2014-09-12T00:00:00-07:00
 ---
 
 ruby
-----
+---
 
 ```
 def show
@@ -20,17 +20,24 @@ def show
 end
 ```
 
-bash
-----
+shell
+---
 
 ```
 cd ~
 ```
 
 python
-------
+---
 
 ```
 from google.appengine.ext import vendor
 vendor.add('lib')
+```
+
+html
+---
+
+```
+<a href="#">Hello world</a>
 ```
