@@ -6,17 +6,7 @@ I'm a *Software Engineer*.
 
 I am passionate about crafting beautiful and intuitive UI / UX to ensure the best possible user interactions.
 
-My interests and specialties include:
-
-፠ Front-End Development <br/>
-፠ Python, JavaScript, Ruby, PHP <br/>
-፠ Test-Driven Development <br/>
-፠ Cloud Computing, DevOps <br/>
-፠ Django, Ruby on Rails, ReactJS <br/>
-፠ Google Cloud, AWS, Heroku <br/>
-፠ SASS, Foundation, Semantic UI <br/>
-፠ MySQL, PostgreSQL <br/>
-፠ Jasmine, RSpec, Selenium <br/>
+[Resume](http://ibraheem.com/resume.pdf)
 
 Email : hi@ibraheem.com <br/>
 Website : www.ibraheem.com <br/>
