@@ -1,3 +1,10 @@
+:root {
+  --facebook: #3b5998;
+  --google: #dc4e41;
+  --twitter: #55acee;
+  --instagram: #bc2a8d;
+}
+
 .ui.menu .item>img:not(.ui) {
   margin: -.3em .1875em;
   padding: 0.1875em;
@@ -26,4 +33,24 @@ html {
 
 p > a, p > a:hover {
   text-decoration: underline;
+}
+
+.ui.link.list a.item:hover {
+  color: none;
+}
+
+.ui.link.list a.item:hover i.icon.facebook:before, i.icon.facebook:hover:before {
+  color: var(--facebook);
+}
+
+.ui.link.list a.item:hover i.icon.google.plus:before, i.icon.google.plus:hover:before {
+  color: var(--google);
+}
+
+.ui.link.list a.item:hover i.icon.twitter:before, i.icon.twitter:hover:before {
+  color: var(--twitter);
+}
+
+.ui.link.list a.item:hover i.icon.instagram:before, i.icon.instagram:hover:before {
+  color: var(--instagram);
 }
