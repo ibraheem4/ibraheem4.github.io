@@ -4,4 +4,4 @@
 
 @linkColor           : rgba(0,0,0,.6);
 @linkUnderline       : none;
-@linkHoverColor      : #339966;
+@linkHoverColor      : #c0e799;
