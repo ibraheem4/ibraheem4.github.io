@@ -3,8 +3,8 @@ layout: post
 title: Sublime Text Vs Atom
 category: blog
 tags:
-- text
-- tips
+  - text
+  - tips
 modified: 2017-01-07T00:00:00-07:00
 comments: true
 ---
