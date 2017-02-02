@@ -11,7 +11,9 @@ comments: true
 > Remove the `--pretend` from `rails` commands to run them for real
 
 # Setup
+
 ### Add/update required gems
+
 #### `Gemfile`
 ``` ruby
 gem 'hirb'
@@ -89,6 +91,7 @@ rails db:migrate && rails db:seed
 ```
 
 ## Active Record associations
+
 > Associations do not write themselves
 
 #### `app/models/pet.rb`
@@ -132,6 +135,7 @@ rails destroy model Toy --no-test-framework --pretend
 rails destroy model User --no-test-framework --pretend
 ```
 # Routing
+
 > Routes do not add themselves
 
 #### `config/routes.rb`
@@ -155,6 +159,7 @@ Rails.application.routes.draw do
 end
 ```
 # Helpers
+
 > Helpers do not write themselves
 
 #### `app/helpers/users_helper.rb`
@@ -171,6 +176,7 @@ end
 ```
 
 # Controllers
+
 > Controllers do not write themselves
 
 ### Generate controllers
@@ -221,6 +227,7 @@ private
   end
 end
 ```
+
 #### `app/controllers/toys_controller.rb`
 ``` ruby
 class ToysController < ApplicationController
@@ -300,9 +307,11 @@ rails destroy controller User --pretend
 ```
 
 # Views
+
 > Views do not write themselves
 
 ### Layouts
+
 #### `app/views/layouts/application.html.erb`
 ``` html
 <!DOCTYPE html>
@@ -329,6 +338,7 @@ rails destroy controller User --pretend
 ```
 
 ### Pets
+
 #### `app/views/pets/_pet.html.erb`
 ``` html
 <li><%= link_to pet.name, pet_path(pet) %></li>
@@ -384,6 +394,7 @@ rails destroy controller User --pretend
 ```
 
 ### Toys
+
 #### `app/views/toys/_toys.html.erb`
 ``` html
 <%= @pet.name %>'s' toys:
@@ -414,7 +425,9 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ```
 
 ### Sessions
+
 #### `app/views/sessions/new.html.erb`
+
 ``` html
 <h1>Login</h1>
 
@@ -431,7 +444,9 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ```
 
 ### Users
+
 #### `app/views/users/new.html.erb`
+
 ``` html
 <h1>Sign up</h1>
 
@@ -455,12 +470,14 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ```
 
 #### `app/views/users/show.html.erb`
+
 ``` html
 <h1><%= current_user.name %></h1>
 <h2><%= current_user.email %></h2>
 ```
 
 # Tests
+
 > Tests (generally) do not write themselves
 
 ### Generate model tests
