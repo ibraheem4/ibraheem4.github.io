@@ -3,7 +3,7 @@ layout: post
 title: Fabric Vs Invoke
 category: blog
 tags:
-- python
+  - python
 modified: 2017-01-17T00:00:00-07:00
 comments: true
 ---

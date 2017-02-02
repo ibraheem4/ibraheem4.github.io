@@ -3,9 +3,9 @@ layout: post
 title: rbenv Vs pyenv Vs nvm
 category: blog
 tags:
-- ruby
-- python
-- version management
+  - ruby
+  - python
+  - version management
 modified: 2016-12-26T00:00:00-07:00
 comments: true
 ---
