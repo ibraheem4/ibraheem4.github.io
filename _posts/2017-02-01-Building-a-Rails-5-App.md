@@ -8,7 +8,9 @@ modified: 2017-02-01T00:00:00-07:00
 comments: true
 ---
 
-We're going to put together a basic web application using Rails, describing the features in terms of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
+We're going to put together a basic web application using Rails, describing the app in terms Features and of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
+
+#### User Stories
 
 `Users` can sign up, login, view their profile page and logout.
 
@@ -16,16 +18,20 @@ We're going to put together a basic web application using Rails, describing the 
 
 `Pets` can be edited.
 
-`Users` can see the `Pet`'s information and click on a link to show the `Pet`'s `Toys`.  The link with display a partial using AJAX.
+`Users` can see a `Pet`'s information.
+
+`User `click on a link to show a `Pet`'s `Toys` via AJAX.
+
+#### Features
 
 * User authentication system
 * Nested routes
 * Error handling
 * AJAX
 * Active Record
+* Seed files
+* Helpers
 * Testing
-
-We'll also touch on a few smaller topics such as Helpers and write a Seed file.  Away we go!
 
 # Setup
 
