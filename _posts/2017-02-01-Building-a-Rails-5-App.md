@@ -8,7 +8,24 @@ modified: 2017-02-01T00:00:00-07:00
 comments: true
 ---
 
-> Remove the `--pretend` from `rails` commands to run them for real
+We're going to put together a basic web application using Rails, describing the features in terms of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
+
+`Users` can sign up, login, view their profile page and logout.
+
+`Users` can view a list of `Pets` and the `Toys` that belong to each `Pet`.
+
+`Pets` can be edited.
+
+`Users` can see the `Pet`'s information and click on a link to show the `Pet`'s `Toys`.  The link with display a partial using AJAX.
+
+* User authentication system
+* Nested routes
+* Error handling
+* AJAX
+* Active Record
+* Testing
+
+We'll also touch on a few smaller topics such as Helpers and write a Seed file.  Away we go!
 
 # Setup
 
@@ -31,9 +48,9 @@ bundle && rails db:create
 
 ### Generate models
 ```
-rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework --pretend
-rails generate model Toy description:text pet:references --no-test-framework --pretend
-rails generate model User name:string email:string:uniq password_digest:string --no-test-framework --pretend
+rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework
+rails generate model Toy description:text pet:references --no-test-framework
+rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
 ```
 > `null` and `default` cannot be specified from the command line, add them to the migrations as necessary. [docs](http://guides.rubyonrails.org/active_record_migrations.html#column-modifiers)
 
@@ -92,8 +109,6 @@ rails db:migrate && rails db:seed
 
 ## Active Record associations
 
-> Associations do not write themselves
-
 #### `app/models/pet.rb`
 ``` ruby
 class Pet < ApplicationRecord
@@ -130,14 +145,12 @@ end
 
 ### Rollback models (if necessary)
 ```
-rails destroy model Pet --no-test-framework --pretend
-rails destroy model Toy --no-test-framework --pretend
-rails destroy model User --no-test-framework --pretend
+rails destroy model Pet --no-test-framework
+rails destroy model Toy --no-test-framework
+rails destroy model User --no-test-framework
 ```
 
 # Routing
-
-> Routes do not add themselves
 
 #### `config/routes.rb`
 ``` ruby
@@ -162,8 +175,6 @@ end
 
 # Helpers
 
-> Helpers do not write themselves
-
 #### `app/helpers/users_helper.rb`
 ``` ruby
 module UsersHelper
@@ -179,14 +190,12 @@ end
 
 # Controllers
 
-> Controllers do not write themselves
-
 ### Generate controllers
 ```
-rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets --pretend
-rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets --pretend
-rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets --pretend
-rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets --pretend
+rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets
+rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets
+rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets
+rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets
 ```
 
 #### `app/controllers/application_controller.rb`
@@ -302,15 +311,13 @@ end
 
 ### Rollback controllers (if necessary)
 ```
-rails destroy controller Pet --pretend
-rails destroy controller Toy --pretend
-rails destroy controller Session --pretend
-rails destroy controller User --pretend
+rails destroy controller Pet
+rails destroy controller Toy
+rails destroy controller Session
+rails destroy controller User
 ```
 
 # Views
-
-> Views do not write themselves
 
 ### Layouts
 
@@ -480,19 +487,17 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 
 # Tests
 
-> Tests (generally) do not write themselves
-
 ### Generate model tests
 ```
-rails generate model Pet --no-migration --test-framework=rspec --skip --pretend
-rails generate model Toy --no-migration --test-framework=rspec --skip --pretend
-rails generate model User --no-migration --test-framework=rspec --skip --pretend
+rails generate model Pet --no-migration --test-framework=rspec --skip
+rails generate model Toy --no-migration --test-framework=rspec --skip
+rails generate model User --no-migration --test-framework=rspec --skip
 ```
 
 ### Generate controller tests
 ```
-rails generate controller Pet --no-migration --test-framework=rspec --skip --pretend
-rails generate controller Toy --no-migration --test-framework=rspec --skip --pretend
-rails generate controller Session --no-migration --test-framework=rspec --skip --pretend
-rails generate controller User --no-migration --test-framework=rspec --skip --pretend
+rails generate controller Pet --no-migration --test-framework=rspec --skip
+rails generate controller Toy --no-migration --test-framework=rspec --skip
+rails generate controller Session --no-migration --test-framework=rspec --skip
+rails generate controller User --no-migration --test-framework=rspec --skip
 ```
