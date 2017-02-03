@@ -134,6 +134,7 @@ rails destroy model Pet --no-test-framework --pretend
 rails destroy model Toy --no-test-framework --pretend
 rails destroy model User --no-test-framework --pretend
 ```
+
 # Routing
 
 > Routes do not add themselves
@@ -158,6 +159,7 @@ Rails.application.routes.draw do
   get '/home' => "pets#index"
 end
 ```
+
 # Helpers
 
 > Helpers do not write themselves
