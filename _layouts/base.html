@@ -5,12 +5,14 @@ layout: default
   {% include head.html %}
 </head>
 <body class="Site">
+  {% include _gtm.html %}
+  {% include _fb_pixel_base.html %}
   <main class="Site-content">
-    {% include topbar.html %}
     <div id="root"></div>
-    {% include _gtm.html %}
-    {% include _fb_pixel_base.html %}
-    {{ content }}
+    <div class="ui text container">
+      {% include topbar.html %}
+      {{ content }}
+    </div>
   </main>
   <footer>
     {% include footer.html %}
