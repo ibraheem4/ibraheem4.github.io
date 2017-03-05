@@ -65,3 +65,24 @@ p > a, p > a:hover {
   flex: 1 0 auto;
   width: 100%;
 }
+
+.ui.menu {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ui.secondary.pointing.menu {
+  border-bottom: none;
+}
+
+.ui.secondary.pointing.menu .item {
+  font-weight: 800;
+  margin: 0 .35714286em;
+}
+
+.ui.secondary.pointing.menu .item:hover {
+  border-color: #1B1C1D;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  transition: color .1s ease;
+}
