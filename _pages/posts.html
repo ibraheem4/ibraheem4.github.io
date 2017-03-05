@@ -3,14 +3,12 @@ layout: page
 title: Posts
 permalink: /posts/
 ---
-<div class="ui text container">
-  <h1 class="ui center aligned header">Posts</h1>
-  <div class="ui two column stackable relaxed grid">
-    {% for post in site.posts %}
-      <div class="center aligned column">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }}</small></p>
-      </div>
-    {% endfor %}
-  </div>
+<h1 class="ui center aligned header">Posts</h1>
+<div class="ui two column stackable relaxed grid">
+  {% for post in site.posts %}
+    <div class="center aligned column">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> | {{ post.category }}</small></p>
+    </div>
+  {% endfor %}
 </div>
