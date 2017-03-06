@@ -24,11 +24,12 @@
 
 p > a {
   background-color: #ffcb04;
+  border-bottom: 1px solid transparent;
 }
 
 p > a:visited, p > a:hover {
   text-decoration: none;
-  border-bottom: 2px solid #ffcb04;
+  border-bottom: 1px solid #ffcb04;
   background-color: transparent;
   color: inherit;
 }
@@ -84,10 +85,4 @@ p > a:visited, p > a:hover {
 
 a {
   color: rgba(0,0,0,.7);
-}
-
-@media (max-width: 48rem) {
-  html {
-    font-size: 95%;
-  }
 }
