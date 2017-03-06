@@ -58,7 +58,7 @@ rails generate model Pet name:string breed:string age:integer cute:boolean --no-
 rails generate model Toy description:text pet:references --no-test-framework
 rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
 ```
-> `null` and `default` cannot be specified from the command line, add them to the migrations as necessary. [docs](http://guides.rubyonrails.org/active_record_migrations.html#column-modifiers)
+> `null` and `default` cannot be specified from the command line, add them to the migrations as necessary. [documentation](http://guides.rubyonrails.org/active_record_migrations.html#column-modifiers)
 
 ### Edit migrations
 
