@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/ibraheem4/ibraheem4.github.io.git"
   },
+  "scripts": {
+    "build:semantic": "cd semantic && gulp build && cd .."
+  },
   "bugs": {
     "url": "https://github.com/ibraheem4/ibraheem4.github.io/issues",
     "email": "ibraheem4@gmail.com"

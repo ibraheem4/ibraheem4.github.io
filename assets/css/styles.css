@@ -24,12 +24,13 @@
 
 p > a {
   background-color: #ffcb04;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-out;
 }
 
 p > a:visited, p > a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #ffcb04;
+  border-bottom: 2px solid #ffcb04;
   background-color: transparent;
   color: inherit;
 }
@@ -81,8 +82,4 @@ p > a:visited, p > a:hover {
 
 .ui.secondary.pointing.menu .item:hover {
   border-bottom: 2px solid #1B1C1D;
-}
-
-a {
-  color: rgba(0,0,0,.7);
 }

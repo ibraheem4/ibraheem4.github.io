@@ -328,7 +328,7 @@ rails destroy controller User
 ### Layouts
 
 #### `app/views/layouts/application.html.erb`
-``` html
+``` erb
 <!DOCTYPE html>
 <html>
   <head>
@@ -355,12 +355,12 @@ rails destroy controller User
 ### Pets
 
 #### `app/views/pets/_pet.html.erb`
-``` html
+``` erb
 <li><%= link_to pet.name, pet_path(pet) %></li>
 ```
 
 #### `app/views/pets/edit.html.erb`
-``` html
+``` erb
 <h1>Edit <%= @pet.name %></h1>
   <%= form_for([@pet]) do |f| %>
 
@@ -383,7 +383,7 @@ rails destroy controller User
 ```
 
 #### `app/views/pets/index.html.erb`
-``` html
+``` erb
 <h1>Pets</h1>
 
 <ul>
@@ -392,7 +392,7 @@ rails destroy controller User
 ```
 
 #### `app/views/pets/show.html.erb`
-``` html
+``` erb
 <h1><%= @pet.name %></h1>
 
 <ul>
@@ -411,7 +411,7 @@ rails destroy controller User
 ### Toys
 
 #### `app/views/toys/_toys.html.erb`
-``` html
+``` erb
 <%= @pet.name %>'s' toys:
 <ul>
   <% @toys.each do |toy| %>
@@ -423,7 +423,7 @@ rails destroy controller User
 ```
 
 #### `app/views/toys/index.html.erb`
-``` html
+``` erb
 <%= @pet.name %>'s' toys:
 <ul>
   <% @toys.each do |toy| %>
@@ -443,7 +443,7 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 
 #### `app/views/sessions/new.html.erb`
 
-``` html
+``` erb
 <h1>Login</h1>
 
 <% if not @user %>
@@ -462,7 +462,7 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 
 #### `app/views/users/new.html.erb`
 
-``` html
+``` erb
 <h1>Sign up</h1>
 
 <%= form_for @user, url: '/users' do |f| %>
@@ -486,7 +486,7 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 
 #### `app/views/users/show.html.erb`
 
-``` html
+``` erb
 <h1><%= current_user.name %></h1>
 <h2><%= current_user.email %></h2>
 ```
