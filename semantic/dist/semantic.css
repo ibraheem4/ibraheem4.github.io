@@ -611,7 +611,7 @@ a {
 }
 
 a:hover {
-  color: #396;
+  color: #ffcb04;
   text-decoration: none;
 }
 
@@ -13220,7 +13220,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #396;
+  color: #ffcb04;
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: none;
 }
@@ -13692,7 +13692,7 @@ ol.ui.list ol li,
 
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /* Linked Item Icons */
@@ -13712,7 +13712,7 @@ ol.ui.list ol li,
 
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
-  color: #396 !important;
+  color: #ffcb04 !important;
 }
 
 /* Floated Content */
@@ -13888,7 +13888,7 @@ ol.ui.list ol li,
 
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /* Linking Content */
@@ -13898,7 +13898,7 @@ ol.ui.list ol li,
 }
 
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #396 !important;
+  color: #ffcb04 !important;
 }
 
 /*-------------------
@@ -17011,7 +17011,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.breadcrumb a:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /* Icon Divider */
@@ -25189,7 +25189,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /* Meta */
@@ -25308,7 +25308,7 @@ Floated Menu / Item
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /*******************************
@@ -26053,7 +26053,7 @@ a.ui.card:hover,
 }
 
 .ui.comments .comment a.author:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /*--------------
@@ -26786,7 +26786,7 @@ a.ui.card:hover,
 }
 
 .ui.items > .item > .content > a.header:hover {
-  color: #396;
+  color: #ffcb04;
 }
 
 /* Meta */
@@ -27016,7 +27016,7 @@ a.ui.card:hover,
 
 .ui.items a.item:hover .content .header,
 .ui.link.items > .item:hover .content .header {
-  color: #396;
+  color: #ffcb04;
 }
 
 /*--------------
