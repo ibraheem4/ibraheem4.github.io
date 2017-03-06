@@ -22,10 +22,6 @@
   max-width: 768px!important;
 }
 
-html {
-  font-size: 95%;
-}
-
 p > a {
   background-color: #ffcb04;
 }
@@ -90,8 +86,8 @@ a {
   color: rgba(0,0,0,.7);
 }
 
-@media (min-width: 48rem) {
+@media (max-width: 48rem) {
   html {
-    font-size: 105%;
+    font-size: 95%;
   }
 }
