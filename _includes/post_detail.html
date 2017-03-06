@@ -1,9 +1,9 @@
-<h1 class="ui center aligned header">
+<h2 class="ui center aligned header">
   {% if post.title %}
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
   {% endif %}
   <div class="ui center aligned sub header">
     {{ post.date | date: '%B %d, %Y' }}
   </div>
-</h1>
+</h2>
 {{ content }}
