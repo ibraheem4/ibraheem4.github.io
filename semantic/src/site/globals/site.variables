@@ -2,6 +2,6 @@
      User Global Variables
 *******************************/
 
-@linkColor           : rgba(0,0,0,.9);
+@linkColor           : rgba(0,0,0,.7);
 @linkUnderline       : none;
 @linkHoverColor      : #ffcb04;

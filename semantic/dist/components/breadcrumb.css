@@ -44,7 +44,7 @@
 
 /* Link */
 .ui.breadcrumb a {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 .ui.breadcrumb a:hover {
   color: #ffcb04;

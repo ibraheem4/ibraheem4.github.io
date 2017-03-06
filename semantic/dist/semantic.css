@@ -606,7 +606,7 @@ p:last-child {
 --------------------*/
 
 a {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
 
@@ -13687,7 +13687,7 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .ui.list .list > a.item:hover,
@@ -13707,7 +13707,7 @@ ol.ui.list ol li,
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.9) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .ui.list .list > .item a.header:hover,
@@ -16665,7 +16665,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.steps .step.active .title {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .ui.ordered.steps .step.active:before,
@@ -17007,7 +17007,7 @@ ol.ui.horizontal.list li:before,
 /* Link */
 
 .ui.breadcrumb a {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .ui.breadcrumb a:hover {

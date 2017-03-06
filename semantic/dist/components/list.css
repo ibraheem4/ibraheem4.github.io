@@ -181,7 +181,7 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.7);
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
@@ -198,7 +198,7 @@ ol.ui.list ol li,
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.9) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 .ui.list .list > .item a.header:hover,
 .ui.list > .item a.header:hover {
