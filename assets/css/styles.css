@@ -25,14 +25,16 @@
 html {
   font-size: 95%;
 }
-@media (min-width: 48rem) {
-  html {
-    font-size: 110%;
-  }
+
+p > a {
+  background-color: #ffcb04;
 }
 
-p > a, p > a:hover {
-  text-decoration: underline;
+p > a:visited, p > a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #ffcb04;
+  background-color: transparent;
+  color: inherit;
 }
 
 .ui.link.list a.item:hover {
@@ -81,11 +83,15 @@ p > a, p > a:hover {
 }
 
 .ui.secondary.pointing.menu .item:hover {
-  border-color: #1B1C1D;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom: 2px solid #1B1C1D;
 }
 
 a {
-  color: rgba(0,0,0,.8);
+  color: rgba(0,0,0,.7);
+}
+
+@media (min-width: 48rem) {
+  html {
+    font-size: 105%;
+  }
 }
