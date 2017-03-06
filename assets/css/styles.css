@@ -84,5 +84,8 @@ p > a, p > a:hover {
   border-color: #1B1C1D;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  transition: color .1s ease;
+}
+
+a {
+  color: rgba(0,0,0,.8);
 }

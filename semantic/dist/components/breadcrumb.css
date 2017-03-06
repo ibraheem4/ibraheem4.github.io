@@ -44,10 +44,10 @@
 
 /* Link */
 .ui.breadcrumb a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.9);
 }
 .ui.breadcrumb a:hover {
-  color: #c0e799;
+  color: #396;
 }
 
 /* Icon Divider */
