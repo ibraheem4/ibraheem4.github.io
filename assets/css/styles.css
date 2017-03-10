@@ -79,3 +79,24 @@ p > a:visited, p > a:hover {
 .ui.secondary.pointing.menu .item:hover {
   border-bottom: 2px solid #1B1C1D;
 }
+
+@media only screen and (max-width: 48rem) {
+  .ui.secondary.pointing.menu {
+    border-bottom: none;
+  }
+
+  .ui.secondary.pointing.menu .item {
+    margin: 2px 0 2px 0;
+    border-left: 2px solid transparent;
+    border-bottom: none;
+  }
+
+  .ui.secondary.pointing.menu .item:hover {
+    border-left: 2px solid #1B1C1D;
+    border-bottom: none;
+  }
+
+  .ui.secondary.pointing.menu .item.active {
+    border-left: 2px solid #1B1C1D;
+  }
+}
