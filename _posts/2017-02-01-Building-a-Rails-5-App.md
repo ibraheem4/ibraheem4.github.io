@@ -8,7 +8,7 @@ modified: 2017-02-01T00:00:00-07:00
 comments: true
 ---
 
-We're going to put together a basic web application using Rails, describing the app in terms Features and of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
+We're going to put together a basic web application using Rails, describing the app in terms of Features and of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
 
 #### User Stories
 
