@@ -2,10 +2,10 @@
 .highlighter-rouge table pre, .highlight table pre { margin: 0; }
 div.highlighter-rouge, .highlight, .highlight .w {
   color: #f8f8f2;
-  background-color: #272822;
+  background-color: #2D2D2D;
 }
 .highlighter-rouge .err, .highlight .err {
-  color: #272822;
+  color: #2D2D2D;
   background-color: #f92672;
 }
 .highlighter-rouge .c, .highlight .c,
@@ -35,7 +35,7 @@ div.highlighter-rouge, .highlight, .highlight .w {
 }
 .highlighter-rouge .gh, .highlight .gh {
   color: #66d9ef;
-  background-color: #272822;
+  background-color: #2D2D2D;
   font-weight: bold;
 }
 .highlighter-rouge .k, .highlight .k,
@@ -228,7 +228,7 @@ code.highlighter-rouge {
   padding-right: 0.625em;
 }
 .highlighter-rouge, .highlighter-rouge .hll, .highlighter-rouge pre, .highlighter-rouge code {
-  background-color: #272822;
+  background-color: #2D2D2D;
   border: none;
 }
 .highlighter-rouge pre {
