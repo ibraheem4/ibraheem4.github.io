@@ -4,6 +4,7 @@ title: Building a Rails 5 App
 category: blog
 tags:
   - ruby
+  - rails
 modified: 2017-03-13T00:00:00-07:00
 comments: true
 ---
