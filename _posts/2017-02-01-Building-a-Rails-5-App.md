@@ -4,7 +4,7 @@ title: Building a Rails 5 App
 category: blog
 tags:
   - ruby
-modified: 2017-02-01T00:00:00-07:00
+modified: 2017-03-13T00:00:00-07:00
 comments: true
 ---
 
@@ -34,6 +34,11 @@ We're going to put together a basic web application using Rails, describing the 
 * Testing
 
 # Setup
+
+### Create rails project
+``` ruby
+rails new pet_project
+```
 
 ### Add/update required gems
 
