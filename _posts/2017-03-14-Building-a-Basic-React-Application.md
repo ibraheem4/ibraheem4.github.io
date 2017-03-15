@@ -53,7 +53,7 @@ We're going to put together a single page application using React.
     $ npm init
 
 #### `package.json`
-``` javascript
+``` json
 {
   "name": "projectName",
   "version": "1.0.0",
@@ -94,7 +94,7 @@ We're going to put together a single page application using React.
     $ mkdir src
     $ mkdir src/app
 
-#### Create `src` folder containing `app`
+#### Add webpack config
 
     $ touch webpack.config.js src/index.html src/app/index.js
 

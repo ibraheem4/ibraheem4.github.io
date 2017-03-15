@@ -52,18 +52,17 @@ gem 'rspec-rails'
 ```
 
 ### Bundle, create database
-```
-bundle && rails db:create
-```
+
+    $ bundle && rails db:create
 
 # Models
 
 ### Generate models
-```
-rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework
-rails generate model Toy description:text pet:references --no-test-framework
-rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
-```
+
+    $ rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework
+    $ rails generate model Toy description:text pet:references --no-test-framework
+    $ rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
+
 > `null` and `default` cannot be specified from the command line, add them to the migrations as necessary. [documentation](http://guides.rubyonrails.org/active_record_migrations.html#column-modifiers)
 
 ### Edit migrations
@@ -115,9 +114,8 @@ end
 ```
 
 ### Migrate, Seed database
-```
-rails db:migrate && rails db:seed
-```
+
+    $ rails db:migrate && rails db:seed
 
 ## Active Record associations
 
@@ -156,11 +154,10 @@ end
 ```
 
 ### Rollback models (if necessary)
-```
-rails destroy model Pet --no-test-framework
-rails destroy model Toy --no-test-framework
-rails destroy model User --no-test-framework
-```
+
+    $ rails destroy model Pet --no-test-framework
+    $ rails destroy model Toy --no-test-framework
+    $ rails destroy model User --no-test-framework
 
 # Routing
 
@@ -203,12 +200,11 @@ end
 # Controllers
 
 ### Generate controllers
-```
-rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets
-rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets
-rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets
-rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets
-```
+
+    $ rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets
+    $ rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets
+    $ rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets
+    $ rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets
 
 #### `app/controllers/application_controller.rb`
 ``` ruby
@@ -217,7 +213,6 @@ class ApplicationController < ActionController::Base
   include UsersHelper
 end
 ```
-
 
 #### `app/controllers/pets_controller.rb`
 ``` ruby
@@ -322,12 +317,11 @@ end
 ```
 
 ### Rollback controllers (if necessary)
-```
-rails destroy controller Pet
-rails destroy controller Toy
-rails destroy controller Session
-rails destroy controller User
-```
+
+    $ rails destroy controller Pet
+    $ rails destroy controller Toy
+    $ rails destroy controller Session
+    $ rails destroy controller User
 
 # Views
 
@@ -448,7 +442,6 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ### Sessions
 
 #### `app/views/sessions/new.html.erb`
-
 ``` erb
 <h1>Login</h1>
 
@@ -467,7 +460,6 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ### Users
 
 #### `app/views/users/new.html.erb`
-
 ``` erb
 <h1>Sign up</h1>
 
@@ -491,7 +483,6 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ```
 
 #### `app/views/users/show.html.erb`
-
 ``` erb
 <h1><%= current_user.name %></h1>
 <h2><%= current_user.email %></h2>
@@ -500,16 +491,14 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 # Tests
 
 ### Generate model tests
-```
-rails generate model Pet --no-migration --test-framework=rspec --skip
-rails generate model Toy --no-migration --test-framework=rspec --skip
-rails generate model User --no-migration --test-framework=rspec --skip
-```
+
+    $ rails generate model Pet --no-migration --test-framework=rspec --skip
+    $ rails generate model Toy --no-migration --test-framework=rspec --skip
+    $ rails generate model User --no-migration --test-framework=rspec --skip
 
 ### Generate controller tests
-```
-rails generate controller Pet --no-migration --test-framework=rspec --skip
-rails generate controller Toy --no-migration --test-framework=rspec --skip
-rails generate controller Session --no-migration --test-framework=rspec --skip
-rails generate controller User --no-migration --test-framework=rspec --skip
-```
+
+    $ rails generate controller Pet --no-migration --test-framework=rspec --skip
+    $ rails generate controller Toy --no-migration --test-framework=rspec --skip
+    $ rails generate controller Session --no-migration --test-framework=rspec --skip
+    $ rails generate controller User --no-migration --test-framework=rspec --skip

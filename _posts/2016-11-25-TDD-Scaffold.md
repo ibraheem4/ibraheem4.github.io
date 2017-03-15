@@ -15,6 +15,4 @@ And if you're using a [Test Driven Development](https://en.wikipedia.org/wiki/Te
 
 I originally wrote an executable Ruby script to scaffold Ruby objects and their related RSpec tests. This project has now been published as a [Ruby Gem](https://rubygems.org/gems/tdd_scaffold). And of course, the code is available on [GitHub](https://github.com/ibraheem4/tdd_scaffold).
 
-``` shell
-gem install tdd_scaffold
-```
+    $ gem install tdd_scaffold

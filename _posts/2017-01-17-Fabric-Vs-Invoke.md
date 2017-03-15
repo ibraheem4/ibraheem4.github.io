@@ -11,7 +11,6 @@ comments: true
 Similar to Ruby's [Rake](https://github.com/ruby/rake) tool, Python has tools for running shell commands and defining/organizing tasks.  My personal favorite of the bunch is [Fabric](http://www.fabfile.org), but for those using Python 3, you can consider using [Invoke](http://www.pyinvoke.org).  These tools provide high level APIs for task execution.
 
 ### Invoke
-
 ``` python
 from invoke import task, run
 
@@ -22,7 +21,6 @@ def count_files(ctx):
 ```
 
 ### Fabric
-
 ``` python
 from fabric.api import *
 

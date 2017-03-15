@@ -24,95 +24,71 @@ Node has a similar tool, called [NVM](https://github.com/creationix/nvm) which h
 
 #### Install and configure pyenv
 
-``` shell
-brew install pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
-```
+    $ brew install pyenv
+    $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+    $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+    $ echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
 
 ##### Install Python versions
 
-``` shell
-env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.13
-env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.4.5
-```
+    $ env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.13
+    $ env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.4.5
 
 ##### Set pyenv versions
 
-``` shell
-# Python 2
-pyenv global 2.7.13
-pip install -U pip virtualenv virtualenvwrapper
+    # Python 2
+    $ pyenv global 2.7.13
+    $ pip install -U pip virtualenv virtualenvwrapper
 
-# Python 3
-pyenv global 3.4.5
-pip3 install -U pip virtualenv virtualenvwrapper
+    # Python 3
+    $ pyenv global 3.4.5
+    $ pip3 install -U pip virtualenv virtualenvwrapper
 
-# Set Python 2/3 available globally
-pyenv global 2.7.13 3.4.5
-```
+    # Set Python 2/3 available globally
+    $ pyenv global 2.7.13 3.4.5
 
 #### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
 
-``` shell
-git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
-git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
-```
+    $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+    $ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/pyenv-virtualenvwrapper
 
 ##### Test pyenv installations
 
-``` shell
-pyenv versions
-pyenv whence virtualenv virtualenvwrapper.sh
-pyenv virtualenvs
-```
+    $ pyenv versions
+    $ pyenv whence virtualenv virtualenvwrapper.sh
+    $ pyenv virtualenvs
 
 ## rbenv
 
 #### Install and configure rbenv
 
-``` shell
-brew install rbenv
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bashrc
-echo 'test -d "$HOME/.rbenv/" && PATH="$HOME/.rbenv/bin:$PATH" && PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bashrc
-```
+    $ brew install rbenv
+    $ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bashrc
+    $ echo 'test -d "$HOME/.rbenv/" && PATH="$HOME/.rbenv/bin:$PATH" && PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bashrc
 
 ##### Install Ruby versions
 
-``` shell
-rbenv install 2.3.1
-rbenv install 2.2.5
-```
+    $ rbenv install 2.3.1
+    $ rbenv install 2.2.5
 
 ##### Set rbenv versions
 
-``` shell
-rbenv global 2.3.1
-```
+    $ rbenv global 2.3.1
 
 ##### Test rbenv installations
 
-``` shell
-rbenv versions
-```
+    $ rbenv versions
 
-## nvm
+## NVM
 
 #### Install and configure nvm
 
-``` shell
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
-```
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
 
 ##### Install Node versions
 
-``` shell
-nvm install v6.9.2
-```
+    $ nvm install v6.9.2
 
 ##### Test nvm installations
 
-``` shell
-nvm ls
-```
+    $ nvm ls

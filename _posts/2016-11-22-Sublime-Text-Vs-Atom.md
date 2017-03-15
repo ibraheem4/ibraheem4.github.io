@@ -44,18 +44,16 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### Atom
 
-```
-$ mkdir ~/Dropbox/Atom
-$ mv ~/.atom ~/Dropbox/Atom
-$ ln -s ~/Dropbox/Atom ~/.atom
-```
+    $ mkdir ~/Dropbox/Atom
+    $ mv ~/.atom ~/Dropbox/Atom
+    $ ln -s ~/Dropbox/Atom ~/.atom
+
 > [Atom syncing reference](https://discuss.atom.io/t/syncing-settings-packages-between-machines/1385)
 
 #### Sublime Text
 
-```
-$ mkdir ~/Dropbox/Sublime
-$ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Sublime
-$ ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-```
+    $ mkdir ~/Dropbox/Sublime
+    $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Sublime
+    $ ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
