@@ -154,6 +154,7 @@ module.exports = config;
   <title>projectName</title>
 </head>
 <body>
+<div id="app"></div>
 <script src="/app/bundle.js"></script>
 </body>
 </html>
@@ -161,7 +162,20 @@ module.exports = config;
 
 #### `src/app/index.js`
 ``` javascript
-console.log("It works!")
+import React from "react";
+import { render } from "react-dom";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello!</h1>
+      </div>
+    );
+  }
+}
+
+render(<App/>, window.document.getElementById("app"));
 ```
 
 #### Add [open-source](https://en.wikipedia.org/wiki/Open-source_software) files
