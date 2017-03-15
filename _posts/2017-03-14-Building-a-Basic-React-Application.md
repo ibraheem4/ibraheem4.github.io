@@ -55,25 +55,38 @@ We're going to put together a single page application using React.
 #### `package.json`
 ``` json
 {
-  "name": "projectName",
+  "name": "video-door",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot",
-    "build:prod": "webpack -d && cp src/index.html dist/index.html",
+    "build:prod": "webpack -d && cp src/index.html dist/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/projectName.git"
+    "url": "git+https://github.com/ibraheem4/video-door.git"
   },
-  "author": "Real Name <email@email.com>",
+  "author": "Ibraheem Abdul-Malik <ibraheem4@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/username/projectName/issues"
+    "url": "https://github.com/ibraheem4/video-door/issues"
   },
-  "homepage": "https://github.com/username/projectName#readme"
+  "homepage": "https://github.com/ibraheem4/video-door#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
 ```
 
