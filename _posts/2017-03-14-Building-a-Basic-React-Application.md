@@ -5,7 +5,7 @@ category: blog
 tags:
   - javascript
   - react
-modified: 2017-03-13T00:00:00-07:00
+modified: 2017-03-14T00:00:00-07:00
 comments: true
 ---
 
@@ -24,7 +24,7 @@ We're going to put together a single page application using React.
 
     $ mkdir projectName && cd projectName
 
-### Initialize Git
+### Initialize [Git/GitHub](https://github.com/)
 
     $ git init
     $ git create
@@ -46,14 +46,14 @@ We're going to put together a single page application using React.
 /npm-debug.log
 ```
 
-## Install `NPM` modules
+## Install [NPM](https://www.npmjs.com/) modules
 
 ### Generate [package.json](https://docs.npmjs.com/files/package.json)
 
     $ npm init
 
 #### `package.json`
-```
+``` javascript
 {
   "name": "projectName",
   "version": "1.0.0",
@@ -79,11 +79,11 @@ We're going to put together a single page application using React.
 
 > I prefer the [MIT License](https://opensource.org/licenses/MIT) because it is the simplest and most popular free software license.
 
-### Install `React` dependencies
+### Install [React](https://facebook.github.io/react/) dependencies
 
     $ npm install react react-dom --save
 
-### Install `Webpack` dependencies
+### Install [Webpack](https://webpack.github.io/) dependencies
 
     $ npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 --save-dev
 
@@ -151,7 +151,7 @@ module.exports = config;
 console.log("It works!")
 ```
 
-#### Add open-source files
+#### Add [open-source](https://en.wikipedia.org/wiki/Open-source_software) files
 
     $ touch LICENSE.txt CONTRIBUTING.md AUTHORS.md
 
@@ -160,7 +160,7 @@ console.log("It works!")
 #### [README.md](https://github.com/matiassingers/awesome-readme)
 
 #### [CONTRIBUTING.md](https://github.com/blog/1184-contributing-guidelines)
-```
+``` markdown
 ## Contributing
 
 0. Fork it
@@ -172,7 +172,7 @@ console.log("It works!")
 ```
 
 #### AUTHORS.md
-```
+``` markdown
 ## Authors
 
 - **Real Name** - [@username](https://github.com/username)

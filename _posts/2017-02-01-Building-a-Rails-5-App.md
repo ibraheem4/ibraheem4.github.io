@@ -21,7 +21,7 @@ We're going to put together a basic web application using Rails, describing the 
 
 `Users` can see a `Pet`'s information.
 
-`User `click on a link to show a `Pet`'s `Toys` via AJAX.
+`Users` can click on a link to show a `Pet`'s `Toys` via AJAX.
 
 #### Features
 
@@ -36,12 +36,12 @@ We're going to put together a basic web application using Rails, describing the 
 
 # Setup
 
-### Create rails project
+### Create [rails](https://rubyonrails.org/) project
 ``` ruby
 rails new pet_project
 ```
 
-### Add/update required gems
+### Add/update required [gems](http://bundler.io/gemfile.html)
 
 #### `Gemfile`
 ``` ruby
