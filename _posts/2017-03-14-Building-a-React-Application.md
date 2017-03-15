@@ -18,7 +18,7 @@ We're going to put together a single page application using React.
 * Babel
 * Open Source
 
-## Setup
+# Setup
 
 ### Create project directory
 
@@ -46,7 +46,7 @@ We're going to put together a single page application using React.
 /npm-debug.log
 ```
 
-## Install [NPM](https://www.npmjs.com/) modules
+# Install [NPM](https://www.npmjs.com/) modules
 
 ### Generate [package.json](https://docs.npmjs.com/files/package.json)
 
@@ -100,7 +100,7 @@ We're going to put together a single page application using React.
 
     $ npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 --save-dev
 
-## Create file structure
+# Create file structure
 
 #### Create `src` folder containing `app`
 

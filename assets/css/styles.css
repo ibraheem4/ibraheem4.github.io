@@ -18,17 +18,17 @@
   font-family: 'Dr Sugiyama', cursive;
 }
 
-p > a {
-  background-color: #ffcb04;
-  border-bottom: 2px solid transparent;
-  transition: all 0.25s ease-out;
-}
-
-p > a:visited, p > a:hover {
+p > a:hover, p > a:visited {
   text-decoration: none;
   border-bottom: 2px solid #ffcb04;
   background-color: transparent;
   color: inherit;
+}
+
+p > a:link {
+  background-color: #ffcb04;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-out;
 }
 
 .ui.link.list a.item:hover {
