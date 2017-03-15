@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a Basic React Application
+title: Building a React Application
 category: blog
 tags:
   - javascript
