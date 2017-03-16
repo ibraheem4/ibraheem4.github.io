@@ -55,7 +55,7 @@ We're going to put together a single page application using React.
 #### `package.json`
 ``` json
 {
-  "name": "video-door",
+  "name": "projectName",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -66,14 +66,14 @@ We're going to put together a single page application using React.
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ibraheem4/video-door.git"
+    "url": "git+https://github.com/username/projectName.git"
   },
-  "author": "Ibraheem Abdul-Malik <ibraheem4@gmail.com>",
+  "author": "Real Name <email@email.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ibraheem4/video-door/issues"
+    "url": "https://github.com/username/projectName/issues"
   },
-  "homepage": "https://github.com/ibraheem4/video-door#readme",
+  "homepage": "https://github.com/username/projectName#readme",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
@@ -98,7 +98,7 @@ We're going to put together a single page application using React.
 
 ### Install [Webpack](https://webpack.github.io/) dependencies
 
-    $ npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 --save-dev
+    $ npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 --save-dev
 
 # Create file structure
 
