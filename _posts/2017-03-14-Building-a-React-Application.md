@@ -161,7 +161,7 @@ module.exports = config;
 ```
 
 #### `src/app/index.js`
-``` javascript
+``` jsx
 import React from "react";
 import { render } from "react-dom";
 
