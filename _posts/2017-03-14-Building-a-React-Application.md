@@ -161,7 +161,7 @@ module.exports = config;
 ```
 
 #### `src/app/index.js`
-```
+``` jsx
 import React from "react";
 import { render } from "react-dom";
 
@@ -195,7 +195,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #### [README.md](https://github.com/matiassingers/awesome-readme)
 ``` markdown
-# video-door
+# projectName
 ```
 
 #### [CONTRIBUTING.md](https://github.com/blog/1184-contributing-guidelines)

@@ -32,7 +32,7 @@ sass:
   sass_dir: ./assets/scss
   style: compressed
 
-baseurl: /
+baseurl:
 timezone: America/Los_Angeles
 permalink: :categories/:title/
 
