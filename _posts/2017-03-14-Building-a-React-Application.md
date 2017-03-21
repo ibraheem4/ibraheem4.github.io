@@ -98,7 +98,7 @@ We're going to put together a single page application using React.
 
 ### Install [Webpack](https://webpack.github.io/) dependencies
 
-    $ npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 --save-dev
+    $ npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 css-loader less-loader --save-dev
 
 # Create file structure
 
@@ -128,6 +128,14 @@ var config = {
     },
     module: {
         loaders: [
+            {
+                test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif)(\?\S*)?$/,
+                loader: 'url-loader?limit=100000&name=[name].[ext]'
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            },
             {
                 test: /\.js?/,
                 include: SRC_DIR,
@@ -216,3 +224,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - **Real Name** - [@username](https://github.com/username)
 ```
+
+# Start development server
+
+    npm start

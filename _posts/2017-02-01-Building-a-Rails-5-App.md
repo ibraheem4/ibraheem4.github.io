@@ -37,9 +37,8 @@ We're going to put together a basic web application using Rails, describing the 
 # Setup
 
 ### Create [rails](https://rubyonrails.org/) project
-``` ruby
-rails new pet_project && cd pet_project
-```
+
+    $ rails new pet_project && cd pet_project
 
 ### Add/update required [gems](http://bundler.io/gemfile.html)
 
