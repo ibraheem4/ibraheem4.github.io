@@ -16,6 +16,7 @@ We're going to put together a single page application using React.
 * Webpack
 * ReactJS
 * Babel
+* Semantic UI
 * Open Source
 
 # Setup
@@ -102,10 +103,13 @@ We're going to put together a single page application using React.
 
 # Create file structure
 
+### Install [Semantic UI](https://semantic-ui.com/introduction/getting-started.html)
+
 #### Create `src` folder containing `app`
 
     $ mkdir src
     $ mkdir src/app
+    $ mkdir src/app/components
 
 #### Add webpack config
 
@@ -160,6 +164,10 @@ module.exports = config;
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>projectName</title>
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="app"></div>
@@ -173,17 +181,96 @@ module.exports = config;
 import React from "react";
 import { render } from "react-dom";
 
+require('../../semantic/dist/semantic.min.js');
+require('../../semantic/dist/semantic.min.css');
+
+import { Header } from "./components/Header";
+import { Home } from "./components/Home";
+
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Hello!</h1>
+      <div className="ui container">
+        <Header/>
+        <Home/>
       </div>
     );
   }
 }
 
 render(<App/>, window.document.getElementById("app"));
+
+$(document).ready(function() {
+  $('.ui.dropdown')
+    .dropdown()
+  ;
+});
+```
+
+#### `src/app/components/Header.js`
+``` javascript
+import React from "react";
+
+export class Header extends React.Component {
+  render() {
+    return(
+      <nav className="ui text menu">
+        <div className="ui dropdown icon item">
+          <i className="wrench icon"></i>
+          <div className="menu">
+            <div className="item">
+              <i className="dropdown icon"></i>
+              <span className="text">New</span>
+              <div className="menu">
+                <div className="item">Document</div>
+                <div className="item">Image</div>
+              </div>
+            </div>
+            <div className="item">
+              Open...
+            </div>
+            <div className="item">
+              Save...
+            </div>
+            <div className="item">Edit Preferences</div>
+            <div className="divider"></div>
+            <div className="header">
+              Export
+            </div>
+            <div className="item">
+              Share...
+            </div>
+          </div>
+        </div>
+
+        <div className="right menu">
+          <div className="ui right aligned category search item">
+            <div className="ui transparent icon input">
+              <input className="prompt" type="text" placeholder="Search videos..."></input>
+              <i className="search link icon"></i>
+            </div>
+            <div className="results"></div>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+}
+```
+
+#### `src/app/components/Home.js`
+``` javascript
+import React from "react";
+
+export class Home extends React.Component {
+  render() {
+    return(
+      <div>
+        <h1>HOME</h1>
+      </div>
+    );
+  }
+}
 ```
 
 #### Add [open-source](https://en.wikipedia.org/wiki/Open-source_software) files
@@ -228,3 +315,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 # Start development server
 
     $ npm start
+
+> Project will run by default on `http://localhost:8080/`
