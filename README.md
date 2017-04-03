@@ -25,17 +25,14 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 
 ## Setup
 
-    $ bundle install
-    $ bundle update jekyll
+    $ bundle install && bundle update jekyll
 
 ### Install `bower_components`
 
-    $ bower install
-    $ bower update
+    $ bower install && bower update
 
 ### Install `node_modules`
-    $ npm install
-    $ npm update
+    $ npm install && npm update
 
 ## Jekyll `build` and `serve`
     $ bundle exec jekyll build --watch
