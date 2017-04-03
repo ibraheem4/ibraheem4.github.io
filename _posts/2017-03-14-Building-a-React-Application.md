@@ -9,7 +9,7 @@ modified: 2017-03-14T00:00:00-07:00
 comments: true
 ---
 
-We're going to put together a single page application using React.
+We're going to put together a single page React application, composed of multiple `Components`.  We'll setup this project using a combination of Node and Webpack.  For quickly adding front-end styling, we will use Semantic UI.
 
 #### Features
 
@@ -117,8 +117,8 @@ We're going to put together a single page application using React.
 
 #### `webpack.config.js`
 ``` javascript
-var webpack = require("webpack");
 var path = require("path");
+var webpack = require("webpack");
 
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
@@ -141,14 +141,18 @@ var config = {
                 loader: 'style-loader!css-loader'
             },
             {
-                test: /\.js?/,
+                test: /\.jsx?$/,
                 include: SRC_DIR,
+                exclude: /node_modules/,
                 loader: "babel-loader",
                 query: {
-                    presets: ["react", "es2015", "stage-2"]
+                    presets: ["es2015", "react", "stage-2"]
                 }
             }
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     }
 }
 
@@ -207,7 +211,7 @@ $(document).ready(function() {
 });
 ```
 
-#### `src/app/components/Header.js`
+#### `src/app/components/Header.jsx`
 ``` javascript
 import React from "react";
 
@@ -258,7 +262,7 @@ export class Header extends React.Component {
 }
 ```
 
-#### `src/app/components/Home.js`
+#### `src/app/components/Home.jsx`
 ``` javascript
 import React from "react";
 
