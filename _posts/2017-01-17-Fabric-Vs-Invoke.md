@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fabric Vs Invoke
+title: Fabric vs Invoke
 category: blog
 tags:
   - python

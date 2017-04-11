@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title: rbenv Vs pyenv Vs nvm
+title: rbenv vs pyenv vs nvm
 category: blog
 tags:
   - ruby
