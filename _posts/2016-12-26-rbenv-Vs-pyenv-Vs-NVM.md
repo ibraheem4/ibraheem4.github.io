@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: rbenv Vs pyenv Vs nvm
@@ -6,7 +7,7 @@ tags:
   - ruby
   - python
   - version management
-modified: 2016-12-26T00:00:00-07:00
+modified: 2017-04-10T00:00:00-07:00
 comments: true
 ---
 
@@ -16,7 +17,7 @@ In Ruby, for example, many developers manage their Ruby versions using using too
 
 I wanted to do a similar setup using Python and ended up settling on [pyenv](https://github.com/yyuu/pyenv). Using pyenv, I was able to download specific versions of Python 2/3 and set both to be available globally.
 
-Node has a similar tool, called [NVM](https://github.com/creationix/nvm) which has much of the same functionality as it's counterparts.
+Node has a similar tool, called [nvm](https://github.com/creationix/nvm) which has much of the same functionality as it's counterparts.
 
 **If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH` .**
 
@@ -79,15 +80,15 @@ Node has a similar tool, called [NVM](https://github.com/creationix/nvm) which h
 
     $ rbenv versions
 
-## NVM
+## nvm
 
 #### Install and configure nvm
 
-    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 
 ##### Install Node versions
 
-    $ nvm install v6.9.2
+    $ nvm install 6.10.2
 
 ##### Test nvm installations
 
