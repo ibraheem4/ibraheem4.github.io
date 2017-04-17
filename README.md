@@ -6,10 +6,7 @@ I'm a *Software Engineer*.
 
 I am passionate about crafting beautiful and intuitive UI / UX to ensure the best possible user interactions.
 
-[Resume](http://ibraheem.com/resume.pdf)
-
 Email : hi@ibraheem.com <br/>
-Website : www.ibraheem.com <br/>
 
 ## About The Site
 
