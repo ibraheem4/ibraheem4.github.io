@@ -40,7 +40,7 @@ Then use `Ctrl + Cmd + ]` to auto indent.
 
 ### Dropbox Sync
 
-To sync text editor settings across machines, it's possible to move the app settings directory to [Dropbox](www.dropbox.com) then symbolically link to where the settings file used to be.
+To sync text editor settings across machines, it's possible to move the app settings directory to [Dropbox](http://www.dropbox.com) then symbolically link to where the settings file used to be.
 
 #### Atom
 
