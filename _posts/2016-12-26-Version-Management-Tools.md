@@ -1,14 +1,16 @@
 ---
 layout: post
-title: rbenv vs pyenv vs nvm
+title: Version Management Tools
 category: blog
 tags:
   - ruby
   - python
   - version management
-modified: 2017-04-10T00:00:00-07:00
+modified: 2017-05-02T00:00:00-07:00
 comments: true
 ---
+
+> rbenv vs pyenv vs nvm vs jenv
 
 If you're working on multiple web projects, it is a good practice to use Version Managers to maintain consistency amongst and between different code bases.
 
@@ -18,7 +20,11 @@ I wanted to do a similar setup using Python and ended up settling on [pyenv](htt
 
 Node has a similar tool, called [nvm](https://github.com/creationix/nvm) which has much of the same functionality as it's counterparts.
 
-**If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH` .**
+Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/jenv).
+
+**Note: If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH` .**
+
+**Note: jenv does not install JDKs**
 
 ## pyenv
 
@@ -92,3 +98,20 @@ Node has a similar tool, called [nvm](https://github.com/creationix/nvm) which h
 ##### Test nvm installations
 
     $ nvm ls
+
+## jenv
+
+#### Install and configure jenv
+
+    $ brew install jenv
+    $ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bashrc
+    $ echo 'if which jenv > /dev/null; then eval "$(jenv init -)"; fi' >> ~/.bashrc
+
+##### Add Java versions to jenv
+
+    $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/
+    $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/
+
+##### Test jenv installations
+
+    $ jenv versions
