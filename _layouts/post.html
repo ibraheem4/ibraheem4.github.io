@@ -1,12 +1,12 @@
 ---
 layout: base
 ---
-<h2 class="ui center aligned header">
+<h1 class="ui center aligned header">
   {{ page.title }}
   <div class="ui center aligned sub header">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
   </div>
-</h2>
+</h1>
 {{ content }}
 <p><em>{% if page.modified %} Last modified <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
 <div class="ui top center aligned attached block header">Related Posts</div>
