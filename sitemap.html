@@ -4,13 +4,13 @@ title: Sitemap
 permalink: /sitemap/
 ---
 <div class="row small-12 medium-9 large-8 columns">
-  <h2>Posts</h2>
+  <h1>Posts</h1>
   <ul class="no-bullet">
   {% for post in site.posts %}
     <li><a href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.url | remove: 'index.html' }}</a></li>
   {% endfor %}
   </ul>
-  <h2>Pages</h2>
+  <h1>Pages</h1 >
   <ul class="no-bullet">
   {% for page in site.pages %}
   {% if page.layout != nil %}
