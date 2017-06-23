@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Sublime Text vs Atom
+title: Text Editors and IDEs
 category: blog
 tags:
   - text
   - tips
-modified: 2017-03-13T00:00:00-07:00
+modified: 2017-06-23T00:00:00-07:00
 comments: true
 ---
 
@@ -57,3 +57,11 @@ To sync text editor settings across machines, it's possible to move the app sett
     $ ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
+
+#### Visual Studio Code
+
+    $ mkdir ~/Dropbox/Code
+    $ mv ~/Library/Application Support/Code/User ~/Dropbox/Code
+    $ ln -s ~/Dropbox/Code ~/Library/Application Support/Code/User
+
+> [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)

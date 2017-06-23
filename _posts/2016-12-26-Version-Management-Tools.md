@@ -89,11 +89,19 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
 #### Install and configure nvm
 
-    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+
+##### Use system version for administering nvm
+
+    $ nvm use system
+
+##### Set LTS version as default
+
+    $ nvm alias default lts/*
 
 ##### Install Node versions
 
-    $ nvm install 6.10.2
+    $ nvm install --lts
 
 ##### Test nvm installations
 
