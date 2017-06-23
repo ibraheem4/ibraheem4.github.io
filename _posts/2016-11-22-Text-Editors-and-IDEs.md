@@ -62,6 +62,6 @@ To sync text editor settings across machines, it's possible to move the app sett
 
     $ mkdir ~/Dropbox/Code/User
     $ mv ~/Library/Application\ Support/Code/User ~/Dropbox/Code
-    $ ln -s ~/Dropbox/Code ~/Library/Application\ Support/Code/User
+    $ ln -s ~/Dropbox/Code/User ~/Library/Application\ Support/Code/User
 
 > [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
