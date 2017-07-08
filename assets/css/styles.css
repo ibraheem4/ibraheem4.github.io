@@ -20,13 +20,13 @@
 }
 
 p > a:link {
-  background-color: #ffcb04;
-  border-bottom: 2px solid transparent;
-  transition: all 0.25s ease-out;
+  border-bottom: 2px solid rgba(0,0,0,.6);
+  transition: all 0.125s ease-out;
 }
 
 p > a:visited {
-  color: #990000;
+  background-color: transparent;
+  border-bottom: 2px solid #ffcb04;
 }
 
 p > a:hover {
