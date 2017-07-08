@@ -10,9 +10,7 @@ modified: 2017-05-02T00:00:00-07:00
 comments: true
 ---
 
-> rbenv vs pyenv vs nvm vs jenv
-
-If you're working on multiple web projects, it is a good practice to use Version Managers to maintain consistency amongst and between different code bases.
+If you're working on multiple software projects, it is a good practice to use Version Management Tools to maintain consistency amongst and between different code bases.
 
 In Ruby, for example, many developers manage their Ruby versions using using tools like [rbenv](https://github.com/rbenv/rbenv) and [RVM](https://rvm.io/).
 
@@ -22,9 +20,9 @@ Node has a similar tool, called [nvm](https://github.com/creationix/nvm) which h
 
 Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/jenv).
 
-**Note: If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH` .**
+**If you had previously installed Python / Ruby / Node, you will need to remove the existing installations (excluding System installations, e.g. Python) and/or set the managed versions before the user-installed versions in your `$PATH` .**
 
-**Note: jenv does not install JDKs**
+**jenv does not install JDKs**
 
 ## pyenv
 
