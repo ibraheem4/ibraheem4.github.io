@@ -3,6 +3,7 @@
   --google: #dc4e41;
   --twitter: #55acee;
   --instagram: #bc2a8d;
+  --linkedin: #0077b5;
 }
 
 .ui.menu .item>img:not(.ui) {
@@ -53,6 +54,10 @@ p > a:hover {
 
 .ui.link.list a.item:hover i.icon.instagram:before, i.icon.instagram:hover:before {
   color: var(--instagram);
+}
+
+.ui.link.list a.item:hover i.icon.linkedin:before, i.icon.linkedin:hover:before {
+  color: var(--linkedin);
 }
 
 .Site {
