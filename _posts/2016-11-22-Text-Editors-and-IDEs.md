@@ -44,24 +44,24 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### Atom
 
-    $ mkdir ~/Dropbox/Atom
-    $ mv ~/.atom ~/Dropbox/Atom
-    $ ln -s ~/Dropbox/Atom ~/.atom
+    $ mkdir ~/Dropbox/Shared/Atom
+    $ mv ~/.atom ~/Dropbox/Shared/Atom
+    $ ln -s ~/Dropbox/Shared/Atom ~/.atom
 
 > [Atom syncing reference](https://discuss.atom.io/t/syncing-settings-packages-between-machines/1385)
 
 #### Sublime Text
 
-    $ mkdir ~/Dropbox/Sublime
-    $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Sublime
-    $ ln -s ~/Dropbox/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    $ mkdir ~/Dropbox/Shared/Sublime
+    $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Shared/Sublime
+    $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
 
 #### Visual Studio Code
 
-    $ mkdir ~/Dropbox/Code/User
-    $ mv ~/Library/Application\ Support/Code/User ~/Dropbox/Code
-    $ ln -s ~/Dropbox/Code/User ~/Library/Application\ Support/Code/User
+    $ mkdir ~/Dropbox/Shared/Code/User
+    $ mv ~/Library/Application\ Support/Code/User ~/Dropbox/Shared/Code
+    $ ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/User
 
 > [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
