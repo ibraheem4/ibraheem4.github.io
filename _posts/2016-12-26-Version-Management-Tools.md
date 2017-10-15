@@ -133,4 +133,4 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
 ##### Set jenv versions
 
-    $ jenv global 2.4.2
+    $ jenv global 1.8.0_144
