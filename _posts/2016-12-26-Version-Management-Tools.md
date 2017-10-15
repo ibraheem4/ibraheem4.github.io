@@ -81,12 +81,12 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
 ##### Install Ruby versions
 
+    $ rbenv install 2.4.2
     $ rbenv install 2.3.1
-    $ rbenv install 2.2.5
 
 ##### Set rbenv versions
 
-    $ rbenv global 2.3.1
+    $ rbenv global 2.4.2
 
 ##### Test rbenv installations
 
