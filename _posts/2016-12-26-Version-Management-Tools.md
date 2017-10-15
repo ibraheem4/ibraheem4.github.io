@@ -50,13 +50,14 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
     # Python 2
     $ pyenv global 2.7.14
-    $ pip install -U pip virtualenv virtualenvwrapper
+    $ pip2.7 install -U pip virtualenv virtualenvwrapper
 
     # Python 3
     $ pyenv global 3.6.2
     $ pip3 install -U pip virtualenv virtualenvwrapper
 
-    # Set Python 2/3 available globally
+##### Set Python 2/3 available globally
+
     $ pyenv global 2.7.14 3.6.2
 
 #### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
