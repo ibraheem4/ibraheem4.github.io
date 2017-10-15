@@ -35,8 +35,11 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
 ##### Install Python versions
 
-    $ env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.13
-    $ env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.4.5
+    $ pyenv install --list
+    $ brew uninstall openssl && brew install openssl && CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.14
+    $ brew uninstall openssl && brew install openssl && CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.2
+
+> Ensure Python ssl extension was compiled
 
 ##### Set pyenv versions
 
