@@ -125,8 +125,12 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 ##### Add Java versions to jenv
 
     $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/
-    $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/
+    $ jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/
 
 ##### Test jenv installations
 
     $ jenv versions
+
+##### Set jenv versions
+
+    $ jenv global 2.4.2
