@@ -6,7 +6,7 @@ tags:
   - ruby
   - python
   - version management
-modified: 2017-05-02T00:00:00-07:00
+modified: 2017-10-14T00:00:00-07:00
 comments: true
 ---
 
@@ -33,26 +33,31 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
     $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
     $ echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bashrc
 
-##### Install Python versions
+##### Test pyenv installations
 
     $ pyenv install --list
-    $ brew uninstall openssl && brew install openssl && CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.14
-    $ brew uninstall openssl && brew install openssl && CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.2
 
-> Ensure Python ssl extension was compiled
+##### Ensure ssl extension is compiled
+
+    $ brew uninstall openssl && brew install openssl
+
+##### Install Python versions
+
+    $ CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.14
+    $ CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.2
 
 ##### Set pyenv versions
 
     # Python 2
-    $ pyenv global 2.7.13
+    $ pyenv global 2.7.14
     $ pip install -U pip virtualenv virtualenvwrapper
 
     # Python 3
-    $ pyenv global 3.4.5
+    $ pyenv global 3.6.2
     $ pip3 install -U pip virtualenv virtualenvwrapper
 
     # Set Python 2/3 available globally
-    $ pyenv global 2.7.13 3.4.5
+    $ pyenv global 2.7.14 3.6.2
 
 #### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
 
