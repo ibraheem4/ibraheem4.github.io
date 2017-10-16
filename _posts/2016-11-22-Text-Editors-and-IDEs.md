@@ -5,7 +5,7 @@ category: blog
 tags:
   - text
   - tips
-modified: 2017-08-09T00:00:00-07:00
+modified: 2017-10-16T00:00:00-07:00
 comments: true
 ---
 
@@ -105,6 +105,7 @@ To sync text editor settings across machines, it's possible to move the app sett
 #### `settings.json` - User
 
     {
+        "workbench.iconTheme": "vscode-icons",
         "atomKeymap.promptV3Features": true,
         "editor.multiCursorModifier": "ctrlCmd",
         "editor.formatOnPaste": true,
