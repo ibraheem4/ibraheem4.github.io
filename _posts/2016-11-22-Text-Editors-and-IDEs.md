@@ -34,6 +34,7 @@ There are a couple of ways to enable spell check in Sublime.
 
     {
         "auto_complete_delay": 35,
+        "font_size": 14,
         "binary_file_patterns":
         [
             "*.gzip",
@@ -43,15 +44,20 @@ There are a couple of ways to enable spell check in Sublime.
             "dist/*",
             "generated/*",
             "node_modules/*",
-            "tmp/*"
+            "tmp/*",
+            "i18n/*"
         ],
         "bold_folder_labels": true,
         "caret_style": "phase",
-        "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+        "color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
         "fade_fold_buttons": false,
-        "font_size": 14,
         "highlight_line": true,
         "highlight_modified_tabs": true,
+        "ignored_packages":
+        [
+            "Markdown",
+            "Vintage"
+        ],
         "line_padding_bottom": 1,
         "line_padding_top": 1,
         "rulers":
