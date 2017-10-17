@@ -114,8 +114,32 @@ To sync text editor settings across machines, it's possible to move the app sett
         "files.autoSave": "onFocusChange",
         "search.exclude": {
             "**/build": true,
-            "**/dist": true,
             "**/generated": true,
-            "**/tmp": true
+            "**/dist": true,
+            "**/public": true,
+            "**/.public": true,
+            "**/tmp": true,
+            "**/logs": true,
+            "**/node_modules": true,
+            "**/bower_components": true
+        },
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/._.DS_Store": true,
+            "**/node_modules": true,
+            "**/bower_components": true,
+            "**/build": true,
+            "**/dist": true,
+            "**/public": true,
+            "**/.public": true,
+            "**/target": true,
+            "**/tmp": true,
+            "**/logs": true,
+            "**/.eyeglass*": true,
+            "**/.gradle": true
         }
     }
