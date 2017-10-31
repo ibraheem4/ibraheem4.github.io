@@ -5,7 +5,7 @@ category: blog
 tags:
   - text
   - tips
-modified: 2017-10-16T00:00:00-07:00
+modified: 2017-10-31T00:00:00-07:00
 comments: true
 ---
 
@@ -32,18 +32,20 @@ There are a couple of ways to enable spell check in Sublime.
 
 #### `Preferences.sublime-settings` - User
 
+```
     {
         "auto_complete_delay": 35,
-        "font_size": 14,
         "binary_file_patterns":
         [
             "*.gzip",
             "*.tbz2",
-            "bower_components/*",
             "build/*",
             "dist/*",
+            "logs/*",
+            "public/*",
             "generated/*",
             "node_modules/*",
+            "bower_components/*",
             "tmp/*",
             "i18n/*"
         ],
@@ -51,12 +53,21 @@ There are a couple of ways to enable spell check in Sublime.
         "caret_style": "phase",
         "color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
         "fade_fold_buttons": false,
+        "font_size": 14,
         "highlight_line": true,
         "highlight_modified_tabs": true,
         "ignored_packages":
         [
             "Markdown",
             "Vintage"
+        ],
+        "ignored_words":
+        [
+            "dropdown",
+            "javascript",
+            "jquery",
+            "popup",
+            "screenshot"
         ],
         "line_padding_bottom": 1,
         "line_padding_top": 1,
@@ -71,6 +82,7 @@ There are a couple of ways to enable spell check in Sublime.
         "translate_tabs_to_spaces": true,
         "trim_trailing_white_space_on_save": true
     }
+```
 
 ### Atom
 
@@ -110,6 +122,7 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### `settings.json` - User
 
+```
     {
         "workbench.iconTheme": "vscode-icons",
         "atomKeymap.promptV3Features": true,
@@ -127,7 +140,8 @@ To sync text editor settings across machines, it's possible to move the app sett
             "**/tmp": true,
             "**/logs": true,
             "**/node_modules": true,
-            "**/bower_components": true
+            "**/bower_components": true,
+            "**/i18n": true
         },
         "files.exclude": {
             "**/.git": true,
@@ -136,16 +150,20 @@ To sync text editor settings across machines, it's possible to move the app sett
             "**/CVS": true,
             "**/.DS_Store": true,
             "**/._.DS_Store": true,
-            "**/node_modules": true,
-            "**/bower_components": true,
             "**/build": true,
+            "**/generated": true,
             "**/dist": true,
             "**/public": true,
             "**/.public": true,
             "**/target": true,
             "**/tmp": true,
             "**/logs": true,
+            "**/node_modules": true,
+            "**/bower_components": true,
+            "**/i18n": true,
             "**/.eyeglass*": true,
             "**/.gradle": true
-        }
+        },
+        "workbench.startupEditor": "newUntitledFile"
     }
+```
