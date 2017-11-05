@@ -6,7 +6,7 @@ tags:
   - ruby
   - python
   - version management
-modified: 2017-10-14T00:00:00-07:00
+modified: 2017-11-04T00:00:00-07:00
 comments: true
 ---
 
@@ -44,7 +44,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 ##### Install Python versions
 
     $ CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 2.7.14
-    $ CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.2
+    $ CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.6.3
 
 ##### Set pyenv versions
 
@@ -53,12 +53,12 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
     $ pip2.7 install -U pip virtualenv virtualenvwrapper
 
     # Python 3
-    $ pyenv global 3.6.2
+    $ pyenv global 3.6.3
     $ pip3 install -U pip virtualenv virtualenvwrapper
 
 ##### Set Python 2/3 available globally
 
-    $ pyenv global 2.7.14 3.6.2
+    $ pyenv global 2.7.14 3.6.3
 
 #### Install pyenv-virtualenv and pyenv-virtualenvwrapper as plugins
 
