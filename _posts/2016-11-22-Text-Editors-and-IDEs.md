@@ -12,7 +12,7 @@ comments: true
 I'll show you some of the differentiating features of some of the popular text editors being used by web developers
 these days: [Sublime Text](http://www.sublimetext.com), [Atom](http://www.atom.io), and [Visual Studio Code](https://code.visualstudio.com/).
 
-### Sublime Text
+## [Sublime Text](#sublime)
 
 #### Spell Check
 
@@ -84,7 +84,7 @@ There are a couple of ways to enable spell check in Sublime.
     }
 ```
 
-### Atom
+## [Atom](#atom)
 
 #### Auto Indenting
 
@@ -107,7 +107,7 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 > [Atom syncing reference](https://discuss.atom.io/t/syncing-settings-packages-between-machines/1385)
 
-### Visual Studio Code
+## [Visual Studio Code](#vscode)
 
 #### Syncing Visual Studio Code with Dropbox
 
