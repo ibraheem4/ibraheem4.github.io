@@ -1,5 +1,27 @@
 <div class="ui stackable secondary pointing menu">
-  <a class="item" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-  <a class="item" href="{{ site.url }}{{ site.baseurl }}/about/">About</a>
-  <a class="item" href="{{ site.url }}{{ site.baseurl }}/posts/">Posts</a>
+  {% if page.active == "home" %}
+  <li class="item active">
+    <a href="#">Home</a>
+  </li>
+  {% else %}
+  <li class="item">
+    <a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+  </li>
+  {% endif %} {% if page.active == "about" %}
+  <li class="item active">
+    <a href="#">About</a>
+  </li>
+  {% else %}
+  <li class="item">
+    <a href="{{ site.url }}{{ site.baseurl }}/about/">About</a>
+  </li>
+  {% endif %} {% if page.active == "posts" %}
+  <li class="item active">
+    <a href="#">Posts</a>
+  </li>
+  {% else %}
+  <li class="item">
+    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Posts</a>
+  </li>
+  {% endif %}
 </div>
