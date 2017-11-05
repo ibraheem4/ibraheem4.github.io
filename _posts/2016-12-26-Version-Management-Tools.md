@@ -24,7 +24,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
 **jenv does not install JDKs**
 
-## pyenv
+## [pyenv](#pyenv)
 
 #### Install and configure pyenv
 
@@ -71,7 +71,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
     $ pyenv whence virtualenv virtualenvwrapper.sh
     $ pyenv virtualenvs
 
-## rbenv
+## [rbenv](#rbenv)
 
 #### Install and configure rbenv
 
@@ -92,7 +92,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
     $ rbenv versions
 
-## nvm
+## [nvm](#nvm)
 
 #### Install and configure nvm
 
@@ -114,7 +114,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
     $ nvm ls
 
-## jenv
+## [jenv](#jenv)
 
 #### Install and configure jenv
 
