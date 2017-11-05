@@ -303,7 +303,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #ffcb04;
+  color: #ee7632;
 }
 
 /* Meta */
@@ -415,7 +415,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #ffcb04;
+  color: #ee7632;
 }
 
 

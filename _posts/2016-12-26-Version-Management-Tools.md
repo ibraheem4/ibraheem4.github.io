@@ -86,7 +86,7 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 ##### Install Ruby versions
 
     $ rbenv install 2.4.2
-    $ rbenv install 2.3.1
+    $ rbenv install 2.3.5
 
 ##### Set rbenv versions
 
@@ -96,11 +96,15 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
 
     $ rbenv versions
 
+#### Install ruby gems
+
+    $ gem install bundler rails
+
 ## [nvm](#nvm)
 
 #### Install and configure nvm
 
-    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 
 ##### Use system version for administering nvm
 
