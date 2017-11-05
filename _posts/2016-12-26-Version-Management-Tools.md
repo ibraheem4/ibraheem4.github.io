@@ -71,6 +71,10 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
     $ pyenv whence virtualenv virtualenvwrapper.sh
     $ pyenv virtualenvs
 
+#### Install python packages
+
+    $ pip install django fabric fabric3
+
 ## [rbenv](#rbenv)
 
 #### Install and configure rbenv
