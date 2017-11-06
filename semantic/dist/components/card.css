@@ -303,7 +303,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #ee7632;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* Meta */
@@ -415,7 +415,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #ee7632;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 

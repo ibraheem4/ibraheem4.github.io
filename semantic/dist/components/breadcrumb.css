@@ -47,7 +47,7 @@
   color: rgba(0, 0, 0, 0.7);
 }
 .ui.breadcrumb a:hover {
-  color: #ee7632;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* Icon Divider */
