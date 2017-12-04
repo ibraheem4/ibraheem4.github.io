@@ -1,6 +1,7 @@
 <div class="ui vertical footer segment">
   <div class="ui center aligned container">
     <div class="ui horizontal massive link list">
+    {% if site.keybase.username %}<a class="item" href="http://keybase.io/{{ site.keybase.username }}"><i class="keybase icon"></i></a>{% endif %}
     {% if site.linkedin.username %}<a class="item" href="http://linkedin.com/in/{{ site.linkedin.username }}"><i class="linkedin icon"></i></a>{% endif %}
     {% if site.github.username %}<a class="item" href="http://github.com/{{ site.github.username }}"><i class="github alternate icon"></i></a>{% endif %}
     {% if site.facebook.username %}<a class="item" href="http://facebook.com/{{ site.facebook.username }}"><i class="facebook icon"></i></a>{% endif %}
