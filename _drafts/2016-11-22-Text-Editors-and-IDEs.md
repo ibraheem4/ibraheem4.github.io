@@ -28,6 +28,9 @@ There are a couple of ways to enable spell check in Sublime.
     $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Shared/Sublime
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
+    $ rm -rf ~/.config/sublime-text-3/Packages/User
+    $ ln -s ~/Dropbox/Shared/Sublime/User ~/.config/sublime-text-3/Packages
+
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
 
 #### `Preferences.sublime-settings` - User
