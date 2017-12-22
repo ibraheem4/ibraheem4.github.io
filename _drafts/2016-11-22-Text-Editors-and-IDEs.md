@@ -122,6 +122,8 @@ To sync text editor settings across machines, it's possible to move the app sett
     $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
 
     $ sudo ln -s /export/apps/xtools/LNKD-visual-studio-code1/code /usr/local/bin/code
+    $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code/User
+    $ sudo ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode
 
 > [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
 
