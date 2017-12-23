@@ -9,6 +9,7 @@ title: Home
 {% endfor %}
 
 <!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
 <div class="ui center aligned basic segment">
   <div class="ui pagination menu">
     {% if paginator.previous_page %}
@@ -21,3 +22,4 @@ title: Home
     {% endif %}
   </div>
 </div>
+{% endif %}
