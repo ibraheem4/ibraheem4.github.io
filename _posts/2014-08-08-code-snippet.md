@@ -4,7 +4,7 @@ title: Code snippet
 category: blog
 tags:
   - example
-modified: 2014-09-12T00:00:00-07:00
+modified: 2017-12-23T00:00:00-07:00 
 ---
 
 ruby
