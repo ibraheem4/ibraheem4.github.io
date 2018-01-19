@@ -24,9 +24,13 @@ There are a couple of ways to enable spell check in Sublime.
 
 #### Syncing Sublime Text with Dropbox
 
+##### Mac
+
     $ mkdir ~/Dropbox/Shared/Sublime
     $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Shared/Sublime
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
+##### Linux
 
     $ rm -rf ~/.config/sublime-text-3/Packages/User
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/.config/sublime-text-3/Packages
