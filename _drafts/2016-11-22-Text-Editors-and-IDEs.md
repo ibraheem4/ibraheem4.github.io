@@ -127,7 +127,8 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### Linux
 
-    $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code/User
+    $ rm -rf ~/.config/Code/User
+    $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code
     $ rm -rf ~/.vscode/extensions
     $ sudo ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode
 
