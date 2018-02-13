@@ -35,6 +35,14 @@ There are a couple of ways to enable spell check in Sublime.
     $ rm -rf ~/.config/sublime-text-3/Packages/User
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/.config/sublime-text-3/Packages
 
+
+#### Re-Syncing Sublime Text with Dropbox
+
+##### Mac
+
+    $ rm ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
 
 ## [Atom](#atom)
@@ -64,6 +72,8 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### Syncing Visual Studio Code with Dropbox
 
+##### Mac
+
     $ mkdir ~/Dropbox/Shared/Code/User
     $ mkdir ~/Dropbox/Shared/Code/.vscode/extensions
     $ mv ~/Library/Application\ Support/Code/User ~/Dropbox/Shared/Code
@@ -71,19 +81,21 @@ To sync text editor settings across machines, it's possible to move the app sett
     $ mv ~/.vscode/extensions ~/Dropbox/Shared/Code/.vscode
     $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
 
-#### Re-syncing Visual Studio Code with Dropbox
-
-    $ rm -rf /Users/ibraheem/.vscode/extensions/
-    $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
-    $ rm -rf ~/Library/Application\ Support/Code/User
-    $ ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/User
-
 #### Linux
 
     $ rm -rf ~/.config/Code/User
     $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code
     $ rm -rf ~/.vscode/extensions
     $ sudo ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode
+
+#### Re-syncing Visual Studio Code with Dropbox
+
+##### Mac
+
+    $ rm -rf /Users/ibraheem/.vscode/extensions/
+    $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
+    $ rm -rf ~/Library/Application\ Support/Code/User
+    $ ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/User
 
 > [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
 
