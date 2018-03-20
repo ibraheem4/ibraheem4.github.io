@@ -24,68 +24,26 @@ There are a couple of ways to enable spell check in Sublime.
 
 #### Syncing Sublime Text with Dropbox
 
+##### Mac
+
     $ mkdir ~/Dropbox/Shared/Sublime
     $ mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Dropbox/Shared/Sublime
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
+##### Linux
+
     $ rm -rf ~/.config/sublime-text-3/Packages/User
     $ ln -s ~/Dropbox/Shared/Sublime/User ~/.config/sublime-text-3/Packages
 
+
+#### Re-Syncing Sublime Text with Dropbox
+
+##### Mac
+
+    $ rm ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    $ ln -s ~/Dropbox/Shared/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    
 > [Sublime syncing reference](https://packagecontrol.io/docs/syncing)
-
-#### `Preferences.sublime-settings` - User
-
-```
-    {
-        "auto_complete_delay": 35,
-        "binary_file_patterns":
-        [
-            "*.gzip",
-            "*.tbz2",
-            "build/*",
-            "dist/*",
-            "logs/*",
-            "public/*",
-            "generated/*",
-            "node_modules/*",
-            "bower_components/*",
-            "tmp/*",
-            "i18n/*"
-        ],
-        "bold_folder_labels": true,
-        "caret_style": "phase",
-        "color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-        "fade_fold_buttons": false,
-        "font_size": 14,
-        "highlight_line": true,
-        "highlight_modified_tabs": true,
-        "ignored_packages":
-        [
-            "Markdown",
-            "Vintage"
-        ],
-        "ignored_words":
-        [
-            "dropdown",
-            "javascript",
-            "jquery",
-            "popup",
-            "screenshot"
-        ],
-        "line_padding_bottom": 1,
-        "line_padding_top": 1,
-        "rulers":
-        [
-            80
-        ],
-        "save_on_focus_lost": true,
-        "spell_check": true,
-        "tab_size": 2,
-        "theme": "Soda Dark 3.sublime-theme",
-        "translate_tabs_to_spaces": true,
-        "trim_trailing_white_space_on_save": true
-    }
-```
 
 ## [Atom](#atom)
 
@@ -114,6 +72,8 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 #### Syncing Visual Studio Code with Dropbox
 
+##### Mac
+
     $ mkdir ~/Dropbox/Shared/Code/User
     $ mkdir ~/Dropbox/Shared/Code/.vscode/extensions
     $ mv ~/Library/Application\ Support/Code/User ~/Dropbox/Shared/Code
@@ -121,57 +81,22 @@ To sync text editor settings across machines, it's possible to move the app sett
     $ mv ~/.vscode/extensions ~/Dropbox/Shared/Code/.vscode
     $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
 
-    $ sudo ln -s /export/apps/xtools/LNKD-visual-studio-code1/code /usr/local/bin/code
-    $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code/User
+#### Linux
+
+    $ rm -rf ~/.config/Code/User
+    $ sudo ln -s ~/Dropbox/Shared/Code/User ~/.config/Code
     $ rm -rf ~/.vscode/extensions
     $ sudo ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode
 
+#### Re-syncing Visual Studio Code with Dropbox
+
+##### Mac
+
+    $ rm -rf /Users/ibraheem/.vscode/extensions/
+    $ ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
+    $ rm -rf ~/Library/Application\ Support/Code/User
+    $ ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/User
+
 > [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
 
-#### `settings.json` - User
-
-```
-    {
-        "workbench.iconTheme": "vscode-icons",
-        "atomKeymap.promptV3Features": true,
-        "editor.multiCursorModifier": "ctrlCmd",
-        "editor.formatOnPaste": true,
-        "editor.tabSize": 2,
-        "editor.fontSize": 14,
-        "files.autoSave": "onFocusChange",
-        "search.exclude": {
-            "**/build": true,
-            "**/generated": true,
-            "**/dist": true,
-            "**/public": true,
-            "**/.public": true,
-            "**/tmp": true,
-            "**/logs": true,
-            "**/node_modules": true,
-            "**/bower_components": true,
-            "**/i18n": true
-        },
-        "files.exclude": {
-            "**/.git": true,
-            "**/.svn": true,
-            "**/.hg": true,
-            "**/CVS": true,
-            "**/.DS_Store": true,
-            "**/._.DS_Store": true,
-            "**/build": true,
-            "**/generated": true,
-            "**/dist": true,
-            "**/public": true,
-            "**/.public": true,
-            "**/target": true,
-            "**/tmp": true,
-            "**/logs": true,
-            "**/node_modules": true,
-            "**/bower_components": true,
-            "**/i18n": true,
-            "**/.eyeglass*": true,
-            "**/.gradle": true
-        },
-        "workbench.startupEditor": "newUntitledFile"
-    }
-```
+> LinkedIn specific: `sudo ln -s /export/apps/xtools/LNKD-visual-studio-code1/code /usr/local/bin/code`
