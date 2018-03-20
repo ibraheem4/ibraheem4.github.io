@@ -29,7 +29,7 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     $ bower install && bower update
 
 ### Install `node_modules`
-    $ npm install && npm update
+    $ yarn install && yarn update
 
 ## Jekyll `build` and `serve`
     $ bundle exec jekyll build --watch
