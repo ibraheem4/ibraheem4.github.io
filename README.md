@@ -34,7 +34,3 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 ## Jekyll `build` and `serve`
     $ bundle exec jekyll build --watch
     $ bundle exec jekyll serve --watch
-
-## Photo
-![Cover](https://github.com/ibraheem4/ibraheem4.github.io/raw/master/img/harvard_boys.jpg)
-* Boston, December 2012, I'm second from the left.
