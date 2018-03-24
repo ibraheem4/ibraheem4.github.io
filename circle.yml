@@ -6,6 +6,6 @@ test:
   override:
     - gem install bundler
     - bundle exec jekyll build
-    - npm install
     - bower install
+    - yarn install
     - rm _site/circle.yml
