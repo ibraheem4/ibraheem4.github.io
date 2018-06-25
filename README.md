@@ -1,4 +1,6 @@
-[![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io) ![Codewars](https://www.codewars.com/users/ibraheem4/badges/micro)
+# ibraheem.com
+
+![Codewars](https://www.codewars.com/users/ibraheem4/badges/micro)
 
 Hi, I'm **Ibraheem**.  This is my personal blog, since 2007.
 
@@ -29,8 +31,10 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
     $ bower install && bower update
 
 ### Install `node_modules`
+
     $ yarn install && yarn update
 
 ## Jekyll `build` and `serve`
+
     $ bundle exec jekyll build --watch
     $ bundle exec jekyll serve --watch
