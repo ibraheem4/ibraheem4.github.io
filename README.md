@@ -19,15 +19,13 @@ I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager
 
     $ bundle install && bundle update jekyll
 
-### Install `bower_components`
-
-    $ bower install && bower update
-
 ### Install `node_modules`
 
     $ yarn install && yarn update
 
-## Jekyll `build` and `serve`
+## Running / Development
 
-    $ bundle exec jekyll build --watch
-    $ bundle exec jekyll serve --watch
+    $ bundle exec jekyll build --port 4001 --watch
+    $ bundle exec jekyll serve --port 4001 --watch
+
+> Visit your app at [http://localhost:4001](http://localhost:4001).
