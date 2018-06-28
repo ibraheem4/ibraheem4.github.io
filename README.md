@@ -1,4 +1,4 @@
-# ibraheem.com
+# blog.ibraheem.com
 
 ![Codewars](https://www.codewars.com/users/ibraheem4/badges/micro)
 
