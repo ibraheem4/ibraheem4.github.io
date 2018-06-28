@@ -5,7 +5,7 @@ show_drafts: false
 
 version: 1.1.0
 
-url: https://ibraheem.com
+url: https://blog.ibraheem.com
 slug: Ibraheem
 subtitle: Mostly posts about code.
 description: This is my personal blog, since 2007.
@@ -37,7 +37,7 @@ timezone: America/Los_Angeles
 permalink: :categories/:title/
 
 # Plugins
-plugins : 
+plugins :
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
