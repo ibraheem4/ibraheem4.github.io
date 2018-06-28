@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: http://ibraheem.com/sitemap.xml 
+Sitemap: http://blog.ibraheem.com/sitemap.xml
