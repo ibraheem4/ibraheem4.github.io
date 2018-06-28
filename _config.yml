@@ -37,7 +37,7 @@ timezone: America/Los_Angeles
 permalink: :categories/:title/
 
 # Plugins
-plugins :
+plugins : 
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
@@ -91,12 +91,15 @@ keybase:
 
 # Files
 include:
-  - robots.txt
-  - feed.xml
-  - _pages
+  - "robots.txt"
+  - "feed.xml"
+  - "_pages"
 exclude:
-  - vendor
-  - .gitignore
-  - README.md
-  - Gemfile
+  - "vendor"
+  - ".gitignore"
+  - "README.md"
+  - "Gemfile"
   - "Gemfile.lock"
+  - "node_modules"
+  - "package.json"
+  - "gulpfile.js"
