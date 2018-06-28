@@ -17,15 +17,15 @@
   </li>
   {% endif %} {% if page.active == "posts" %}
   <li class="item active">
-    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Blog</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Posts</a>
   </li>
-  {% elsif page.category == "blog" %}
+  {% elsif page.category == "post" %}
   <li class="item active">
-    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Blog</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Posts</a>
   </li>
   {% else %} 
   <li class="item">
-    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Blog</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/posts/">Posts</a>
   </li>
   {% endif %}
 </div>

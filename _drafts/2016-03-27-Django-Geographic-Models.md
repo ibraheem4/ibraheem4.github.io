@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Django Geographic Models
-category: blog
+category: post
 tags:
   - django
   - python

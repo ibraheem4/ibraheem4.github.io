@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Domain Insights
-category: blog
+category: post
 tags:
 - facebook
 - google

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a Rails 5 App
-category: blog
+category: post
 tags:
   - ruby
   - rails

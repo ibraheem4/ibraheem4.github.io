@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Version Management Tools
-category: blog
+category: post
 tags:
   - ruby
   - python

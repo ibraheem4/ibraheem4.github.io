@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Editors and IDEs
-category: blog
+category: post
 tags:
   - text
   - tips

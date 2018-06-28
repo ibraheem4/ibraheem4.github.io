@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Casinos and Card Rooms
-category: blog
+category: post
 tags:
 - gaming
 - casino

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: San Francisco Movies
-category: blog
+category: post
 tags: - movies
 modified: 2016-09-12T00:00:00-07:00
 comments: true
