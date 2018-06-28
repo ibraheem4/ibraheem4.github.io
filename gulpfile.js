@@ -21,3 +21,5 @@ gulp.task('minify-js', function() {
   }))
   .pipe(gulp.dest('assets/dist'))
 });
+
+gulp.task('default', ['minify-css', 'minify-js']);
