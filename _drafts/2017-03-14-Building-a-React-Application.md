@@ -11,7 +11,7 @@ comments: true
 
 We're going to put together a single page React application, composed of multiple `Components`.  We'll setup this project using a combination of Node and Webpack.  For quickly adding front-end styling, we will use Semantic UI.
 
-#### Features
+# Features
 
 * Webpack
 * ReactJS
@@ -21,40 +21,42 @@ We're going to put together a single page React application, composed of multipl
 
 # Setup
 
-### Create project directory
+## Create project directory
 
-    $ mkdir projectName && cd projectName
+    mkdir projectName && cd projectName
 
-### Initialize [Git/GitHub](https://github.com/)
+## Initialize [Git/GitHub](https://github.com/)
 
-    $ git init
-    $ git create
-    $ echo "# projectName" > README.md
-    $ git add . && git commit -m "Initial commit" && git push origin master && git browse
-    $ git branch --set-upstream-to=origin/master master
-    $ git pull origin master
+    git init
+    git create
+    echo "# projectName" > README.md
+    git add . && git commit -m "Initial commit" && git push origin master && git browse
+    git branch --set-upstream-to=origin/master master
+    git pull origin master
 
 > `git create` and `git browse` commands are available via [hub](https://github.com/github/hub).
 
-### Add [.gitignore](https://github.com/github/gitignore)
+## Add [.gitignore](https://github.com/github/gitignore)
 
-    $ touch .gitignore
+    touch .gitignore
 
-#### `.gitignore`
-```
+> `.gitignore`
+
+``` text
 /node_modules
 /dist
 /npm-debug.log
 ```
 
-# Install [NPM](https://www.npmjs.com/) modules
+## Install [NPM](https://www.npmjs.com/) modules
 
 ### Generate [package.json](https://docs.npmjs.com/files/package.json)
 
-    $ npm init
+    npm init
 
-#### `package.json`
-``` json
+> `package.json`
+
+```json
 {
   "name": "projectName",
   "version": "1.0.0",
@@ -95,28 +97,29 @@ We're going to put together a single page React application, composed of multipl
 
 ### Install [React](https://facebook.github.io/react/) dependencies
 
-    $ npm install react react-dom --save
+    npm install react react-dom --save
 
 ### Install [Webpack](https://webpack.github.io/) dependencies
 
-    $ npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 css-loader less-loader --save-dev
+    npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 css-loader less-loader --save-dev
 
 # Create file structure
 
-### Install [Semantic UI](https://semantic-ui.com/introduction/getting-started.html)
+> Install [Semantic UI](https://semantic-ui.com/introduction/getting-started.html)
 
-#### Create `src` folder containing `app`
+## Create `src` folder containing `app`
 
-    $ mkdir src
-    $ mkdir src/app
-    $ mkdir src/app/components
+    mkdir src
+    mkdir src/app
+    mkdir src/app/components
 
-#### Add webpack config
+## Add webpack config
 
-    $ touch webpack.config.js src/index.html src/app/index.js
+    touch webpack.config.js src/index.html src/app/index.js
 
-#### `webpack.config.js`
-``` javascript
+> `webpack.config.js`
+
+```javascript
 var path = require("path");
 var webpack = require("webpack");
 
@@ -159,8 +162,9 @@ var config = {
 module.exports = config;
 ```
 
-#### `src/index.html`
-``` html
+> `src/index.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,8 +184,9 @@ module.exports = config;
 </html>
 ```
 
-#### `src/app/index.js`
-``` javascript
+> `src/app/index.js`
+
+```javascript
 import React from "react";
 import { render } from "react-dom";
 
@@ -211,8 +216,9 @@ $(document).ready(function() {
 });
 ```
 
-#### `src/app/components/Header.jsx`
-``` javascript
+> `src/app/components/Header.jsx`
+
+```javascript
 import React from "react";
 
 export class Header extends React.Component {
@@ -262,8 +268,9 @@ export class Header extends React.Component {
 }
 ```
 
-#### `src/app/components/Home.jsx`
-``` javascript
+> `src/app/components/Home.jsx`
+
+```javascript
 import React from "react";
 
 export class Home extends React.Component {
@@ -277,12 +284,13 @@ export class Home extends React.Component {
 }
 ```
 
-#### Add [open-source](https://en.wikipedia.org/wiki/Open-source_software) files
+## Add [open-source](https://en.wikipedia.org/wiki/Open-source_software) files
 
-    $ touch LICENSE.txt CONTRIBUTING.md AUTHORS.md
+    touch LICENSE.txt CONTRIBUTING.md AUTHORS.md
 
-#### [LICENSE.txt](https://opensource.org/licenses/MIT)
-``` text
+> [LICENSE.txt](https://opensource.org/licenses/MIT)
+
+```text
 Copyright <YEAR> <COPYRIGHT HOLDER>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -292,13 +300,15 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-#### [README.md](https://github.com/matiassingers/awesome-readme)
-``` markdown
+> [README.md](https://github.com/matiassingers/awesome-readme)
+
+```markdown
 # projectName
 ```
 
-#### [CONTRIBUTING.md](https://github.com/blog/1184-contributing-guidelines)
-``` markdown
+> [CONTRIBUTING.md](https://github.com/blog/1184-contributing-guidelines)
+
+```markdown
 ## Contributing
 
 0. Fork it
@@ -309,8 +319,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 0. Submit a pull request
 ```
 
-#### AUTHORS.md
-``` markdown
+> `AUTHORS.md`
+
+```markdown
 ## Authors
 
 - **Real Name** - [@username](https://github.com/username)
@@ -318,6 +329,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Start development server
 
-    $ npm start
+    npm start
 
 > Project will run by default on `http://localhost:8080/`

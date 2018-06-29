@@ -11,7 +11,7 @@ comments: true
 
 We're going to put together a basic web application using Rails, describing the app in terms of Features and of [User Stories](http://www.agilemodeling.com/artifacts/userStory.htm).
 
-#### User Stories
+# User Stories
 
 `Users` can sign up, login, view their profile page and logout.
 
@@ -23,7 +23,7 @@ We're going to put together a basic web application using Rails, describing the 
 
 `Users` can click on a link to show a `Pet`'s `Toys` via AJAX.
 
-#### Features
+# Features
 
 * User authentication system
 * Nested routes
@@ -36,40 +36,38 @@ We're going to put together a basic web application using Rails, describing the 
 
 # Setup
 
-### Create [rails](https://rubyonrails.org/) project
+## Create [rails](https://rubyonrails.org/) project
 
-    $ rails new pet_project && cd pet_project
+    rails new pet_project && cd pet_project
 
-### Add/update required [gems](http://bundler.io/gemfile.html)
+> `Gemfile`
 
-#### `Gemfile`
-``` ruby
+```ruby
 gem 'hirb'
 gem 'faker'
 gem 'bcrypt'
 gem 'rspec-rails'
 ```
 
->
+> Add/update required [gems](http://bundler.io/gemfile.html)
 
-### Bundle, create database
+## Bundle, create database
 
-    $ bundle && rails db:create
+    bundle && rails db:create
 
-# Models
+## Generate models
 
-### Generate models
-
-    $ rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework
-    $ rails generate model Toy description:text pet:references --no-test-framework
-    $ rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
+    rails generate model Pet name:string breed:string age:integer cute:boolean --no-test-framework
+    rails generate model Toy description:text pet:references --no-test-framework
+    rails generate model User name:string email:string:uniq password_digest:string --no-test-framework
 
 > `null` and `default` cannot be specified from the command line, add them to the migrations as necessary. [documentation](http://guides.rubyonrails.org/active_record_migrations.html#column-modifiers)
 
-### Edit migrations
+## Edit migrations
 
-#### `db/migrate/[timestamp]_create_pets.rb`
-``` ruby
+> `db/migrate/[timestamp]_create_pets.rb`
+
+```ruby
 class CreatePets < ActiveRecord::Migration[5.0]
   def change
     create_table :pets do |t|
@@ -84,8 +82,9 @@ class CreatePets < ActiveRecord::Migration[5.0]
 end
 ```
 
-#### `db/migrate/[timestamp]_create_toys.rb`
-``` ruby
+> `db/migrate/[timestamp]_create_toys.rb`
+
+```ruby
 class CreateToys < ActiveRecord::Migration[5.0]
   def change
     create_table :toys do |t|
@@ -98,8 +97,10 @@ class CreateToys < ActiveRecord::Migration[5.0]
 end
 ```
 
-#### `db/migrate/[timestamp]_create_users.rb`
-``` ruby
+> `db/migrate/[timestamp]
+_create_users.rb`
+
+```ruby
 class CreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
@@ -114,14 +115,15 @@ class CreateUsers < ActiveRecord::Migration[5.0]
 end
 ```
 
-### Migrate, Seed database
+# Migrate, Seed database
 
-    $ rails db:migrate && rails db:seed
+    rails db:migrate && rails db:seed
 
-## Active Record associations
+# Active Record associations
 
-#### `app/models/pet.rb`
-``` ruby
+> `app/models/pet.rb`
+
+```ruby
 class Pet < ApplicationRecord
   has_many :toys, inverse_of: :pet
 
@@ -131,8 +133,9 @@ class Pet < ApplicationRecord
 end
 ```
 
-#### `app/models/toy.rb`
-``` ruby
+> `app/models/toy.rb`
+
+```ruby
 class Toy < ApplicationRecord
   belongs_to :pet, inverse_of: :toys
 
@@ -140,8 +143,9 @@ class Toy < ApplicationRecord
 end
 ```
 
-#### `app/models/user.rb`
-``` ruby
+> `app/models/user.rb`
+
+```ruby
 class User < ApplicationRecord
   has_secure_password
   before_save { self.email = email.downcase }
@@ -154,16 +158,17 @@ class User < ApplicationRecord
 end
 ```
 
-### Rollback models (if necessary)
+# Rollback models (if necessary)
 
-    $ rails destroy model Pet --no-test-framework
-    $ rails destroy model Toy --no-test-framework
-    $ rails destroy model User --no-test-framework
+    rails destroy model Pet --no-test-framework
+    rails destroy model Toy --no-test-framework
+    rails destroy model User --no-test-framework
 
 # Routing
 
-#### `config/routes.rb`
-``` ruby
+> `config/routes.rb`
+
+```ruby
 Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   get '/login' => 'sessions#new'
@@ -185,8 +190,9 @@ end
 
 # Helpers
 
-#### `app/helpers/users_helper.rb`
-``` ruby
+> `app/helpers/users_helper.rb`
+
+```ruby
 module UsersHelper
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -200,23 +206,25 @@ end
 
 # Controllers
 
-### Generate controllers
+# Generate controllers
 
-    $ rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets
-    $ rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets
-    $ rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets
-    $ rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets
+    rails generate controller Pets index show edit update --no-controller-specs --no-view-specs --no-helper --no-assets
+    rails generate controller Toys index --no-controller-specs --no-view-specs --no-helper --no-assets
+    rails generate controller Sessions new create destroy --no-controller-specs --no-view-specs --no-helper --no-assets
+    rails generate controller Users new create --no-controller-specs --no-view-specs --no-helper --no-assets
 
-#### `app/controllers/application_controller.rb`
-``` ruby
+> `app/controllers/application_controller.rb`
+
+```ruby
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include UsersHelper
 end
 ```
 
-#### `app/controllers/pets_controller.rb`
-``` ruby
+> `app/controllers/pets_controller.rb`
+
+```ruby
 class PetsController < ApplicationController
   def index
     @pets = Pet.all
@@ -247,8 +255,9 @@ private
 end
 ```
 
-#### `app/controllers/toys_controller.rb`
-``` ruby
+> `app/controllers/toys_controller.rb`
+
+```ruby
 class ToysController < ApplicationController
   def index
     @pet = Pet.find_by(id: params[:pet_id])
@@ -267,8 +276,9 @@ private
 end
 ```
 
-#### `app/controllers/sessions_controller.rb`
-``` ruby
+> `app/controllers/sessions_controller.rb`
+
+```ruby
 class SessionsController < ApplicationController
   def new
     @user = User.new
@@ -292,8 +302,9 @@ class SessionsController < ApplicationController
 end
 ```
 
-#### `app/controllers/users_controller.rb`
-``` ruby
+> `app/controllers/users_controller.rb`
+
+```ruby
 class UsersController < ApplicationController
   def new
     @user = User.new
@@ -317,19 +328,20 @@ private
 end
 ```
 
-### Rollback controllers (if necessary)
+# Rollback controllers (if necessary)
 
-    $ rails destroy controller Pet
-    $ rails destroy controller Toy
-    $ rails destroy controller Session
-    $ rails destroy controller User
+    rails destroy controller Pet
+    rails destroy controller Toy
+    rails destroy controller Session
+    rails destroy controller User
 
 # Views
 
-### Layouts
+# Layouts
 
-#### `app/views/layouts/application.html.erb`
-``` erb
+> `app/views/layouts/application.html.erb`
+
+```erb
 <!DOCTYPE html>
 <html>
   <head>
@@ -353,15 +365,17 @@ end
 </html>
 ```
 
-### Pets
+# Pets
 
-#### `app/views/pets/_pet.html.erb`
-``` erb
+> `app/views/pets/_pet.html.erb`
+
+```erb
 <li><%= link_to pet.name, pet_path(pet) %></li>
 ```
 
-#### `app/views/pets/edit.html.erb`
-``` erb
+> `app/views/pets/edit.html.erb`
+
+```erb
 <h1>Edit <%= @pet.name %></h1>
   <%= form_for([@pet]) do |f| %>
 
@@ -383,8 +397,9 @@ end
 <% end %>
 ```
 
-#### `app/views/pets/index.html.erb`
-``` erb
+> `app/views/pets/index.html.erb`
+
+```erb
 <h1>Pets</h1>
 
 <ul>
@@ -392,8 +407,9 @@ end
 </ul>
 ```
 
-#### `app/views/pets/show.html.erb`
-``` erb
+> `app/views/pets/show.html.erb`
+
+```erb
 <h1><%= @pet.name %></h1>
 
 <ul>
@@ -409,10 +425,11 @@ end
 </div>
 ```
 
-### Toys
+# Toys
 
-#### `app/views/toys/_toys.html.erb`
-``` erb
+> `app/views/toys/_toys.html.erb`
+
+```erb
 <%= @pet.name %>'s' toys:
 <ul>
   <% @toys.each do |toy| %>
@@ -423,8 +440,9 @@ end
 </ul>
 ```
 
-#### `app/views/toys/index.html.erb`
-``` erb
+> `app/views/toys/index.html.erb`
+
+```erb
 <%= @pet.name %>'s' toys:
 <ul>
   <% @toys.each do |toy| %>
@@ -435,15 +453,17 @@ end
 </ul>
 ```
 
-#### `app/views/toys/index.js.erb`
-``` javascript
+> `app/views/toys/index.js.erb`
+
+```javascript
 $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 ```
 
-### Sessions
+# Sessions
 
-#### `app/views/sessions/new.html.erb`
-``` erb
+> `app/views/sessions/new.html.erb`
+
+```erb
 <h1>Login</h1>
 
 <% if not @user %>
@@ -458,10 +478,11 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 <% end %>
 ```
 
-### Users
+# Users
 
-#### `app/views/users/new.html.erb`
-``` erb
+> `app/views/users/new.html.erb`
+
+```erb
 <h1>Sign up</h1>
 
 <%= form_for @user, url: '/users' do |f| %>
@@ -483,23 +504,24 @@ $(".show-toys").html("<%= j render partial: 'toys', locals: { toys: @toys } %>")
 <% end %>
 ```
 
-#### `app/views/users/show.html.erb`
-``` erb
+> `app/views/users/show.html.erb`
+
+```erb
 <h1><%= current_user.name %></h1>
 <h2><%= current_user.email %></h2>
 ```
 
 # Tests
 
-### Generate model tests
+# Generate model tests
 
-    $ rails generate model Pet --no-migration --test-framework=rspec --skip
-    $ rails generate model Toy --no-migration --test-framework=rspec --skip
-    $ rails generate model User --no-migration --test-framework=rspec --skip
+    rails generate model Pet --no-migration --test-framework=rspec --skip
+    rails generate model Toy --no-migration --test-framework=rspec --skip
+    rails generate model User --no-migration --test-framework=rspec --skip
 
-### Generate controller tests
+# Generate controller tests
 
-    $ rails generate controller Pet --no-migration --test-framework=rspec --skip
-    $ rails generate controller Toy --no-migration --test-framework=rspec --skip
-    $ rails generate controller Session --no-migration --test-framework=rspec --skip
-    $ rails generate controller User --no-migration --test-framework=rspec --skip
+    rails generate controller Pet --no-migration --test-framework=rspec --skip
+    rails generate controller Toy --no-migration --test-framework=rspec --skip
+    rails generate controller Session --no-migration --test-framework=rspec --skip
+    rails generate controller User --no-migration --test-framework=rspec --skip

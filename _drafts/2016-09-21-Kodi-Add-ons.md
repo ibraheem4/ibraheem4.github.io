@@ -17,7 +17,7 @@ Amazon's [Fire TV](http://a.co/5oZCi4P) is one of the least expensive Kodi strea
 
 Kodi is updated periodically, to track the status of Kodi versions, see the [releases](http://kodi.wiki/view/releases) page.
 
-#### Movies & TV Shows
+# Movies & TV Shows
 
 The most reliable add-ons that I have found for streaming Movies and TV Shows are **Exodus** and **Phoenix**.
 
@@ -25,7 +25,7 @@ Both Exodus and Phoenix can be installed via [Fusion Installer](http://fusion.tv
 
 You may also consider [Super Repo](https://superrepo.org/get-started/) for an additional centralized list of add-ons.
 
-#### Live Sports
+# Live Sports
 
 For Live Sports, the most reliable add-on that I have tried is [SportsDevil](https://superrepo.org/kodi/addon/plugin.video.sportsdevil.launcher/).
 

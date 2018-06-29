@@ -7,8 +7,7 @@ tags:
 modified: 2017-12-23T00:00:00-07:00 
 ---
 
-ruby
----
+# ruby
 
 ```ruby
 def show
@@ -20,36 +19,32 @@ def show
 end
 ```
 
-shell
----
+# shell
 
 ```shell
 cd ~
 ```
 
-python
----
+# python
 
 ```python
 from google.appengine.ext import vendor
 vendor.add('lib')
 ```
 
-html
----
+# html
 
 ```html
 <a href="#">Hello world</a>
 ```
 
-java
----
+# java
 
 ```java
 public class OracleJdbcTest {
     String driverClass = "oracle.jdbc.driver.OracleDriver";
     Connection con;
- 
+
     public void init(FileInputStream fs) throws ClassNotFoundException, SQLException, FileNotFoundException, IOException {
         Properties props = new Properties();
         props.load(fs);
@@ -59,7 +54,7 @@ public class OracleJdbcTest {
         Class.forName(driverClass);
         con=DriverManager.getConnection(url, userName, password);
     }
- 
+
     public void fetch() throws SQLException, IOException {
         PreparedStatement ps = con.prepareStatement("select SYSDATE from dual");
         ResultSet rs = ps.executeQuery();
@@ -69,7 +64,7 @@ public class OracleJdbcTest {
         rs.close();
         ps.close();
     }
-    
+
     public static void main(String[] args) {
         OracleJdbcTest test = new OracleJdbcTest();
         test.init();
@@ -78,9 +73,7 @@ public class OracleJdbcTest {
 }
 ```
 
-css
----
-
+# css
 
 ```css
 body {
