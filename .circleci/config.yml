@@ -6,11 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Yarn install
-        command: yarn install --non-interactive
+          name: Yarn install
+          command: yarn install --non-interactive
       - run:
-        name: Bundle install
-        command: bundle install
+          name: Bundle install
+          command: bundle install
       - run:
-        name: Jekyll build
-        command: bundle exec jekyll build
+          name: Jekyll build
+          command: bundle exec jekyll build
