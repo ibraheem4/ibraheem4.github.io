@@ -1,5 +1,7 @@
 # blog.ibraheem.com
 
+[![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io/tree/master.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io/tree/master)
+
 ![Codewars](https://www.codewars.com/users/ibraheem4/badges/micro)
 
 Hi, I'm **Ibraheem**.  This is my personal blog, since 2007 (gasp!).
