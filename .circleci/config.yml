@@ -2,8 +2,15 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.5
+      - image: circleci/ruby:2.4.2
     steps:
       - checkout
-      - run: bundle install
-      - run: bundle exec jekyll build
+      - run:
+        name: Yarn install
+        command: yarn install --non-interactive
+      - run:
+        name: Bundle install
+        command: bundle install
+      - run:
+        name: Jekyll build
+        command: bundle exec jekyll build
