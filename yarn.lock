@@ -1217,9 +1217,10 @@ gulp-match@^1.0.3:
   dependencies:
     minimatch "^3.0.3"
 
-gulp-minify@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-minify/-/gulp-minify-3.0.2.tgz#51d2588bad59f8094ac48392b0e41e42cd3157ec"
+gulp-minify@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-minify/-/gulp-minify-3.1.0.tgz#9ed9e09f6bfca64e99cd0427bc8e90d44e736770"
+  integrity sha512-ixF41aYg+NQikI8hpoHdEclYcQkbGdXQu1CBdHaU7Epg8H6e8d2jWXw1+rBPgYwl/XpKgjHj7NI6gkhoSNSSAg==
   dependencies:
     ansi-colors "^1.0.1"
     minimatch "^3.0.2"
