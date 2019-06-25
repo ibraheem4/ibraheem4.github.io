@@ -22,6 +22,7 @@
   "dependencies": {
     "better-console": "^1.0.1",
     "del": "^3.0.0",
+    "diff": "^3.5.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-chmod": "^2.0.0",
     "gulp-clone": "2.0.1",
