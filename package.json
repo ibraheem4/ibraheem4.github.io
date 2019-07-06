@@ -10,6 +10,7 @@
   "scripts": {
     "build:semantic": "cd semantic && gulp build && cd ..",
     "bundle:install": "bundle install",
+    "kill:osx": "lsof -t -i tcp:4004 | xargs kill -9",
     "update": "rm -rf node_modules && yarn"
   },
   "bugs": {
