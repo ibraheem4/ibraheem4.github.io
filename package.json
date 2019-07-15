@@ -47,6 +47,8 @@
     "hoek": "^4.2.1",
     "jquery": ">=3.4.0",
     "lodash": "^4.17.11",
+    "lodash.merge": "^4.6.2",
+    "lodash.template": "^4.5.0",
     "minimatch": "^3.0.2",
     "require-dot-file": "^0.4.0",
     "run-sequence": "~2.2.1",
