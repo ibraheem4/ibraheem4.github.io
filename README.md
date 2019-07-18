@@ -1,34 +1,52 @@
-# blog.ibraheem.com
+# [ibraheem.com](https://www.ibraheem.com)
 
 [![CircleCI](https://circleci.com/gh/ibraheem4/ibraheem4.github.io/tree/master.svg?style=svg)](https://circleci.com/gh/ibraheem4/ibraheem4.github.io/tree/master)
 
 ![Codewars](https://www.codewars.com/users/ibraheem4/badges/micro)
 
-Hi, I'm **Ibraheem**.  This is my personal blog, since 2007 (gasp!).
+Hi, I'm **Ibraheem**.  This is my personal blog, since 2007 (whoa!).
 
 Email : hi@ibraheem.com
 
-## About The Site
+## Prerequisites
 
-This is a [Jekyll](https://jekyllrb.com) site.  It is served on [GitHub Pages](https://pages.github.com/).
+This site is built using the following.
 
-I'm using [Semantic UI](http://www.semantic-ui.com).
+- [Jekyll](https://jekyllrb.com)
+- [GitHub Pages](https://pages.github.com/)
+- [Semantic UI](http://www.semantic-ui.com)
+- [Facebook Comments](https://developers.facebook.com/products/social-plugins/comments/)
+- [Google Tag Manager](https://www.google.com/analytics/tag-manager/)
+- [Google Analytics](https://www.google.com/analytics/)
 
-For comments, I'm using [Facebook Comments](https://developers.facebook.com/products/social-plugins/comments/).
+## Installation
 
-I'm also using [Google Tag Manager](https://www.google.com/analytics/tag-manager/) and [Google Analytics](https://www.google.com/analytics/).
+### Install bundles
+- `bundle install`
+- `bundle update jekyll`
 
-## Setup
-
-    bundle install && bundle update jekyll
-
-### Install `node_modules`
-
-    yarn install && yarn update
+### Install node modules
+- `yarn install`
+- `yarn update`
 
 ## Running / Development
 
-    bundle exec jekyll build --port 4001 --watch
-    bundle exec jekyll serve --port 4001 --watch
+Launch the Jekyll server specifying the certificate and key locations (e.g. `--ssl-cert`, `--ssl-key`).
 
-> Visit your app at [http://localhost:4001](http://localhost:4001).
+    bundle exec jekyll build --port 4004 --watch
+    bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004 --watch
+
+> Visit your app at [https://localhost:4004](https://localhost:4004).
+
+#### Generating locally-trusted certificates using [`mkcert`](https://github.com/FiloSottile/mkcert)
+
+```
+# Use the script
+sh ./scripts/generate-ssl-certificate.sh
+
+# Generate the keys manually
+brew install mkcert
+mkcert -install
+mkdir -p ssl
+mkcert -cert-file ssl/server.crt -key-file ssl/server.key ibraheem.com "*.ibraheem.com" localhost 127.0.0.1 ::1
+```
