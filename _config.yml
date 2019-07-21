@@ -5,7 +5,8 @@ show_drafts: false
 
 version: 1.1.0
 
-url: https://www.ibraheem.com
+url: https://ibraheem4.github.io
+enforce_ssl: ibraheem4.github.io
 slug: Ibraheem
 subtitle: Mostly posts about code.
 description: This is my personal blog, since 2007.
