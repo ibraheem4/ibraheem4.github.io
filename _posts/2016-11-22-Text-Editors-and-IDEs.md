@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Editors and IDEs
-category: post
+category: Code
 tags:
   - text
   - tips
