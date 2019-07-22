@@ -9,20 +9,5 @@ layout: base
 </h1>
 {{ content }}
 <p><em>{% if page.modified %} Last modified <time datetime="{{ page.modified | date_to_xmlschema }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</em></p>
-<div class="ui top center aligned attached block header">Related Posts</div>
-<div class="ui attached segment">
-  <div class="ui two column stackable relaxed grid">
-    {% for post in site.related_posts limit:3 %}
-    <div class="center aligned column">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </div>
-    <div class="center aligned column">
-      {{ post.date | date: '%B %d, %Y' }}
-    </div>
-    {% endfor %}
-  </div>
-</div>
 <div class="ui hidden divider"></div>
 {% include post_comments_fb.html %}
