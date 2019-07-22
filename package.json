@@ -11,7 +11,8 @@
     "build:semantic": "cd semantic && gulp build && cd ..",
     "bundle:install": "bundle install",
     "kill:osx": "lsof -t -i tcp:4004 | xargs kill -9",
-    "update": "rm -rf node_modules && rm -f yarn.lock && yarn"
+    "update": "rm -rf node_modules && rm -f yarn.lock && yarn",
+    "start": "bundle exec jekyll build && bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004"
   },
   "bugs": {
     "url": "https://github.com/ibraheem4/ibraheem4.github.io/issues",
