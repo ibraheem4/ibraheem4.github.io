@@ -1,9 +1,9 @@
 <div class="ui vertical footer segment">
   <div class="ui center aligned container">
     <div class="ui horizontal massive link list">
-    {% if site.linkedin.username %}<a class="item" href="http://linkedin.com/in/{{ site.linkedin.username }}"><i class="linkedin icon"></i></a>{% endif %}
-    {% if site.github.username %}<a class="item" href="http://github.com/{{ site.github.username }}"><i class="github alternate icon"></i></a>{% endif %}
-    {% if site.facebook.username %}<a class="item" href="http://facebook.com/{{ site.facebook.username }}"><i class="facebook icon"></i></a>{% endif %}
+    {% if site.linkedin.username %}<a class="item" href="http://linkedin.com/in/{{ site.linkedin.username }}"><i class="linkedin icon" role="img" aria-label="{{ site.author.first_name }}'s LinkedIn profile"></i></a>{% endif %}
+    {% if site.github.username %}<a class="item" href="http://github.com/{{ site.github.username }}"><i class="github alternate icon" role="img" aria-label="{{ site.author.first_name }}'s GitHub profile"></i></a>{% endif %}
+    {% if site.facebook.username %}<a class="item" href="http://facebook.com/{{ site.facebook.username }}"><i class="facebook icon" role="img" aria-label="{{ site.author.first_name }}'s Facebook profile"></i></a>{% endif %}
     </div>
   </div>
 </div>
