@@ -90,8 +90,8 @@ To sync text editor settings across machines, it's possible to move the app sett
 
 ### VSCode for Mac
 
-    rm -rf /Users/ibraheem/.vscode/extensions/ && ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/extensions
-    rm -rf ~/Library/Application\ Support/Code/User && ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/User
+    rm -rf /Users/ibraheem/.vscode/extensions/ && ln -s ~/Dropbox/Shared/Code/.vscode/extensions ~/.vscode/
+    rm -rf ~/Library/Application\ Support/Code/User && ln -s ~/Dropbox/Shared/Code/User ~/Library/Application\ Support/Code/
 
 * [Visual Studio Code syncing blog post](https://tommcfarlin.com/sharing-visual-studio-code-settings/)
 
