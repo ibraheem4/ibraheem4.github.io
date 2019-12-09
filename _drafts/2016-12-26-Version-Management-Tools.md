@@ -129,6 +129,11 @@ Java, not to be outdone, has a tool called [jenv](https://github.com/gcuisinier/
     brew install jenv
     echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bashrc
     echo 'if which jenv > /dev/null; then eval "$(jenv init -)"; fi' >> ~/.bashrc
+    
+### Download Java versions from archive
+
+- [Oracle Java Archive](https://www.oracle.com/technetwork/java/archive-139210.html)
+- [Java SE Downloads](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ### Add Java versions to jenv
 
