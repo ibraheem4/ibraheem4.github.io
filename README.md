@@ -22,12 +22,10 @@ This site is built using the following.
 ## Installation
 
 ### Install bundles
-- `bundle install`
-- `bundle update jekyll`
+- `bundle install && bundle update jekyll`
 
 ### Install node modules
-- `yarn install`
-- `yarn update`
+- `yarn install && yarn update`
 
 ## Running / Development
 
