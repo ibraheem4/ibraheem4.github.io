@@ -27,16 +27,7 @@ This site is built using the following.
 ### Install node modules
 - `yarn install && yarn update`
 
-## Running / Development
-
-Launch the Jekyll server specifying the certificate and key locations (e.g. `--ssl-cert`, `--ssl-key`).
-
-    bundle exec jekyll build --port 4004 --watch
-    bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004 --watch
-
-> Visit your app at [https://localhost:4004](https://localhost:4004).
-
-#### Generating locally-trusted certificates using [`mkcert`](https://github.com/FiloSottile/mkcert)
+### Generating locally-trusted certificates using [`mkcert`](https://github.com/FiloSottile/mkcert)
 
 ```
 # Use the script
@@ -48,3 +39,12 @@ mkcert -install
 mkdir -p ssl
 mkcert -cert-file ssl/server.crt -key-file ssl/server.key ibraheem.com "*.ibraheem.com" localhost 127.0.0.1 ::1
 ```
+
+## Running / Development
+
+Launch the Jekyll server specifying the certificate and key locations (e.g. `--ssl-cert`, `--ssl-key`).
+
+    bundle exec jekyll build --port 4004 --watch
+    bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004 --watch
+
+> Visit your app at [https://localhost:4004](https://localhost:4004).
