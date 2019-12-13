@@ -44,7 +44,7 @@ mkcert -cert-file ssl/server.crt -key-file ssl/server.key ibraheem.com "*.ibrahe
 
 Launch the Jekyll server specifying the certificate and key locations (e.g. `--ssl-cert`, `--ssl-key`).
 
-    bundle exec jekyll build --port 4004 --watch
+    bundle exec jekyll build --watch
     bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004 --watch
 
 > Visit your app at [https://localhost:4004](https://localhost:4004).
