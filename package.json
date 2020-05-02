@@ -10,8 +10,9 @@
   "scripts": {
     "build:semantic": "cd semantic && gulp build && cd ..",
     "bundle:install": "bundle install",
+    "bundle:update": "bundle update",
     "kill:osx": "lsof -t -i tcp:4004 | xargs kill -9",
-    "update": "rm -rf node_modules && rm -f yarn.lock && yarn",
+    "update": "rm -rf node_modules && rm -f yarn.lock && yarn bundle:update && yarn",
     "start": "rm -rf _site/ && bundle exec jekyll build && bundle exec jekyll serve --ssl-key ssl/server.key --ssl-cert ssl/server.crt --port 4004 --watch"
   },
   "bugs": {
@@ -46,11 +47,13 @@
     "gulp-watch": "^5.0.0",
     "highlight.js": "~9.12.0",
     "hoek": "^4.2.1",
-    "jquery": ">=3.4.0",
+    "jquery": "^3.5.0",
+    "kind-of": "^6.0.3",
     "lodash": "^4.17.13",
     "lodash.merge": "^4.6.2",
     "lodash.template": "^4.5.0",
     "minimatch": "^3.0.2",
+    "minimist": "^1.2.3",
     "require-dot-file": "^0.4.0",
     "run-sequence": "~2.2.1",
     "yamljs": "^0.3.0"
