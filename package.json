@@ -56,7 +56,7 @@
     "minimist": "^1.2.3",
     "require-dot-file": "^0.4.0",
     "run-sequence": "~2.2.1",
-    "url-regex": "5.0.0",
+    "url-regex": "^5.0.0",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
