@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Django Geographic Models
-category: post
+category: draft
 tags:
   - django
   - python

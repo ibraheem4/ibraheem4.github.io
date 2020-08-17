@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kodi Add-ons
-category: post
+category: draft
 tags:
   - kodi
   - xbmc

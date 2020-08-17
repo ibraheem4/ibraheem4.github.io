@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example post
-category: post
+category: draft
 tags:
   - example
 modified: 2017-12-23T00:00:00-07:00

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Promo Codes
-category: post
+category: draft
 tags:
   - promo codes
 modified: 2015-04-19T00:00:00-07:00

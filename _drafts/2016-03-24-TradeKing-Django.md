@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TradeKing Django
-category: post
+category: draft
 tags:
   - finance
   - python

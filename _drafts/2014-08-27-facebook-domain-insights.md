@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Domain Insights
-category: post
+category: draft
 tags:
 - facebook
 - google

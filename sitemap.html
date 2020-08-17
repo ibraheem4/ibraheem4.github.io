@@ -7,7 +7,7 @@ permalink: /sitemap/
   <h1>Posts</h1>
   <ul class="no-bullet">
   {% for post in site.posts %}
-    <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url | remove: 'index.html' }}">{{ post.url | remove: 'index.html' }}</a></li>
+    <li><a href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.url | remove: 'index.html' }}</a></li>
   {% endfor %}
   </ul>
   <h1>Pages</h1 >
@@ -16,7 +16,7 @@ permalink: /sitemap/
   {% if page.layout != nil %}
   {% if page.title != 'Sitemap' %}
   {% if page.layout != 'feed' %}
-    <li><a href="{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index.html' }}">{{ page.url | remove: 'index.html' }}</a></li>
+    <li><a href="{{ site.url }}{{ page.url | remove: 'index.html' }}">{{ page.url | remove: 'index.html' }}</a></li>
   {% endif %}
   {% endif %}
   {% endif %}

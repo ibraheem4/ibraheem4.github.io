@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TDD Scaffold
-category: post
+category: draft
 tags:
   - rspec
   - ruby

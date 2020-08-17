@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fabric vs Invoke
-category: post
+category: draft
 tags:
   - python
 modified: 2017-01-17T00:00:00-07:00

@@ -1,0 +1,14 @@
+{% if paginator.total_pages > 1 %}
+<div class="ui center aligned basic segment">
+  <div class="ui pagination menu">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous item">Previous</a>
+    {% else %}
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next item">Next</a>
+    {% else %}
+    {% endif %}
+  </div>
+</div>
+{% endif %}

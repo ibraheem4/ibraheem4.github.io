@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a React Application
-category: Code
+category: code
 tags:
   - javascript
   - react

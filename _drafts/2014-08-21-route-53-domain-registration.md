@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Route 53 Domain Registration
-category: post
+category: draft
 tags:
 - aws
 - dns

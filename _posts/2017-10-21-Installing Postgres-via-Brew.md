@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Postgres via Brew
-category: Code
+category: code
 tags:
   - postgres
 modified: 2019-02-15T00:00:00-07:00
