@@ -42,6 +42,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-twitter-plugin
 
 paginate: 4
 

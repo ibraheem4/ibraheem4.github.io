@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a Rails 5 App
-category: code
+category: draft
 tags:
   - ruby
   - rails
