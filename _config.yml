@@ -71,7 +71,7 @@ google:
   analytics:
     tracking_id: UA-27939534-4
   tagmanager:
-    id: GTM-BVJQ
+    id: GTM-PFK4XJ3
 
 linkedin:
   username: ibraheem4
@@ -82,7 +82,7 @@ twitter:
 facebook:
   user_id: 7907713
   app_id: 275310882861610
-  sdk_version: v2.7
+  sdk_version: v8.0
   username: ibraheem4
   comments: true
 
