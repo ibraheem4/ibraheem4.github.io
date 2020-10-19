@@ -8,7 +8,7 @@
     "url": "https://github.com/ibraheem4/ibraheem4.github.io.git"
   },
   "scripts": {
-    "build:semantic": "cd semantic && gulp build && cd ..",
+    "build:semantic": "yarn --cwd node_modules/fomantic-ui gulp build",
     "bundle:install": "bundle install",
     "bundle:update": "bundle update",
     "kill:osx": "lsof -t -i tcp:4004 | xargs kill -9",
@@ -29,6 +29,7 @@
     "del": "^3.0.0",
     "diff": "^3.5.0",
     "extend": "^3.0.2",
+    "fomantic-ui": "2.8.7",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-chmod": "^2.0.0",
     "gulp-clone": "2.0.1",
