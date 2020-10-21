@@ -2,12 +2,16 @@
      User Global Variables
 *******************************/
 
-@pageBackground      : rgba(250,250,250,1);
-
 /*-------------------
        Links
 --------------------*/
 
-@linkColor           : rgba(0,0,0,.7);
+@linkColor           : rgba(0,0,0,.8);
 @linkUnderline       : none;
-@linkHoverColor      : rgba(0,0,0,.5);
+@linkHoverColor      : rgba(0,0,0,.6);
+
+/*-------------------
+       Font
+--------------------*/
+
+@emSize		: 16px;
