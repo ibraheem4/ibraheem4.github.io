@@ -30,7 +30,7 @@
     "diff": "^3.5.0",
     "extend": "^3.0.2",
     "fomantic-ui": "^2.8.7",
-    "highlight.js": "^9.12.0",
+    "highlight.js": "^10.4.1",
     "hoek": "^4.2.1",
     "jquery": "^3.5.0",
     "kind-of": "^6.0.3",
